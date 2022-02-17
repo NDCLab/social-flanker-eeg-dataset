@@ -25,7 +25,7 @@ This `main` branch contains completed releases for this project. For all work-in
 | insert team member | add team member's role |
 | insert team member | add team member's role |
 
-Learn more about us [here](www.ndclab.com/people).
+Learn more about us [here](https://www.ndclab.com/people).
 
 ## Contributing
 If you are interested in contributing, please read our [CONTRIBUTING.md](CONTRIBUTING.md) file.
