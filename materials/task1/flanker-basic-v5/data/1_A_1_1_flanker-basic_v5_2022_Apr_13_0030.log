@@ -1,0 +1,14 @@
+7.1624 	INFO 	Loaded monitor calibration from ['2021_09_14 11:10']
+7.1658 	WARNING 	User requested fullscreen with size [1536  864], but screen is actually [1920, 1080]. Using actual size
+10.6190 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([-1, -1, -1]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x000001B8725BA160>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x000001B87260B048>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+10.6195 	EXP 	window1: mouseVisible = True
+10.6195 	EXP 	window1: recordFrameIntervals = False
+10.6595 	EXP 	window1: recordFrameIntervals = True
+10.7055 	DEBUG 	Screen (0) actual frame rate measured at 240.63
+10.7056 	EXP 	window1: recordFrameIntervals = False
+10.9454 	INFO 	keyboard.Keyboard is using ptb backend.
+10.9456 	EXP 	window1: mouseVisible = False
+12.7366 	EXP 	window1: mouseVisible = True
+12.7371 	DEBUG 	Saving data for flanker-basic_v5 ExperimentHandler
+12.7382 	INFO 	saved data to C:\Users\NDClab\Desktop\Experiments\social-flanker-eeg\flanker-basic-v5\data/1_A_1_1_flanker-basic_v5_2022_Apr_13_0030.psydat
+12.7386 	INFO 	saved data to 'C:\\Users\\NDClab\\Desktop\\Experiments\\social-flanker-eeg\\flanker-basic-v5\\data/1_A_1_1_flanker-basic_v5_2022_Apr_13_0030.csv'
