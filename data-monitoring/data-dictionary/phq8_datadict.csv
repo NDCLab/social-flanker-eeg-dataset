@@ -1,0 +1,11 @@
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
+phq8_i1,"PHQ8, question 1",Little interest or pleasure in doing things,s1_r1_e1,Likert,"0, 1, 2, 3","0, Not at all | 1, Several days | 2, More than half the days | 3, Nearly every day",NA,1,NA,direct-redcap
+phq8_i2,"PHQ8, question 2","Feeling down, depressed, or hopeless",s1_r1_e1,Likert,"0, 1, 2, 3","0, Not at all | 1, Several days | 2, More than half the days | 3, Nearly every day",NA,1,NA,direct-redcap
+phq8_i3,"PHQ8, question 3","Trouble falling or staying asleep, or sleeping too much",s1_r1_e1,Likert,"0, 1, 2, 3","0, Not at all | 1, Several days | 2, More than half the days | 3, Nearly every day",NA,1,NA,direct-redcap
+phq8_i4,"PHQ8, question 4",Feeling tired or having little energy,s1_r1_e1,Likert,"0, 1, 2, 3","0, Not at all | 1, Several days | 2, More than half the days | 3, Nearly every day",NA,1,NA,direct-redcap
+phq8_i5,"PHQ8, question 5",Poor appetite or overeating,s1_r1_e1,Likert,"0, 1, 2, 3","0, Not at all | 1, Several days | 2, More than half the days | 3, Nearly every day",NA,1,NA,direct-redcap
+phq8_i6,"PHQ8, question 6",Feeling bad about yourself - or that you are a failure or have let yourself or your family down,s1_r1_e1,Likert,"0, 1, 2, 3","0, Not at all | 1, Several days | 2, More than half the days | 3, Nearly every day",NA,1,NA,direct-redcap
+phq8_i7,"PHQ8, question 7","Trouble concentrating on things, such as reading the newspaper or watching television",s1_r1_e1,Likert,"0, 1, 2, 3","0, Not at all | 1, Several days | 2, More than half the days | 3, Nearly every day",NA,1,NA,direct-redcap
+phq8_i8,"PHQ8, question 8",Moving or speaking so slowly that other people could have noticed. Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual,s1_r1_e1,Likert,"0, 1, 2, 3","0, Not at all | 1, Several days | 2, More than half the days | 3, Nearly every day",NA,1,NA,direct-redcap
+phq8_scrdTotal,PHQ8 total score,sum of all phq8 items (NA if phq8_percTotal < 1),s1_r1_e1,Integer,"[0,24]",NA,NA,1,NA,code-instruments
+phq8_percTotal,PHQ8 percentage response,percentage of response for phq8 items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments

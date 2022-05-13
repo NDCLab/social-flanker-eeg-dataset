@@ -1,0 +1,10 @@
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
+rvq_i1,"RVQ, question 1",Spread rumors about you?,s1_r1_e1,Likert,"1, 2, 3, 4, 5","1, Never | 2,  | 3,  | 4,  | 5, Always",NA,1,NA,direct-redcap
+rvq_i2,"RVQ, question 2",Purposely exclude you from social interactions?,s1_r1_e1,Likert,"1, 2, 3, 4, 5","1, Never | 2,  | 3,  | 4,  | 5, Always",NA,1,NA,direct-redcap
+rvq_i3,"RVQ, question 3",Purposely ignore or refuse to talk to you?,s1_r1_e1,Likert,"1, 2, 3, 4, 5","1, Never | 2,  | 3,  | 4,  | 5, Always",NA,1,NA,direct-redcap
+rvq_i4,"RVQ, question 4",Divulge personal information about you that was originally shared in confidence?,s1_r1_e1,Likert,"1, 2, 3, 4, 5","1, Never | 2,  | 3,  | 4,  | 5, Always",NA,1,NA,direct-redcap
+rvq_i5,"RVQ, question 5",Try to cause fights or arguments among you and other peers?,s1_r1_e1,Likert,"1, 2, 3, 4, 5","1, Never | 2,  | 3,  | 4,  | 5, Always",NA,1,NA,direct-redcap
+rvq_i6,"RVQ, question 6","Pick you last for an activity, for reasons NOT related to your ability?",s1_r1_e1,Likert,"1, 2, 3, 4, 5","1, Never | 2,  | 3,  | 4,  | 5, Always",NA,1,NA,direct-redcap
+rvq_i7,"RVQ, question 7",Ridicule you in front of other people?,s1_r1_e1,Likert,"1, 2, 3, 4, 5","1, Never | 2,  | 3,  | 4,  | 5, Always",NA,1,NA,direct-redcap
+rvq_scrdTotal,RVQ total score,average of all rvq items (NA if rvq_percTotal < 0.8),s1_r1_e1,Real,"[1,5]",NA,NA,1,NA,code-instruments
+rvq_percTotal,RVQ percentage response,percentage of response for rvq items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
