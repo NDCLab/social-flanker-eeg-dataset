@@ -1,15 +1,11 @@
-﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
-stai5_i1, "STAIS-5, question 1",I feel upset.,"s1_r1_e1, s1_r1_e2, s1_r1_e3",Likert,"1, 2, 3, 4","1, Not at all | 2, Somewhat | 3, Moderately so | 4, Very much so",NA,1,NA,direct-redcap
-stai5_i2,"STAIS-5, question 2",I feel frightened.,"s1_r1_e1, s1_r1_e2, s1_r1_e3",Likert,"1, 2, 3, 4","1, Not at all | 2, Somewhat | 3, Moderately so | 4, Very much so",NA,1,NA,direct-redcap
-stai5_i3,"STAIS-5, question 3",I feel nervous.,"s1_r1_e1, s1_r1_e2, s1_r1_e3",Likert,"1, 2, 3, 4","1, Not at all | 2, Somewhat | 3, Moderately so | 4, Very much so",NA,1,NA,direct-redcap
-stai5_i4,"STAIS-5, question 4",I feel jittery.,"s1_r1_e1, s1_r1_e2, s1_r1_e3",Likert,"1, 2, 3, 4","1, Not at all | 2, Somewhat | 3, Moderately so | 4, Very much so",NA,1,NA,direct-redcap
-stai5_i5,"STAIS-5, question 5",I feel confused.,"s1_r1_e1, s1_r1_e2, s1_r1_e3",Likert,"1, 2, 3, 4","1, Not at all | 2, Somewhat | 3, Moderately so | 4, Very much so",NA,1,NA,direct-redcap
-stai5_i6,"STAIT-5, question 1",I feel that difficulties are piling up so that I cannot overcome them.,"s1_r1_e1, s1_r1_e2, s1_r1_e3",Likert,"1, 2, 3, 4","1, Not at all | 2, Somewhat | 3, Moderately so | 4, Very much so",NA,1,NA,direct-redcap
-stai5_i7,"STAIT-5, question 2",I worry too much over something that really doesn't matter.,"s1_r1_e1, s1_r1_e2, s1_r1_e3",Likert,"1, 2, 3, 4","1, Not at all | 2, Somewhat | 3, Moderately so | 4, Very much so",NA,1,NA,direct-redcap
-stai5_i8,"STAIT-5, question 3",Some unimportant thoughts run through my mind and bother me.,"s1_r1_e1, s1_r1_e2, s1_r1_e3",Likert,"1, 2, 3, 4","1, Not at all | 2, Somewhat | 3, Moderately so | 4, Very much so",NA,1,NA,direct-redcap
-stai5_i9,"STAIT-5, question 4",I take disappointments so keenly that I can't put them out of my mind.,"s1_r1_e1, s1_r1_e2, s1_r1_e3",Likert,"1, 2, 3, 4","1, Not at all | 2, Somewhat | 3, Moderately so | 4, Very much so",NA,1,NA,direct-redcap
-stai5_i10,"STAIT-5, question 5",I get in a state of tension or turmoil as I think over my recent concerns and interests.,"s1_r1_e1, s1_r1_e2, s1_r1_e3",Likert,"1, 2, 3, 4","1, Not at all | 2, Somewhat | 3, Moderately so | 4, Very much so",NA,1,NA,direct-redcap
-stai5_scrdS,STAIS-5 subscore (state anxiety),sum of stai5 items 1-5 (NA if stai5_percS < 1),"s1_r1_e1, s1_r1_e2, s1_r1_e3",Integer,"[5,20]",NA,NA,1,NA,code-instruments
-stai5_scrdT,STAIT-5 subscore (trait anxiety),sum of stai5 items 6-10 (NA if stai5_percT < 1),"s1_r1_e1, s1_r1_e2, s1_r1_e3",Integer,"[5,20]",NA,NA,1,NA,code-instruments
-stai5_percS,STAIS-5 percentage response,percentage of response for stais5 items (NA if all items are blank),"s1_r1_e1, s1_r1_e2, s1_r1_e3",Real,"[0,1]",NA,NA,1,NA,code-instruments
-stai5_percT,STAIT-5 percentage response,percentage of response for stait5 items (NA if all items are blank),"s1_r1_e1, s1_r1_e2, s1_r1_e3",Real,"[0,1]",NA,NA,1,NA,code-instruments
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance,
+stai5_i1," ""STAIS-5"," question 1""",I feel upset.,"s1_r1_e1, s1_r1_e2, s1_r1_e3",Likert,"1, 2, 3, 4","1, Not at all | 2, Somewhat | 3, Moderately so | 4, Very much so",NA,1,NA,direct-redcap
+stai5_i2,"STAIS-5, question 2",I feel frightened.,"s1_r1_e1, s1_r1_e2, s1_r1_e3",Likert,"1, 2, 3, 4","1, Not at all | 2, Somewhat | 3, Moderately so | 4, Very much so",NA,1,NA,direct-redcap,
+stai5_i3,"STAIS-5, question 3",I feel nervous.,"s1_r1_e1, s1_r1_e2, s1_r1_e3",Likert,"1, 2, 3, 4","1, Not at all | 2, Somewhat | 3, Moderately so | 4, Very much so",NA,1,NA,direct-redcap,
+stai5_i4,"STAIS-5, question 4",I feel jittery.,"s1_r1_e1, s1_r1_e2, s1_r1_e3",Likert,"1, 2, 3, 4","1, Not at all | 2, Somewhat | 3, Moderately so | 4, Very much so",NA,1,NA,direct-redcap,
+stai5_i5,"STAIS-5, question 5",I feel confused.,"s1_r1_e1, s1_r1_e2, s1_r1_e3",Likert,"1, 2, 3, 4","1, Not at all | 2, Somewhat | 3, Moderately so | 4, Very much so",NA,1,NA,direct-redcap,
+stai5_i6,"STAIT-5, question 1",I feel that difficulties are piling up so that I cannot overcome them.,"s1_r1_e1, s1_r1_e2, s1_r1_e3",Likert,"1, 2, 3, 4","1, Not at all | 2, Somewhat | 3, Moderately so | 4, Very much so",NA,1,NA,direct-redcap,
+stai5_i7,"STAIT-5, question 2",I worry too much over something that really doesn't matter.,"s1_r1_e1, s1_r1_e2, s1_r1_e3",Likert,"1, 2, 3, 4","1, Not at all | 2, Somewhat | 3, Moderately so | 4, Very much so",NA,1,NA,direct-redcap,
+stai5_i8,"STAIT-5, question 3",Some unimportant thoughts run through my mind and bother me.,"s1_r1_e1, s1_r1_e2, s1_r1_e3",Likert,"1, 2, 3, 4","1, Not at all | 2, Somewhat | 3, Moderately so | 4, Very much so",NA,1,NA,direct-redcap,
+stai5_i9,"STAIT-5, question 4",I take disappointments so keenly that I can't put them out of my mind.,"s1_r1_e1, s1_r1_e2, s1_r1_e3",Likert,"1, 2, 3, 4","1, Not at all | 2, Somewhat | 3, Moderately so | 4, Very much so",NA,1,NA,direct-redcap,
+stai5_i10,"STAIT-5, question 5",I get in a state of tension or turmoil as I think over my recent concerns and interests.,"s1_r1_e1, s1_r1_e2, s1_r1_e3",Likert,"1, 2, 3, 4","1, Not at all | 2, Somewhat | 3, Moderately so | 4, Very much so",NA,1,NA,direct-redcap,
