@@ -1,0 +1,8 @@
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
+pints_i1,"PINTS, question 1",I lay awake at night thinking about things,s1_r1_e1,Likert,"1, 2, 3, 4, 5","1, never | 2,  | 3,  | 4,  | 5, almost always",NA,1,NA,direct-redcap
+pints_i2,"PINTS, question 2","When I have a problem, I can't get it out of my head",s1_r1_e1,Likert,"1, 2, 3, 4, 5","1, never | 2,  | 3,  | 4,  | 5, almost always",NA,1,NA,direct-redcap
+pints_i3,"PINTS, question 3","When something upsets me, I think about it over and over",s1_r1_e1,Likert,"1, 2, 3, 4, 5","1, never | 2,  | 3,  | 4,  | 5, almost always",NA,1,NA,direct-redcap
+pints_i4,"PINTS, question 4",I get stuck thinking about things,s1_r1_e1,Likert,"1, 2, 3, 4, 5","1, never | 2,  | 3,  | 4,  | 5, almost always",NA,1,NA,direct-redcap
+pints_i5,"PINTS, question 5","When something difficult is coming up, I keep thinking about it all of the time",s1_r1_e1,Likert,"1, 2, 3, 4, 5","1, never | 2,  | 3,  | 4,  | 5, almost always",NA,1,NA,direct-redcap
+pints_scrdTotal,PINTS total score,average of all pints items (NA if pints_percTotal < 0.6),s1_r1_e1,Real,"[1,5]",NA,NA,1,NA,code-instruments
+pints_percTotal,PINTS percentage response,percentage of response for pints items (NA if all items are blank),s1_r1_e1,Real,"[0,1]",NA,NA,1,NA,code-instruments
