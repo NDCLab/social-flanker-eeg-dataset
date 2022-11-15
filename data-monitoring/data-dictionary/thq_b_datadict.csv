@@ -1,0 +1,49 @@
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
+thq_b_i1,"THQ (version b), question 1","Has anyone ever tried to take something directly from you by using force or the threat of force, such as a stick-up or mugging?",s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+thq_b_i1_age,Specification of age if question 1==1,Approximate age(s),s1_r1_e1,Char,text,NA,NA,1,NA,direct-redcap
+thq_b_i2,"THQ (version b), question 2","Has anyone ever attempted to rob you or actually robbed you (i.e., stolen your personal belongings)?",s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+thq_b_i2_age,Specification of age if question 2==1,Approximate age(s),s1_r1_e1,Char,text,NA,NA,1,NA,direct-redcap
+thq_b_i3,"THQ (version b), question 3",Has anyone ever attempted to or succeeded in breaking into your home when you were not there?,s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+thq_b_i3_age,Specification of age if question 3==1,Approximate age(s),s1_r1_e1,Char,text,NA,NA,1,NA,direct-redcap
+thq_b_i4,"THQ (version b), question 4",Has anyone ever attempted to or succeeded in breaking into your home while you were there?,s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+thq_b_i4_age,Specification of age if question 4==1,Approximate age(s),s1_r1_e1,Char,text,NA,NA,1,NA,direct-redcap
+thq_b_i5,"THQ (version b), question 5","Have you ever had a serious accident at work, in a car, or somewhere else?",s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+thq_b_i5_age,Specification of age if question 5==1,Approximate age(s),s1_r1_e1,Char,text,NA,NA,1,NA,direct-redcap
+thq_b_i6,"THQ (version b), question 6","Have you ever experienced a natural disaster such as a tornado, hurricane, flood or major earthquake, etc., where you felt you or your loved ones were in danger of death or injury? ",s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+thq_b_i6_age,Specification of age if question 6==1,Approximate age(s),s1_r1_e1,Char,text,NA,NA,1,NA,direct-redcap
+thq_b_i7,"THQ (version b), question 7","Have you ever experienced a ""man-made"" disaster such as a train crash, building collapse, bank robbery, fire, etc., where you felt you or your loved ones were in danger of death or injury?",s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+thq_b_i7_age,Specification of age if question 7==1,Approximate age(s),s1_r1_e1,Char,text,NA,NA,1,NA,direct-redcap
+thq_b_i8,"THQ (version b), question 8",Have you ever been exposed to dangerous chemicals or radioactivity that might threaten your health?,s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+thq_b_i8_age,Specification of age if question 8==1,Approximate age(s),s1_r1_e1,Char,text,NA,NA,1,NA,direct-redcap
+thq_b_i9,"THQ (version b), question 9",Have you ever been in any other situation in which you were seriously injured?,s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+thq_b_i9_age,Specification of age if question 9==1,Approximate age(s),s1_r1_e1,Char,text,NA,NA,1,NA,direct-redcap
+thq_b_i10,"THQ (version b), question 10",Have you ever been in any other situation in which you feared you might be killed or seriously injured?,s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+thq_b_i10_age,Specification of age if question 10==1,Approximate age(s),s1_r1_e1,Char,text,NA,NA,1,NA,direct-redcap
+thq_b_i11,"THQ (version b), question 11",Have you ever seen someone seriously injured or killed?,s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+thq_b_i11_age,Specification of age if question 11==1,Approximate age(s),s1_r1_e1,Char,text,NA,NA,1,NA,direct-redcap
+thq_b_i12,"THQ (version b), question 12",Have you ever seen dead bodies (other than at a funeral) or had to handle dead bodies for any reason?,s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+thq_b_i12_age,Specification of age if question 12==1,Approximate age(s),s1_r1_e1,Char,text,NA,NA,1,NA,direct-redcap
+thq_b_i13,"THQ (version b), question 13","Have you ever had a close friend or family member murdered, or killed by a drunk driver?",s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+thq_b_i13_age,Specification of age if question 13==1,Approximate age(s),s1_r1_e1,Char,text,NA,NA,1,NA,direct-redcap
+thq_b_i14,"THQ (version b), question 14","Have you ever had a spouse, romantic partner, or child die?",s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+thq_b_i14_age,Specification of age if question 14==1,Approximate age(s),s1_r1_e1,Char,text,NA,NA,1,NA,direct-redcap
+thq_b_i15,"THQ (version b), question 15",Have you ever had a serious or life-threatening illness?,s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+thq_b_i15_age,Specification of age if question 15==1,Approximate age(s),s1_r1_e1,Char,text,NA,NA,1,NA,direct-redcap
+thq_b_i16,"THQ (version b), question 16","Have you ever received news of a serious injury, life-threatening illness, or unexpected death of someone close to you?",s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+thq_b_i16_age,Specification of age if question 16==1,Approximate age(s),s1_r1_e1,Char,text,NA,NA,1,NA,direct-redcap
+thq_b_i17,"THQ (version b), question 17",Have you ever had to engage in combat while in military service in an official or unofficial war zone?,s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+thq_b_i17_age,Specification of age if question 17==1,Approximate age(s),s1_r1_e1,Char,text,NA,NA,1,NA,direct-redcap
+thq_b_i18,"THQ (version b), question 18",Has anyone ever made you have intercourse or oral or anal sex against your will?,s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+thq_b_i18_age,Specification of age if question 18==1,Approximate age(s),s1_r1_e1,Char,text,NA,NA,1,NA,direct-redcap
+thq_b_i19,"THQ (version b), question 19","Has anyone ever touched private parts of your body, or made you touch theirs, under force or threat?",s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+thq_b_i19_age,Specification of age if question 19==1,Approximate age(s),s1_r1_e1,Char,text,NA,NA,1,NA,direct-redcap
+thq_b_i20,"THQ (version b), question 20","Other than incidents mentioned in the previous two questions, have there been any other situations in which another person tried to force you to have an unwanted sexual contact?",s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+thq_b_i20_age,Specification of age if question 20==1,Approximate age(s),s1_r1_e1,Char,text,NA,NA,1,NA,direct-redcap
+thq_b_i21,"THQ (version b), question 21","Has anyone, including family members or friends, ever attacked you with a gun, knife, or some other weapon?",s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+thq_b_i21_age,Specification of age if question 21==1,Approximate age(s),s1_r1_e1,Char,text,NA,NA,1,NA,direct-redcap
+thq_b_i22,"THQ (version b), question 22","Has anyone, including family members or friends, ever attacked you without a weapon and seriously injured you?",s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+thq_b_i22_age,Specification of age if question 22==1,Approximate age(s),s1_r1_e1,Char,text,NA,NA,1,NA,direct-redcap
+thq_b_i23,"THQ (version b), question 23","Has anyone in your family ever beaten, spanked, or pushed you hard enough to cause injury?",s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+thq_b_i23_age,Specification of age if question 23==1,Approximate age(s),s1_r1_e1,Char,text,NA,NA,1,NA,direct-redcap
+thq_b_i24,"THQ (version b), question 24",Have you experienced any other extraordinarily stressful situation or event that is not covered above?,s1_r1_e1,Logical,"0, 1","1, Yes | 0, No",NA,1,NA,direct-redcap
+thq_b_i24_age,Specification of age if question 24==1,Approximate age(s),s1_r1_e1,Char,text,NA,NA,1,NA,direct-redcap

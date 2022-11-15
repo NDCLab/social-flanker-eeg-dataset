@@ -1,0 +1,8 @@
+﻿variable,description,detail,allowedSuffix,valueType,allowedValues,valueInfo,naValueType,activeStatus,replacement,provenance
+stai5_i1,"STAIS-5, question 1",I feel upset.,"s1_r1_e1, s1_r1_e2, s1_r1_e3, s1_r1_e4, s1_r1_e5",Integer,"1, 2, 3, 4","1, Not at all | 2, Somewhat | 3, Moderately so | 4, Very much so",NA,1,NA,direct-redcap
+stai5_i2,"STAIS-5, question 2",I feel frightened.,"s1_r1_e1, s1_r1_e2, s1_r1_e3, s1_r1_e4, s1_r1_e5",Integer,"1, 2, 3, 4","1, Not at all | 2, Somewhat | 3, Moderately so | 4, Very much so",NA,1,NA,direct-redcap
+stai5_i3,"STAIS-5, question 3",I feel nervous.,"s1_r1_e1, s1_r1_e2, s1_r1_e3, s1_r1_e4, s1_r1_e5",Integer,"1, 2, 3, 4","1, Not at all | 2, Somewhat | 3, Moderately so | 4, Very much so",NA,1,NA,direct-redcap
+stai5_i4,"STAIS-5, question 4",I feel jittery.,"s1_r1_e1, s1_r1_e2, s1_r1_e3, s1_r1_e4, s1_r1_e5",Integer,"1, 2, 3, 4","1, Not at all | 2, Somewhat | 3, Moderately so | 4, Very much so",NA,1,NA,direct-redcap
+stai5_i5,"STAIS-5, question 5",I feel confused.,"s1_r1_e1, s1_r1_e2, s1_r1_e3, s1_r1_e4, s1_r1_e5",Integer,"1, 2, 3, 4","1, Not at all | 2, Somewhat | 3, Moderately so | 4, Very much so",NA,1,NA,direct-redcap
+stai5_scrdS,STAIS-5 subscore (state anxiety),sum of stai5 items 1-5 (NA if stai5_percS < 1),"s1_r1_e1, s1_r1_e2, s1_r1_e3, s1_r1_e4, s1_r1_e5",Integer,"[5,20]",NA,NA,1,NA,code-instruments
+stai5_percS,STAIS-5 percentage response,percentage of response for stais5 items (NA if all items are blank),"s1_r1_e1, s1_r1_e2, s1_r1_e3, s1_r1_e4, s1_r1_e5",Real,"[0,1]",NA,NA,1,NA,code-instruments
