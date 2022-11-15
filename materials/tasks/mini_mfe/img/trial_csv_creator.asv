@@ -1,0 +1,240 @@
+%% This script is written by Kianoosh Hosseini at NDClab (See https://Kianoosh.info and https://ndclab.com) in May. 2022.
+
+%This script reads the faces' files in the renders folder and then loads all
+%45 and -45 faces in a single column. 
+
+clear % clear matlab workspace
+clc % clear matlab command window
+
+%% Loading all the right-directed faces. 
+%main_dir = 'C:\Users\kihossei\Desktop\MFE_Flanker\img';
+main_dir = '/Users/khoss005/Library/CloudStorage/OneDrive-FloridaInternationalUniversity/Projects/Psychopy/MFE_Flanker/img';
+faceData_location = [main_dir filesep 'renders']; %Location of stored faces (i.e., renders folder)
+cd(faceData_location)
+data_file_lists = dir; 
+data_file_lists = data_file_lists(~ismember({data_file_lists.name},{'.', '..', '.DS_Store'}));
+data_file_lists = {data_file_lists.name};
+data_file_lists = string(data_file_lists); 
+allFaces_filename_pattern = '_45'; % The face file that has this pattern in its name will be loaded.
+allFaces = contains(data_file_lists, allFaces_filename_pattern, 'IgnoreCase',true);
+allFaces = data_file_lists(allFaces);
+allFaces = allFaces';
+for lisar1=1:length(allFaces)
+    allFaces(lisar1) = append('img/renders/',allFaces(lisar1)); 
+end
+
+%% After creating a list of all faces, randomly sample 384 faces. 384 is the number of trials. We also select additional 20 faces as practice trials.
+faces = randsample(allFaces, 404);
+trialFaces_for_surprise = faces; % This stores the list of faces that are going to be shown in practicae and main trials. 
+surpriseFaces = ~contains(allFaces, faces, 'IgnoreCase',true);
+surpriseFaces = allFaces(surpriseFaces); % these are the faces in the renders folder that are not selected to be shown during practice and main trials. We need 
+% these as foil faces in the surprise memory task.
+% As we will show 50% foils, we will need to randomly select 384/2 faces
+% from this surpriseFaces.
+surpriseFaces = randsample(surpriseFaces, 384/2);
+% We need to show faces that are looking straight forward during the
+% surprise memory task. So, we change these surpriseFaces to be looking
+% straight forward.
+for Soubatan1=1:length(surpriseFaces)
+            surpriseFaces(Soubatan1) = strrep(surpriseFaces(Soubatan1),'_45','_0'); %renaming to have looking straight forward faces
+end
+foilFaces = surpriseFaces;
+for abrak1=1:length(foilFaces) % adding a second column that mentions if this is a new face (i.e., foil). For new faces
+    foilFaces(abrak1,2) = 'new';
+end
+
+%% A loop that creates 12 CSV files for the blocks.
+for jaguar=1:13 % 12 of these files will be for the main blocks. The last one with 20 trials will be the practice block.
+    if jaguar==13
+        firstDat = randsample(faces, 20); % this practice block will have 20 trials.
+        pracFaces_intact = firstDat; % we need this for the 2nd csv file.
+        % we need to randomly select half of the faces to be right directed and the
+        % remaining half will be left-directed.
+        rightDir_faces = randsample(firstDat, 20/2); % right-directed faces
+        leftDir_faces = ~contains(firstDat, rightDir_faces, 'IgnoreCase',true);
+        leftDir_faces = firstDat(leftDir_faces); % contains the remaining 192 faces that will be left-directed.
+        for lisar2=1:length(leftDir_faces)
+            leftDir_faces(lisar2) = strrep(leftDir_faces(lisar2),'_45','_-45'); %renaming to have left-directed faces
+        end
+        % Randomly selecting half of the right-directed and left-directed faces to be congruent and the remaining half be incongruent.
+        %there is going to be the table that has 6 columns; the 1st column is the target; the 2nd and 3rd are distractor faces; 4th column is stimNum; 5th column is congrunet?; 6th is the target.
+        rightCong = randsample(rightDir_faces, 20/4); % Congruent faces.
+        rightCong_intact = rightCong; % We need this for the next step.
+        % Let's create right-directed congruent rows.
+        for zebra=1:length(rightCong)
+            rightCong(zebra,1)= rightCong(zebra);
+            rightCong(zebra,2)= rightCong(zebra);
+            rightCong(zebra,3)= rightCong(zebra);
+            rightCong(zebra,4)= 5; % stimNum
+            rightCong(zebra,5)= 1; %congruent?
+            rightCong(zebra,6)= 'right'; %target
+            rightCong(zebra,7)= '[0,0]'; % Center image Location on the screen for the Psychopy
+            rightCong(zebra,8)= '[.18,0]'; % Right image Location on the screen for the Psychopy
+            rightCong(zebra,9)= '[-.18,0]'; % Left image Location on the screen for the Psychopy
+
+        end
+        rightIncong = ~contains(rightDir_faces, rightCong_intact, 'IgnoreCase',true);
+        rightIncong = rightDir_faces(rightIncong); % the target faces that will be incongruent.
+        % Let's create right-directed incongruent rows.
+        for zebra2=1:length(rightIncong)
+            rightIncong(zebra2,1)= rightIncong(zebra2);
+            tempIncong_name = strrep(rightIncong(zebra2),'_45','_-45');
+            rightIncong(zebra2,2)= tempIncong_name;
+            rightIncong(zebra2,3)= tempIncong_name;
+            rightIncong(zebra2,4)= 7; % stimNum
+            rightIncong(zebra2,5)= 0; % congruent?
+            rightIncong(zebra2,6)= 'right'; %target
+            rightIncong(zebra2,7)= '[0.08,0]'; % Center image Location on the screen for the Psychopy
+            rightIncong(zebra2,8)= '[.18,0]'; % Right image Location on the screen for the Psychopy
+            rightIncong(zebra2,9)= '[-.18,0]'; % Left image Location on the screen for the Psychopy
+
+        end
+
+        leftCong = randsample(leftDir_faces, 20/4); % Congruent faces.
+        leftCong_intact = leftCong; % We need this for the next step.
+        % Let's create left-directed congruent rows.
+        for zebra3=1:length(leftCong)
+            leftCong(zebra3,1)= leftCong(zebra3);
+            leftCong(zebra3,2)= leftCong(zebra3);
+            leftCong(zebra3,3)= leftCong(zebra3);
+            leftCong(zebra3,4)= 6; % stimNum
+            leftCong(zebra3,5)= 1; % congruent?
+            leftCong(zebra3,6)= 'left'; %target
+            leftCong(zebra3,7)= '[0,0]'; % Center image Location on the screen for the Psychopy
+            leftCong(zebra3,8)= '[.18,0]'; % Right image Location on the screen for the Psychopy
+            leftCong(zebra3,9)= '[-.18,0]'; % Left image Location on the screen for the Psychopy
+        end
+        leftIncong = ~contains(leftDir_faces, leftCong_intact, 'IgnoreCase',true);
+        leftIncong = leftDir_faces(leftIncong); % the target faces that will be incongruent.
+        % Let's create left-directed incongruent rows.
+        for zebra4=1:length(leftIncong)
+            leftIncong(zebra4,1)= leftIncong(zebra4);
+            tempIncong_name = strrep(leftIncong(zebra4),'_-45','_45');
+            leftIncong(zebra4,2)= tempIncong_name;
+            leftIncong(zebra4,3)= tempIncong_name;
+            leftIncong(zebra4,4)= 8; % stimNum
+            leftIncong(zebra4,5)= 0; % congruent?
+            leftIncong(zebra4,6)= 'left'; %target
+            leftIncong(zebra4,7)= '[-0.08,0]'; % Center image Location on the screen for the Psychopy
+            leftIncong(zebra4,8)= '[.18,0]'; % Right image Location on the screen for the Psychopy
+            leftIncong(zebra4,9)= '[-.18,0]'; % Left image Location on the screen for the Psychopy
+        end
+        % Creating the main table that contains all we have created above for the 1st CSV file.
+        mainTable = table([rightCong(:,1);rightIncong(:,1);leftCong(:,1);leftIncong(:,1)],[rightCong(:,2);rightIncong(:,2);leftCong(:,2);leftIncong(:,2)],[rightCong(:,3);rightIncong(:,3);leftCong(:,3);leftIncong(:,3)],[rightCong(:,4);rightIncong(:,4);leftCong(:,4);leftIncong(:,4)],[rightCong(:,5);rightIncong(:,5);leftCong(:,5);leftIncong(:,5)],[rightCong(:,6);rightIncong(:,6);leftCong(:,6);leftIncong(:,6)],[rightCong(:,7);rightIncong(:,7);leftCong(:,7);leftIncong(:,7)],[rightCong(:,8);rightIncong(:,8);leftCong(:,8);leftIncong(:,8)],[rightCong(:,9);rightIncong(:,9);leftCong(:,9);leftIncong(:,9)]);
+        mainTable = table2array(mainTable);
+        mainTable = mainTable(randperm(size(mainTable, 1)), : ); % Shuffle the data randomly by rows.
+        mainTable = array2table(mainTable);
+        mainTable.Properties.VariableNames = {'middleStim','leftStim','rightStim', 'stimNum','congruent','target','locationC','locationR','locationL'};
+        fileName = append("trialTable_practice",".csv");
+        writetable(mainTable, fileName)
+        % let's update faces for the next round of this loop. So, it will not
+        % have the 32 faces used in this loop.
+        facesTemp = ~contains(faces, pracFaces_intact, 'IgnoreCase',true);
+        faces = faces(facesTemp);
+    else
+        firstDat = randsample(faces, 32); % each block will have 32 trials.
+        firstDat_intact = firstDat; % we need this for the 2nd csv file.
+        % we need to randomly select half of the faces to be right directed and the
+        % remaining half will be left-directed.
+        rightDir_faces = randsample(firstDat, 32/2); % right-directed faces
+        leftDir_faces = ~contains(firstDat, rightDir_faces, 'IgnoreCase',true);
+        leftDir_faces = firstDat(leftDir_faces); % contains the remaining 192 faces that will be left-directed.
+        for lisar2=1:length(leftDir_faces)
+            leftDir_faces(lisar2) = strrep(leftDir_faces(lisar2),'_45','_-45'); %renaming to have left-directed faces
+        end
+        % Randomly selecting half of the right-directed and left-directed faces to be congruent and the remaining half be incongruent.
+        %there is going to be the table that has 6 columns; the 1st column is the target; the 2nd and 3rd are distractor faces; 4th column is stimNum; 5th column is congrunet?; 6th is the target.
+        rightCong = randsample(rightDir_faces, 32/4); % Congruent faces.
+        rightCong_intact = rightCong; % We need this for the next step.
+        % Let's create right-directed congruent rows.
+        for zebra=1:length(rightCong)
+            rightCong(zebra,1)= rightCong(zebra);
+            rightCong(zebra,2)= rightCong(zebra);
+            rightCong(zebra,3)= rightCong(zebra);
+            rightCong(zebra,4)= 5; % stimNum
+            rightCong(zebra,5)= 1; %congruent?
+            rightCong(zebra,6)= 'right'; %target
+            rightCong(zebra,7)= '[0,0]'; % Center image Location on the screen for the Psychopy
+            rightCong(zebra,8)= '[.18,0]'; % Right image Location on the screen for the Psychopy
+            rightCong(zebra,9)= '[-.18,0]'; % Left image Location on the screen for the Psychopy
+
+        end
+        rightIncong = ~contains(rightDir_faces, rightCong_intact, 'IgnoreCase',true);
+        rightIncong = rightDir_faces(rightIncong); % the target faces that will be incongruent.
+        % Let's create right-directed incongruent rows.
+        for zebra2=1:length(rightIncong)
+            rightIncong(zebra2,1)= rightIncong(zebra2);
+            tempIncong_name = strrep(rightIncong(zebra2),'_45','_-45');
+            rightIncong(zebra2,2)= tempIncong_name;
+            rightIncong(zebra2,3)= tempIncong_name;
+            rightIncong(zebra2,4)= 7; % stimNum
+            rightIncong(zebra2,5)= 0; % congruent?
+            rightIncong(zebra2,6)= 'right'; %target
+            rightIncong(zebra2,7)= '[0.08,0]'; % Center image Location on the screen for the Psychopy
+            rightIncong(zebra2,8)= '[.18,0]'; % Right image Location on the screen for the Psychopy
+            rightIncong(zebra2,9)= '[-.18,0]'; % Left image Location on the screen for the Psychopy
+
+        end
+
+        leftCong = randsample(leftDir_faces, 32/4); % Congruent faces.
+        leftCong_intact = leftCong; % We need this for the next step.
+        % Let's create left-directed congruent rows.
+        for zebra3=1:length(leftCong)
+            leftCong(zebra3,1)= leftCong(zebra3);
+            leftCong(zebra3,2)= leftCong(zebra3);
+            leftCong(zebra3,3)= leftCong(zebra3);
+            leftCong(zebra3,4)= 6; % stimNum
+            leftCong(zebra3,5)= 1; % congruent?
+            leftCong(zebra3,6)= 'left'; %target
+            leftCong(zebra3,7)= '[0,0]'; % Center image Location on the screen for the Psychopy
+            leftCong(zebra3,8)= '[.18,0]'; % Right image Location on the screen for the Psychopy
+            leftCong(zebra3,9)= '[-.18,0]'; % Left image Location on the screen for the Psychopy
+        end
+        leftIncong = ~contains(leftDir_faces, leftCong_intact, 'IgnoreCase',true);
+        leftIncong = leftDir_faces(leftIncong); % the target faces that will be incongruent.
+        % Let's create left-directed incongruent rows.
+        for zebra4=1:length(leftIncong)
+            leftIncong(zebra4,1)= leftIncong(zebra4);
+            tempIncong_name = strrep(leftIncong(zebra4),'_-45','_45');
+            leftIncong(zebra4,2)= tempIncong_name;
+            leftIncong(zebra4,3)= tempIncong_name;
+            leftIncong(zebra4,4)= 8; % stimNum
+            leftIncong(zebra4,5)= 0; % congruent?
+            leftIncong(zebra4,6)= 'left'; %target
+            leftIncong(zebra4,7)= '[-0.08,0]'; % Center image Location on the screen for the Psychopy
+            leftIncong(zebra4,8)= '[.18,0]'; % Right image Location on the screen for the Psychopy
+            leftIncong(zebra4,9)= '[-.18,0]'; % Left image Location on the screen for the Psychopy
+        end
+        % Creating the main table that contains all we have created above for the 1st CSV file.
+        mainTable = table([rightCong(:,1);rightIncong(:,1);leftCong(:,1);leftIncong(:,1)],[rightCong(:,2);rightIncong(:,2);leftCong(:,2);leftIncong(:,2)],[rightCong(:,3);rightIncong(:,3);leftCong(:,3);leftIncong(:,3)],[rightCong(:,4);rightIncong(:,4);leftCong(:,4);leftIncong(:,4)],[rightCong(:,5);rightIncong(:,5);leftCong(:,5);leftIncong(:,5)],[rightCong(:,6);rightIncong(:,6);leftCong(:,6);leftIncong(:,6)],[rightCong(:,7);rightIncong(:,7);leftCong(:,7);leftIncong(:,7)],[rightCong(:,8);rightIncong(:,8);leftCong(:,8);leftIncong(:,8)],[rightCong(:,9);rightIncong(:,9);leftCong(:,9);leftIncong(:,9)]);
+        mainTable = table2array(mainTable);
+        mainTable = mainTable(randperm(size(mainTable, 1)), : ); % Shuffle the data randomly by rows.
+        mainTable = array2table(mainTable);
+        mainTable.Properties.VariableNames = {'middleStim','leftStim','rightStim', 'stimNum','congruent','target','locationC','locationR','locationL'};
+        fileName = append("trialTable_",string(jaguar),".csv");
+        writetable(mainTable, fileName)
+        % let's update faces for the next round of this loop. So, it will not
+        % have the 32 faces used in this loop.
+        facesTemp = ~contains(faces, firstDat_intact, 'IgnoreCase',true);
+        faces = faces(facesTemp);
+    end
+end
+includeFaces_for_surprise = ~contains(trialFaces_for_surprise, pracFaces_intact, 'IgnoreCase',true); % Exclude the trials shown in the practice block.
+trialFaces_for_surprise = trialFaces_for_surprise(includeFaces_for_surprise); % Includes the list of faces that are shown in the main 12 blocks.
+% We need to show faces that are looking straight forward during the
+% surprise memory task. So, we change these trialFaces to be looking
+% straight forward.
+for Soubatan2=1:length(trialFaces_for_surprise)
+            trialFaces_for_surprise(Soubatan2) = strrep(trialFaces_for_surprise(Soubatan2),'_45','_0'); % renaming to have looking straight forward faces.
+end
+for abrak2=1:length(trialFaces_for_surprise) % adding a second column that mentions this row is an old face (shown in trials).
+    trialFaces_for_surprise(abrak2,2) = 'old';
+end
+surpriseTable = table([foilFaces(:,1);trialFaces_for_surprise(:,1)],[foilFaces(:,2);trialFaces_for_surprise(:,2)]);
+surpriseTable = table2array(surpriseTable);
+surpriseTable = surpriseTable(randperm(size(surpriseTable, 1)), : ); % Shuffle the data randomly by rows.
+surpriseTable = array2table(surpriseTable);
+surpriseTable.Properties.VariableNames = {'surpriseFaces'};
+writetable(surpriseTable, "surpriseTable.csv")
+
+
