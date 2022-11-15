@@ -23,4 +23,4 @@ jobs:
         if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
     - name: Lint with flake8
       run: |
-       flake8 . --ignore=E501,W503,W504
+       flake8 . --select=E501,E701 --ignore=E
