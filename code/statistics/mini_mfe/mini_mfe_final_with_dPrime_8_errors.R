@@ -9,7 +9,7 @@ library(ggplot2)
 
 
 #Working directory should be the Psychopy experiment directory.
-proje_wd <- "~/Documents/GitHub/memory-for-error-dataset/materials/experiments/larger_arrows_triggers"
+proje_wd <- "/Users/kihossei/Documents/mini_mfe_withData"
 setwd(proje_wd)
 
 today <- Sys.Date()
