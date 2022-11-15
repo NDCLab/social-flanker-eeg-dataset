@@ -1,29 +1,23 @@
-# [project name]
+# social-flanker-eeg-dataset
 
 ## Project Goal
-Replace this text with a pithy description of the goal of the data collection project.
+Dataset collected to investigated links between error monitoring and social anxiety. Includes social/nonsocial flanker, memory-for-errors task, and speech/icebreaker questions. 
 
 
 ## Background & Design
-Replace this text with a slightly longer (but still only max 250 words) description of the project background and its design. 
-
+Dataset collected to investigated links between error monitoring and social anxiety. Includes social/nonsocial flanker, memory-for-errors task, and speech/icebreaker questions. 
 
 ## Roadmap
-:point_right: Details of each data release should be documented in this readme. 
-
+TBD
 
 ## Work in Development
-This `main` branch contains completed releases for this project. For all work-in-progress, please switch over to the `dev` branches.
-
-:point_right: Keep the "Work in Development" text above as the default NDCLab "blurb" to help visitors navigate the repo. But delete this note before publishing the readme file.
-
+This `main` branch contains completed releases and ongoing work for this project.
 
 ## Contributors
 | Name | Role |
 | ---  | ---  |
-| insert team member | add team member's role |
-| insert team member | add team member's role |
-| insert team member | add team member's role |
+| George Buzzell | design, data collection, analysis |
+| Kianoosh Hosseini | design, data collection, analysis |
 
 Learn more about us [here](https://www.ndclab.com/people).
 
