@@ -1,5 +1,5 @@
 variable,exact name of data variable
-description,human-readable description of the variable
+description,"human-readable description of the variable, starting with one of the official data types: consent, psychopy, eeg, digi, audio, video, redcap_data, redcap_scrd, custom"
 detail,"for questionnaire items, content of the specific question; for all other variables, clarification of how the variable value is calculated/derived"
 allowedSuffix,"sX_rX_eX, where s=session, r=run, and e=event"
 valueType,"indication of the computer-readable value type used for the variable (i.e., Integer, Real, Logical, Char, Time)"
