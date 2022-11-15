@@ -1,0 +1,16 @@
+variable	description	detail	allowedSuffix	valueType	allowedValues	valueInfo	naValueType	activeStatus	replacement	provenance
+new	The surprise memory task; shows if the displayed face is new or not.	This variable stores the true value as to whether the displayed face is new or not (not the response from the subject)	s1_r1_e1	Logical	"0, 1"	"0, old | 1, new"	NA	1	NA	ndclab
+newKey	The surprise memory task; which button (key) should be pressed when the face is new.	This variable stores the value for which key should be pressed when the face is new.	s1_r1_e1	char	"right, left"	"left, left key | right, right key"	NA	1	NA	ndclab
+FriendlyKey	The surprise memory task; which button (key) should be pressed when the face is identified as friendly.	This variable stores the value for which key should be pressed when the face is identified as friendly by participants.	s1_r1_e1	char	"right, left"	"left, left key | right, right key"	NA	1	NA	ndclab
+congruent										
+stimNum										
+accuracy										
+task1_stim_keyResp.keys										
+textbox_2.text										
+surprise_key_resp.keys										
+friendly_key_resp.keys										
+bigFace.started										
+surpriseFaces										
+straightFace										
+task1_stim_keyResp.rt										
+task_trial_loop.thisTrialN										
