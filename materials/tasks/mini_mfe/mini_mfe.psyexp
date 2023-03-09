@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" ?>
-<PsychoPy2experiment encoding="utf-8" version="2022.1.4">
+<PsychoPy2experiment encoding="utf-8" version="2022.2.2">
   <Settings>
     <Param val="use prefs" valType="str" updates="None" name="Audio latency priority"/>
     <Param val="use prefs" valType="str" updates="None" name="Audio lib"/>
@@ -706,7 +706,7 @@
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="None" name="disabled"/>
         <Param val="prac_stimTrigger_code" valType="code" updates="None" name="name"/>
       </CodeComponent>
       <KeyboardComponent name="prac_stim_keyResp">
@@ -741,7 +741,7 @@
         <Param val="" valType="extendedCode" updates="constant" name="End JS Experiment"/>
         <Param val="/* Syntax Error: Fix Python code */" valType="extendedCode" updates="constant" name="End JS Routine"/>
         <Param val="&amp;#10;#instead of including here, should instead include something&amp;#10;#in each frame section that computes t at stim onset and then&amp;#10;#when thisISI - t &lt;= .05 (50 ms) and then at that point we throw&amp;#10;#the no-resp marker...&amp;#10;&amp;#10;#if not prac_stim_keyResp.keys or len(prac_stim_keyResp.keys) == 0:&amp;#10;#            port.write([0x63]) # 99&amp;#10;#            time.sleep(PulseWidth)&amp;#10;#            port.write([0x00])" valType="extendedCode" updates="constant" name="End Routine"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="None" name="disabled"/>
         <Param val="prac_respTrigger_code" valType="code" updates="None" name="name"/>
       </CodeComponent>
       <CodeComponent name="prac_accuracy_code">
@@ -1658,7 +1658,7 @@
         <Param val="psychoJS.window.mouseVisible = true;&amp;#10;port.write([255]);&amp;#10;time.sleep(PulseWidth);&amp;#10;port.close();&amp;#10;" valType="extendedCode" updates="constant" name="End JS Experiment"/>
         <Param val="" valType="extendedCode" updates="constant" name="End JS Routine"/>
         <Param val="" valType="extendedCode" updates="constant" name="End Routine"/>
-        <Param val="False" valType="bool" updates="None" name="disabled"/>
+        <Param val="True" valType="bool" updates="None" name="disabled"/>
         <Param val="setup_code" valType="code" updates="None" name="name"/>
       </CodeComponent>
     </Routine>

@@ -14,4 +14,4 @@ module load matlab-2021b
 pwd; hostname; date
 
 
-matlab -nodisplay < MADE_pipeline_v1_mini_mfe_flanker.m
+matlab -nodisplay < MADE_pipeline_v1_mini_mfe_flanker5.m

@@ -1,18 +1,41 @@
 %
 %%%%%% Label event markers%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-% This script labels the mini mfe task data. Labelling includes basic
+% This script labels the sfe flanker task data. Labelling includes basic
 % information about stimulus type and responses, as well as exhaustive 
 % labeling of prior/next trial data.
 
-
+%% debug code
+% Kia commented debug code
+%EEG = pop_loadbv('/Users/kihossei/OneDrive - Florida International University/Projects/sfe/scripts/sfe-dataset/sourcedata/raw/eeg', '160015_sfe_eeg_s1-r1-e1.vhdr');
+%EEG = eeg_checkset(EEG);
+%EEG = pop_resample( EEG, 250);
+%EEG = eeg_checkset( EEG );
+%for atm=1:length({EEG.event.type})
+   % if isnumeric(EEG.event(atm).type)
+      %  EEG.event(atm).type = num2str(EEG.event(atm).type);
+  %  end
+%end
+%%
 
 %% event codes from task
-% stimulus triggers
-% Right congruent : S 5
-% Left cong: S 6
-% Right incong: S 7
-% Left incong: S 8
+
+% %practice trials
+% leftStim1             leftStim2        stimNum congruent target
+% img/rightArrow.png	img/rightArrow.png	1       1       right
+% img/leftArrow.png     img/leftArrow.png	2       1       left
+% img/leftArrow.png     img/leftArrow.png	3       0       right
+% img/rightArrow.png	img/rightArrow.png	4       0       left
+% %nonsocial condition
+% img/rightArrow.png	img/rightArrow.png	41      1       right
+% img/leftArrow.png     img/leftArrow.png	42      1       left
+% img/leftArrow.png     img/leftArrow.png	43      0       right
+% img/rightArrow.png	img/rightArrow.png	44      0       left
+% %social condition
+% img/rightArrow.png	img/rightArrow.png	51      1       right
+% img/leftArrow.png     img/leftArrow.png	52      1       left
+% img/leftArrow.png     img/leftArrow.png	53      0       right
+% img/rightArrow.png	img/rightArrow.png	54      0       left
 
 %correct response: 11
 %error response: 12
@@ -29,6 +52,8 @@ all_respMarkers = {'S 11', 'S 12', 'S 21', 'S 22'};
 % practice triggers are not differenet from the main task triggers.
 mainTask_stimMarkers = {'S  5', 'S  6', 'S  7', 'S  8'};
 
+%ns_stimMarkers = {'S 41', 'S 42', 'S 43', 'S 44'};
+%s_stimMarkers = {'S 51', 'S 52', 'S 53', 'S 54'};
 
 rightTarDir_stimMarkers = {'S  5', 'S  7'};
 leftTarDir_stimMarkers = {'S  6', 'S  8'};
@@ -89,39 +114,12 @@ EEG = eeg_checkset( EEG );
 
 %% loop to label markers
 
-% load check mini mfe eeg csv file. In this file, we have a column that
-% shows almost when the first flanker block starts. We do not label
-% practice trials. Using this csv file, we will exclude practice trials.
-
-
-mini_mfe_eeg_check_csv = table2array(readtable('/Users/kihossei/Documents/GitHub/memory-for-error-mini/input/mini_mfe_eeg_check_without_notes.csv'));
-% finding current participant id 
-current_participant_id = str2double(extractBefore(EEG.setname,'_eeg-mfe_s1_r1_e1'));
-% finding the index number in the mini_mfe_eeg_check_csv table . Then, we can use this idx to
-% select the row that corresponds to the current participant
-
-id_col_array = mini_mfe_eeg_check_csv(:,1); % an array that stores values from the id column
-
-latency_col_array = mini_mfe_eeg_check_csv(:,3); % an array that stores values from the latency_main column. 
-% The unit of values in latency_main is in seconds.
-participant_row_idx = find(ismember(id_col_array, current_participant_id));
-latency_for_the_current_participant = latency_col_array(participant_row_idx); % in seconds
-% stim and resp markers after the identified time in the third column of
-% the mini_mfe_eeg_check_csv file will be labeled. 
-
-
-
+%find all stimMarker events and store their event numbers in all_stimMarkers_idx
+    %all_stimMarkers_idx = find(ismember({EEG.event.type},mainTask_stimMarkers));
+%NOTE: for now, only labeling main task markers (not practice). This is partly
+%becuase of an issue with the task following the flanker sharing a marker
+%number with one of the practice task markers in the flanker ('S  1')
 all_stimMarkers_eventNums = find(ismember({EEG.event.type},mainTask_stimMarkers));
-new_all_stimMarkers_eventNums = [];
-for t = all_stimMarkers_eventNums
-    if ((EEG.event(t).latency/EEG.srate) > latency_for_the_current_participant) % checks to see if the chosen stim event is happening after the
-        % identified latency for the current participant or not. If it is
-        % after that, it means it belongs to the main flanker task and we add it
-        % to new_all_stimMarkers_eventNums.
-        new_all_stimMarkers_eventNums = [new_all_stimMarkers_eventNums, t];
-    end
-end
-all_stimMarkers_eventNums = new_all_stimMarkers_eventNums;
 
 %loop through all stim marker event numbers identified in the all_stimMarkers_eventNums vector and label 
 for t = all_stimMarkers_eventNums %t = event numbers stored in all_stimMarkers_eventNums
@@ -136,12 +134,12 @@ for t = all_stimMarkers_eventNums %t = event numbers stored in all_stimMarkers_e
 
     %figure out what the next Trsp EVENT # is, unless this is the last
     %trial in a block. we determine if two stimuli are from seperate blocks
-    %by checking the amount of time between events. The ITI is 3.5-4 sec
-    %for this task, so each trial shoulod be within <4 sec of each other
-    %(we use a cutoff just above this at 5 s).
+    %by checking the amount of time between events. The ITI is 1.5-2 sec
+    %for this task, so each trial shoulod be within <2 sec of each other
+    %(we use a cutoff just above this at 3 s).
     if stimTrialNum == length(all_stimMarkers_eventNums)
         nextStimEventNum = 0;
-    elseif (EEG.event(all_stimMarkers_eventNums(stimTrialNum+1)).latency -  EEG.event(all_stimMarkers_eventNums(stimTrialNum)).latency)/EEG.srate < 5
+    elseif (EEG.event(all_stimMarkers_eventNums(stimTrialNum+1)).latency -  EEG.event(all_stimMarkers_eventNums(stimTrialNum)).latency)/EEG.srate < 3
         nextStimEventNum = all_stimMarkers_eventNums(stimTrialNum+1);
     else
         nextStimEventNum = 0;
@@ -149,12 +147,12 @@ for t = all_stimMarkers_eventNums %t = event numbers stored in all_stimMarkers_e
 
     %figure out what the previous Trsp EVENT # is, unless this is the
     %first trial in a block. we determine if two stimuli are from seperate blocks
-    %by checking the amount of time between events. The ITI is 3.5-4 sec
+    %by checking the amount of time between events. The ITI is 1.5-2 sec
     %for this task, so each trial shoulod be within <2 sec of each other
-    %(we use a cutoff just above this at 5 s).
+    %(we use a cutoff just above this at 3 s).
     if stimTrialNum == 1
         prevStimEventNum = 0;
-    elseif (EEG.event(all_stimMarkers_eventNums(stimTrialNum)).latency -  EEG.event(all_stimMarkers_eventNums(stimTrialNum-1)).latency)/EEG.srate < 5
+    elseif (EEG.event(all_stimMarkers_eventNums(stimTrialNum)).latency -  EEG.event(all_stimMarkers_eventNums(stimTrialNum-1)).latency)/EEG.srate < 3
         prevStimEventNum = all_stimMarkers_eventNums(stimTrialNum-1);
     else
         prevStimEventNum = 0;
