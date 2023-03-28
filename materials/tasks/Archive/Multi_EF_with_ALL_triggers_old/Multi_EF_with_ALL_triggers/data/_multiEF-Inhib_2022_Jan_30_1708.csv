@@ -1,0 +1,65 @@
+﻿whichBlock,practice,numberReps,taskNameSource,taskTextSource,cueReminderTextSource,whichFace,whichCue,center,surround,rotCenter,rotSurround,blueCenter,blueSurround,ethnicity,male,identity,scramFace,prac_BlockLoop.thisRepN,prac_BlockLoop.thisTrialN,prac_BlockLoop.thisN,prac_BlockLoop.thisIndex,prac_trialLoop.thisRepN,prac_trialLoop.thisTrialN,prac_trialLoop.thisN,prac_trialLoop.thisIndex,prac_cueLoop.thisRepN,prac_cueLoop.thisTrialN,prac_cueLoop.thisN,prac_cueLoop.thisIndex,prac_stimLoop.thisRepN,prac_stimLoop.thisTrialN,prac_stimLoop.thisN,prac_stimLoop.thisIndex,begin_text1.started,begin_text1.stopped,pracImage_center.started,pracImage_center.stopped,pracImage_top.started,pracImage_top.stopped,pracImage_right.started,pracImage_right.stopped,pracImage_bottom.started,pracImage_bottom.stopped,pracImage_left.started,pracImage_left.stopped,begin_keyResp.keys,begin_keyResp.rt,begin_keyResp.started,begin_keyResp.stopped,begin_text2.started,begin_text2.stopped,begin_text1_4.started,begin_text1_4.stopped,pracImage_center_2.started,pracImage_center_2.stopped,pracImage_top_2.started,pracImage_top_2.stopped,pracImage_right_2.started,pracImage_right_2.stopped,pracImage_bottom_2.started,pracImage_bottom_2.stopped,pracImage_left_2.started,pracImage_left_2.stopped,begin_keyResp_4.keys,begin_keyResp_4.rt,begin_keyResp_4.started,begin_keyResp_4.stopped,begin_text2_4.started,begin_text2_4.stopped,begin_text1_3a.started,begin_text1_3a.stopped,begin_text2_3a.started,begin_text2_3a.stopped,begin_keyResp_3a.keys,begin_keyResp_3a.rt,begin_keyResp_3a.started,begin_keyResp_3a.stopped,taskName.started,taskName.stopped,task_Text.started,task_Text.stopped,leftKey_text.started,leftKey_text.stopped,rightKey_text.started,rightKey_text.stopped,task_text5.started,task_text5.stopped,LeftReminder_text.started,LeftReminder_text.stopped,rightReminder_text.started,rightReminder_text.stopped,pracOrMain_keyResp.keys,pracOrMain_keyResp.rt,pracOrMain_keyResp.started,pracOrMain_keyResp.stopped,taskName_2.started,taskName_2.stopped,task_Text_2.started,task_Text_2.stopped,task_text_3.started,task_text_3.stopped,task_text_4.started,task_text_4.stopped,LeftReminder_text_5.started,LeftReminder_text_5.stopped,rightReminder_text_5.started,rightReminder_text_5.stopped,pracOrMain_keyResp_3.keys,pracOrMain_keyResp_3.rt,pracOrMain_keyResp_3.started,pracOrMain_keyResp_3.stopped,RSI,LeftReminder_text_6.started,LeftReminder_text_6.stopped,rightReminder_text_6.started,rightReminder_text_6.stopped,cuePresented_2.started,cuePresented_2.stopped,ISI,corrAns,LeftReminder_text_7.started,LeftReminder_text_7.stopped,rightReminder_text_7.started,rightReminder_text_7.stopped,centerPresented_2.started,centerPresented_2.stopped,topPresented_2.started,topPresented_2.stopped,rightPresented_2.started,rightPresented_2.stopped,bottomPresented_2.started,bottomPresented_2.stopped,leftPresented_2.started,leftPresented_2.stopped,keyResp_2.keys,keyResp_2.corr,keyResp_2.started,keyResp_2.stopped,participant,session,date,expName,psychopyVersion,frameRate,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.832899499917403,None,8.832899499917403,None,8.832899499917403,None,8.832899499917403,None,8.832899499917403,None,8.832899499917403,None,space,0.5659787999466062,8.832899499917403,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Jan_30_1708,multiEF-Inhib,2021.2.3,240.6958990054958,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,8.832899499917403,None,9.421291899867356,None,9.421291899867356,None,9.421291899867356,None,9.421291899867356,None,9.421291899867356,None,9.421291899867356,None,space,0.3309255000203848,9.421291899867356,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Jan_30_1708,multiEF-Inhib,2021.2.3,240.6958990054958,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,9.421291899867356,None,9.7617758999113,None,9.7617758999113,None,space,0.24633100000210106,9.7617758999113,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Jan_30_1708,multiEF-Inhib,2021.2.3,240.6958990054958,
+shape.xlsx,1,1,SHAPE Game Practice,"
+
+
+
+In this game, you have to focus on the SHAPE of the center image
+
+Press the Z key with your left index finger, if:
+
+Press the M key with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which SHAPE. Ignore the color words for now.","
+
+
+
+
+
+
+The word SHAPE will be presented before each image to remind you what to do.",face2M1_Sc.xlsx,SHAPE,,,,,,,,,,,0,0,0,1,0,0,0,3,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,10.082233299966902,None,10.082233299966902,None,10.082233299966902,None,10.082233299966902,None,10.082233299966902,None,10.082233299966902,None,10.082233299966902,None,space,0.13297499995678663,10.082233299966902,None,10.262407900067046,None,10.262407900067046,None,10.262407900067046,None,10.262407900067046,None,10.262407900067046,None,10.262407900067046,None,z,0.7246515001170337,10.262407900067046,None,1.157314629258517,11.024545599939302,None,11.024545599939302,None,12.183031399967149,None,,,,,,,,,,,,,,,,,,,,,,001,2022_Jan_30_1708,multiEF-Inhib,2021.2.3,240.6958990054958,
+shape.xlsx,1,1,SHAPE Game Practice,"
+
+
+
+In this game, you have to focus on the SHAPE of the center image
+
+Press the Z key with your left index finger, if:
+
+Press the M key with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which SHAPE. Ignore the color words for now.","
+
+
+
+
+
+
+The word SHAPE will be presented before each image to remind you what to do.",face2M1_Sc.xlsx,,images/2M1_Sc_OD.jpg,images/2M1_Sc_BD.jpg,45,45,0,1,2,1,1,1,0,0,0,1,0,0,0,3,,,,,0,0,0,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.3797595190380763,z,13.244944700039923,None,13.244944700039923,None,14.62223570002243,15.627896399935707,14.62223570002243,15.627896399935707,14.62223570002243,15.627896399935707,14.62223570002243,15.627896399935707,14.62223570002243,15.627896399935707,None,0,14.62223570002243,16.123831799952313,,001,2022_Jan_30_1708,multiEF-Inhib,2021.2.3,240.6958990054958,
+shape.xlsx,1,1,SHAPE Game Practice,"
+
+
+
+In this game, you have to focus on the SHAPE of the center image
+
+Press the Z key with your left index finger, if:
+
+Press the M key with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which SHAPE. Ignore the color words for now.","
+
+
+
+
+
+
+The word SHAPE will be presented before each image to remind you what to do.",face2M1_Sc.xlsx,,,,,,,,,,,,0,0,0,1,0,0,0,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Jan_30_1708,multiEF-Inhib,2021.2.3,240.6958990054958,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.060120240480962,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

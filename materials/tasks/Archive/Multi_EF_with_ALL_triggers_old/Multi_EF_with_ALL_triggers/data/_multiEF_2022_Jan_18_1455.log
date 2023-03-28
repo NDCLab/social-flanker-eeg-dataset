@@ -1,0 +1,1088 @@
+0.8538 	WARNING 	We strongly recommend you activate the PTB sound engine in PsychoPy prefs as the preferred audio engine. Its timing is vastly superior. Your prefs are currently set to use ['sounddevice', 'PTB', 'pyo', 'pygame'] (in that order).
+7.0590 	INFO 	Loaded monitor calibration from ['2021_10_17 20:07']
+7.1062 	WARNING 	User requested fullscreen with size [1536  960], but screen is actually [1920, 1080]. Using actual size
+8.0483 	EXP 	Created window1 = Window(allowGUI=False, allowStencil=False, autoLog=True, backendConf=UNKNOWN, bitsMode=UNKNOWN, blendMode='avg', bpc=(8, 8, 8), color=array([0, 0, 0]), colorSpace='rgb', depthBits=8, fullscr=<method-wrapper '__getattribute__' of attributeSetter object at 0x0000016A6E44AC50>, gamma=None, gammaErrorPolicy='raise', lms=UNKNOWN, monitor=<psychopy.monitors.calibTools.Monitor object at 0x0000016A6E4A00B8>, multiSample=False, name='window1', numSamples=2, pos=[0.0, 0.0], screen=0, size=array([1920, 1080]), stencilBits=0, stereo=False, units='height', useFBO=True, useRetina=False, viewOri=0.0, viewPos=None, viewScale=None, waitBlanking=True, winType='pyglet')
+8.0493 	EXP 	window1: mouseVisible = True
+8.0493 	EXP 	window1: recordFrameIntervals = False
+8.2146 	EXP 	window1: recordFrameIntervals = True
+8.3980 	DEBUG 	Screen (0) actual frame rate measured at 59.99
+8.3980 	EXP 	window1: recordFrameIntervals = False
+8.8268 	INFO 	keyboard.Keyboard is using ptb backend.
+8.9535 	EXP 	Created begin_text1 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='begin_text1', opacity=1, ori=0, pos=array([0.  , 0.35]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=23)
+9.0500 	EXP 	Created pracImage_center = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='images/2M2_Sc_BD.jpg', interpolate=True, mask=None, maskParams=None, name='pracImage_center', opacity=1, ori=0.0, pos=array([0., 0.]), size=array([0.1, 0.1]), texRes=512, units='height', win=Window(...))
+9.1313 	EXP 	Created pracImage_top = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='images/2M2_Sc_BD.jpg', interpolate=True, mask=None, maskParams=None, name='pracImage_top', opacity=1, ori=0.0, pos=array([0.  , 0.18]), size=array([0.1, 0.1]), texRes=512, units='height', win=Window(...))
+9.2161 	EXP 	Created pracImage_right = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='images/2M2_Sc_BD.jpg', interpolate=True, mask=None, maskParams=None, name='pracImage_right', opacity=1, ori=0.0, pos=array([0.18, 0.  ]), size=array([0.1, 0.1]), texRes=512, units='height', win=Window(...))
+9.2946 	EXP 	Created pracImage_bottom = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, image='images/2M2_Sc_BD.jpg', interpolate=True, mask=None, maskParams=None, name='pracImage_bottom', opacity=1, ori=0.0, pos=array([ 0.  , -0.18]), size=array([0.1, 0.1]), texRes=512, units='height', win=Window(...))
+9.3754 	EXP 	Created pracImage_left = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, image='images/2M2_Sc_BD.jpg', interpolate=True, mask=None, maskParams=None, name='pracImage_left', opacity=1, ori=0.0, pos=array([-0.18,  0.  ]), size=array([0.1, 0.1]), texRes=512, units='height', win=Window(...))
+9.3754 	INFO 	keyboard.Keyboard is using ptb backend.
+9.3854 	EXP 	Created begin_text2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-7.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='begin_text2', opacity=1, ori=0, pos=array([ 0.  , -0.35]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=23)
+9.3919 	EXP 	Created begin_text1_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='begin_text1_4', opacity=1, ori=0, pos=array([0.  , 0.35]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=23)
+9.4708 	EXP 	Created pracImage_center_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, image='images/2M2_Sc_OD.jpg', interpolate=True, mask=None, maskParams=None, name='pracImage_center_2', opacity=1, ori=315.0, pos=array([0., 0.]), size=array([0.1, 0.1]), texRes=512, units='height', win=Window(...))
+9.5598 	EXP 	Created pracImage_top_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, image='images/2M2_Sc_BD.jpg', interpolate=True, mask=None, maskParams=None, name='pracImage_top_2', opacity=1, ori=0.0, pos=array([0.  , 0.18]), size=array([0.1, 0.1]), texRes=512, units='height', win=Window(...))
+9.6394 	EXP 	Created pracImage_right_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, image='images/2M2_Sc_BD.jpg', interpolate=True, mask=None, maskParams=None, name='pracImage_right_2', opacity=1, ori=0.0, pos=array([0.18, 0.  ]), size=array([0.1, 0.1]), texRes=512, units='height', win=Window(...))
+9.7158 	EXP 	Created pracImage_bottom_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, image='images/2M2_Sc_BD.jpg', interpolate=True, mask=None, maskParams=None, name='pracImage_bottom_2', opacity=1, ori=0.0, pos=array([ 0.  , -0.18]), size=array([0.1, 0.1]), texRes=512, units='height', win=Window(...))
+9.7902 	EXP 	Created pracImage_left_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, image='images/2M2_Sc_BD.jpg', interpolate=True, mask=None, maskParams=None, name='pracImage_left_2', opacity=1, ori=0.0, pos=array([-0.18,  0.  ]), size=array([0.1, 0.1]), texRes=512, units='height', win=Window(...))
+9.7903 	INFO 	keyboard.Keyboard is using ptb backend.
+9.7971 	EXP 	Created begin_text2_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-7.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='begin_text2_4', opacity=1, ori=0, pos=array([ 0.  , -0.35]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=23)
+9.8135 	EXP 	Created begin_text1_3a = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='begin_text1_3a', opacity=1, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text=str(...), units='height', win=Window(...), wrapWidth=23)
+9.8174 	EXP 	Created begin_text2_3a = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='begin_text2_3a', opacity=1, ori=0, pos=array([ 0. , -0.3]), rgb=UNKNOWN, text='Press the space key to continue', units='height', win=Window(...), wrapWidth=23)
+9.8174 	INFO 	keyboard.Keyboard is using ptb backend.
+9.8192 	EXP 	Created taskName = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='taskName', opacity=1, ori=0, pos=array([0.   , 0.387]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.8206 	EXP 	Created task_Text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='task_Text', opacity=1, ori=0, pos=array([0.   , 0.141]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=22)
+9.8220 	EXP 	Created leftKey_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='leftKey_text', opacity=1, ori=0, pos=array([0.   , 0.106]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=22)
+9.8235 	EXP 	Created rightKey_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='rightKey_text', opacity=1, ori=0, pos=array([0.   , 0.141]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=22)
+9.8275 	EXP 	Created task_text5 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='task_text5', opacity=1, ori=0, pos=array([ 0.  , -0.35]), rgb=UNKNOWN, text='Press the space key to continue', units='height', win=Window(...), wrapWidth=22)
+9.8290 	EXP 	Created LeftReminder_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='LeftReminder_text', opacity=1, ori=0, pos=array([-0.45, -0.45]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.8309 	EXP 	Created rightReminder_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-7.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='rightReminder_text', opacity=1, ori=0, pos=array([ 0.45, -0.45]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.8309 	INFO 	keyboard.Keyboard is using ptb backend.
+9.8325 	EXP 	Created taskName_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='taskName_2', opacity=1, ori=0, pos=array([0.   , 0.176]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.8339 	EXP 	Created task_Text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='task_Text_2', opacity=1, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=22)
+9.8353 	EXP 	Created task_text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='task_text_3', opacity=1, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.8367 	EXP 	Created task_text_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='task_text_4', opacity=1, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=22)
+9.8382 	EXP 	Created LeftReminder_text_5 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='LeftReminder_text_5', opacity=1, ori=0, pos=array([-0.45, -0.45]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.8396 	EXP 	Created rightReminder_text_5 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='rightReminder_text_5', opacity=1, ori=0, pos=array([ 0.45, -0.45]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.8396 	INFO 	keyboard.Keyboard is using ptb backend.
+9.8410 	EXP 	Created LeftReminder_text_6 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='LeftReminder_text_6', opacity=1, ori=0, pos=array([-0.45, -0.45]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.8424 	EXP 	Created rightReminder_text_6 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='rightReminder_text_6', opacity=1, ori=0, pos=array([ 0.45, -0.45]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.8438 	EXP 	Created cuePresented_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='cuePresented_2', opacity=1, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.8452 	EXP 	Created LeftReminder_text_7 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='LeftReminder_text_7', opacity=1, ori=0, pos=array([-0.45, -0.45]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.8466 	EXP 	Created rightReminder_text_7 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='rightReminder_text_7', opacity=1, ori=0, pos=array([ 0.45, -0.45]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.8538 	EXP 	Created centerPresented_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='centerPresented_2', opacity=1, ori=1.0, pos=array([0., 0.]), size=array([0.1, 0.1]), texRes=512, units='height', win=Window(...))
+9.8593 	EXP 	Created topPresented_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='topPresented_2', opacity=1, ori=1.0, pos=array([0.  , 0.18]), size=array([0.1, 0.1]), texRes=512, units='height', win=Window(...))
+9.8648 	EXP 	Created rightPresented_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='rightPresented_2', opacity=1, ori=1.0, pos=array([0.18, 0.  ]), size=array([0.1, 0.1]), texRes=512, units='height', win=Window(...))
+9.8703 	EXP 	Created bottomPresented_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-7.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='bottomPresented_2', opacity=1, ori=1.0, pos=array([ 0.  , -0.18]), size=array([0.1, 0.1]), texRes=512, units='height', win=Window(...))
+9.8762 	EXP 	Created leftPresented_2 = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-8.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='leftPresented_2', opacity=1, ori=1.0, pos=array([-0.18,  0.  ]), size=array([0.1, 0.1]), texRes=512, units='height', win=Window(...))
+9.8762 	INFO 	keyboard.Keyboard is using ptb backend.
+9.8776 	EXP 	Created taskName = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='taskName', opacity=1, ori=0, pos=array([0.   , 0.387]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.8790 	EXP 	Created task_Text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='task_Text', opacity=1, ori=0, pos=array([0.   , 0.141]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=22)
+9.8804 	EXP 	Created leftKey_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='leftKey_text', opacity=1, ori=0, pos=array([0.   , 0.106]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=22)
+9.8817 	EXP 	Created rightKey_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='rightKey_text', opacity=1, ori=0, pos=array([0.   , 0.141]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=22)
+9.8860 	EXP 	Created task_text5 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='task_text5', opacity=1, ori=0, pos=array([ 0.  , -0.35]), rgb=UNKNOWN, text='Press the space key to continue', units='height', win=Window(...), wrapWidth=22)
+9.8874 	EXP 	Created LeftReminder_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='LeftReminder_text', opacity=1, ori=0, pos=array([-0.45, -0.45]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.8888 	EXP 	Created rightReminder_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-7.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.03, italic=False, languageStyle='LTR', name='rightReminder_text', opacity=1, ori=0, pos=array([ 0.45, -0.45]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.8888 	INFO 	keyboard.Keyboard is using ptb backend.
+9.8902 	EXP 	Created taskName_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='taskName_2', opacity=1, ori=0, pos=array([0.   , 0.176]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.8916 	EXP 	Created task_Text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='task_Text_2', opacity=1, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=22)
+9.8931 	EXP 	Created task_text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='task_text_3', opacity=1, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.8945 	EXP 	Created task_text_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='task_text_4', opacity=1, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=22)
+9.8959 	EXP 	Created LeftReminder_text_5 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='LeftReminder_text_5', opacity=1, ori=0, pos=array([-0.45, -0.45]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.8974 	EXP 	Created rightReminder_text_5 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='rightReminder_text_5', opacity=1, ori=0, pos=array([ 0.45, -0.45]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.8974 	INFO 	keyboard.Keyboard is using ptb backend.
+9.8988 	EXP 	Created LeftReminder_text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='LeftReminder_text_3', opacity=1, ori=0, pos=array([-0.45, -0.45]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.9005 	EXP 	Created rightReminder_text_3 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='rightReminder_text_3', opacity=1, ori=0, pos=array([ 0.45, -0.45]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.9024 	EXP 	Created cuePresented = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='cuePresented', opacity=1, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.9039 	EXP 	Created LeftReminder_text_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-2.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='LeftReminder_text_4', opacity=1, ori=0, pos=array([-0.45, -0.45]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.9052 	EXP 	Created rightReminder_text_4 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-3.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.035, italic=False, languageStyle='LTR', name='rightReminder_text_4', opacity=1, ori=0, pos=array([ 0.45, -0.45]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.9108 	EXP 	Created centerPresented = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-4.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='centerPresented', opacity=1, ori=1.0, pos=array([0., 0.]), size=array([0.1, 0.1]), texRes=512, units='height', win=Window(...))
+9.9164 	EXP 	Created topPresented = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-5.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='topPresented', opacity=1, ori=1.0, pos=array([0.  , 0.18]), size=array([0.1, 0.1]), texRes=512, units='height', win=Window(...))
+9.9219 	EXP 	Created rightPresented = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-6.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='rightPresented', opacity=1, ori=1.0, pos=array([0.18, 0.  ]), size=array([0.1, 0.1]), texRes=512, units='height', win=Window(...))
+9.9274 	EXP 	Created bottomPresented = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-7.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='bottomPresented', opacity=1, ori=1.0, pos=array([ 0.  , -0.18]), size=array([0.1, 0.1]), texRes=512, units='height', win=Window(...))
+9.9330 	EXP 	Created leftPresented = ImageStim(__class__=<class 'psychopy.visual.image.ImageStim'>, autoLog=True, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-8.0, flipHoriz=False, flipVert=False, image='sin', interpolate=True, mask=None, maskParams=None, name='leftPresented', opacity=1, ori=1.0, pos=array([-0.18,  0.  ]), size=array([0.1, 0.1]), texRes=512, units='height', win=Window(...))
+9.9331 	INFO 	keyboard.Keyboard is using ptb backend.
+9.9352 	EXP 	Created text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=1.0, italic=False, languageStyle='LTR', name='text', opacity=1, ori=0.0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.9352 	INFO 	keyboard.Keyboard is using ptb backend.
+9.9365 	EXP 	Created taskEnd_text = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=-1.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='taskEnd_text', opacity=1, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.9366 	INFO 	keyboard.Keyboard is using ptb backend.
+9.9379 	EXP 	Created taskEnd_text_2 = TextStim(__class__=<class 'psychopy.visual.text.TextStim'>, alignHoriz=method-wrapper(...), alignText='center', alignVert=method-wrapper(...), anchorHoriz='center', anchorVert='center', antialias=True, autoLog=True, bold=False, color=array([1., 1., 1.]), colorSpace='rgb', contrast=1.0, depth=0.0, flipHoriz=False, flipVert=False, font='Arial', fontFiles=[], height=0.025, italic=False, languageStyle='LTR', name='taskEnd_text_2', opacity=1, ori=0, pos=array([0., 0.]), rgb=UNKNOWN, text='', units='height', win=Window(...), wrapWidth=1)
+9.9379 	INFO 	keyboard.Keyboard is using ptb backend.
+10.0427 	EXP 	begin_text1: autoDraw = True
+10.0427 	EXP 	pracImage_center: autoDraw = True
+10.0427 	EXP 	pracImage_top: autoDraw = True
+10.0427 	EXP 	pracImage_right: autoDraw = True
+10.0427 	EXP 	pracImage_bottom: autoDraw = True
+10.0427 	EXP 	pracImage_left: autoDraw = True
+10.0427 	EXP 	begin_text2: autoDraw = True
+12.3740 	DATA 	Keypress: space
+12.3813 	EXP 	begin_text1: autoDraw = False
+12.3813 	EXP 	pracImage_center: autoDraw = False
+12.3813 	EXP 	pracImage_top: autoDraw = False
+12.3813 	EXP 	pracImage_right: autoDraw = False
+12.3813 	EXP 	pracImage_bottom: autoDraw = False
+12.3813 	EXP 	pracImage_left: autoDraw = False
+12.3813 	EXP 	begin_text2: autoDraw = False
+12.3813 	EXP 	begin_text1_4: autoDraw = True
+12.3813 	EXP 	pracImage_center_2: autoDraw = True
+12.3813 	EXP 	pracImage_top_2: autoDraw = True
+12.3813 	EXP 	pracImage_right_2: autoDraw = True
+12.3813 	EXP 	pracImage_bottom_2: autoDraw = True
+12.3813 	EXP 	pracImage_left_2: autoDraw = True
+12.3813 	EXP 	begin_text2_4: autoDraw = True
+13.0891 	DATA 	Keypress: space
+13.0979 	EXP 	begin_text1_4: autoDraw = False
+13.0979 	EXP 	pracImage_center_2: autoDraw = False
+13.0979 	EXP 	pracImage_top_2: autoDraw = False
+13.0979 	EXP 	pracImage_right_2: autoDraw = False
+13.0979 	EXP 	pracImage_bottom_2: autoDraw = False
+13.0979 	EXP 	pracImage_left_2: autoDraw = False
+13.0979 	EXP 	begin_text2_4: autoDraw = False
+13.0979 	EXP 	begin_text1_3a: autoDraw = True
+13.0979 	EXP 	begin_text2_3a: autoDraw = True
+17.1722 	DEBUG 	Read csv file with pandas: switch_practiceblockSelect.csv
+17.1738 	DEBUG 	Clearing unnamed columns from switch_practiceblockSelect.csv
+17.1744 	EXP 	Imported switch_practiceblockSelect.csv as conditions, 3 conditions, 6 params
+17.1748 	EXP 	Created sequence: random, trialTypes=3, nReps=1, seed=None
+17.1751 	EXP 	New trial (rep=0, index=0): OrderedDict([('whichBlock', 'color.xlsx'), ('practice', 1), ('numberReps', 1), ('taskNameSource', 'COLOR Game Practice'), ('taskTextSource', '\n\n\n\nIn this game, you have to focus on the COLOR of the center image\n\nPress the Z key with your left index finger, if:\n\nPress the M key with your right index finger, if:\n\n\nLabels in the lower-left and lower-right of the screen will remind you\nwhich hand to use for which COLOR. Ignore the shape words for now.'), ('cueReminderTextSource', '\n\n\n\n\n\n\nThe word COLOR will be presented before each\nimage to remind you what to do.')])
+17.2363 	DATA 	Keypress: space
+17.2479 	EXP 	begin_text1_3a: autoDraw = False
+17.2479 	EXP 	begin_text2_3a: autoDraw = False
+17.2479 	EXP 	taskName: text = 'COLOR Game Practice'
+17.2479 	EXP 	task_Text: text = '\n\n\n\nIn this game, you have to focus on the COLOR of the center image\n\nPress the Z key with your left index finger, if:\n\nPress the M key with your right index finger, if:\n\n\nLabels in the lower-left and lower-right of the screen will remind you\nwhich hand to use for which COLOR. Ignore the shape words for now.'
+17.2479 	EXP 	leftKey_text: text = 'the center image is BLUE \n'
+17.2479 	EXP 	rightKey_text: text = '\n \n \n \n \n \n the center image is ORANGE'
+17.2479 	EXP 	LeftReminder_text: text = 'BLUE - SQUARE'
+17.2479 	EXP 	rightReminder_text: text = 'ORANGE - DIAMOND'
+17.2479 	EXP 	taskName: autoDraw = True
+17.2479 	EXP 	task_Text: autoDraw = True
+17.2479 	EXP 	leftKey_text: autoDraw = True
+17.2479 	EXP 	rightKey_text: autoDraw = True
+17.2479 	EXP 	task_text5: autoDraw = True
+17.2479 	EXP 	LeftReminder_text: autoDraw = True
+17.2479 	EXP 	rightReminder_text: autoDraw = True
+18.4191 	DATA 	Keypress: space
+18.4312 	EXP 	taskName: autoDraw = False
+18.4312 	EXP 	task_Text: autoDraw = False
+18.4312 	EXP 	leftKey_text: autoDraw = False
+18.4312 	EXP 	rightKey_text: autoDraw = False
+18.4312 	EXP 	task_text5: autoDraw = False
+18.4312 	EXP 	LeftReminder_text: autoDraw = False
+18.4312 	EXP 	rightReminder_text: autoDraw = False
+18.4312 	EXP 	taskName_2: text = 'COLOR Game Practice'
+18.4312 	EXP 	task_Text_2: text = '\n\nPlease rest your left finger on the Z key and your right finger on the M key.\nWhen an image is shown, you should respond as quickly as you can while also being correct.'
+18.4312 	EXP 	task_text_3: text = '\n\n\n\n\n\n\nThe word COLOR will be presented before each\nimage to remind you what to do.'
+18.4312 	EXP 	task_text_4: text = '\n \n \n \n \n \n \n \n \n \n \n \n \n \n Press either the Z or M key to practice this game'
+18.4312 	EXP 	LeftReminder_text_5: text = 'BLUE - SQUARE'
+18.4312 	EXP 	rightReminder_text_5: text = 'ORANGE - DIAMOND'
+18.4312 	EXP 	taskName_2: autoDraw = True
+18.4312 	EXP 	task_Text_2: autoDraw = True
+18.4312 	EXP 	task_text_3: autoDraw = True
+18.4312 	EXP 	task_text_4: autoDraw = True
+18.4312 	EXP 	LeftReminder_text_5: autoDraw = True
+18.4312 	EXP 	rightReminder_text_5: autoDraw = True
+23.0220 	DEBUG 	Read csv file with pandas: practice_faceSelect.csv
+23.0228 	DEBUG 	Clearing unnamed columns from practice_faceSelect.csv
+23.0231 	EXP 	Imported practice_faceSelect.csv as conditions, 8 conditions, 1 params
+23.0234 	EXP 	Created sequence: random, trialTypes=8, nReps=1, seed=None
+23.0236 	EXP 	New trial (rep=0, index=0): OrderedDict([('whichFace', 'face1F1_Sc.xlsx')])
+23.0393 	DEBUG 	Read excel file with openpyxl: color.xlsx
+23.0395 	EXP 	Imported color.xlsx as conditions, 1 conditions, 1 params
+23.0397 	EXP 	Created sequence: fullRandom, trialTypes=1, nReps=1, seed=None
+23.0399 	EXP 	New trial (rep=0, index=0): {'whichCue': 'COLOR'}
+23.0487 	DATA 	Keypress: z
+23.0646 	EXP 	taskName_2: autoDraw = False
+23.0646 	EXP 	task_Text_2: autoDraw = False
+23.0646 	EXP 	task_text_3: autoDraw = False
+23.0646 	EXP 	task_text_4: autoDraw = False
+23.0646 	EXP 	LeftReminder_text_5: autoDraw = False
+23.0646 	EXP 	rightReminder_text_5: autoDraw = False
+23.0646 	EXP 	LeftReminder_text_6: text = 'BLUE - SQUARE'
+23.0646 	EXP 	rightReminder_text_6: text = 'ORANGE - DIAMOND'
+23.0646 	EXP 	cuePresented_2: text = 'COLOR'
+23.0646 	EXP 	LeftReminder_text_6: autoDraw = True
+23.0646 	EXP 	rightReminder_text_6: autoDraw = True
+24.3812 	EXP 	cuePresented_2: autoDraw = True
+25.3812 	EXP 	cuePresented_2: autoDraw = False
+25.4198 	DEBUG 	Read excel file with openpyxl: face1F1_Sc.xlsx
+25.4233 	EXP 	Imported face1F1_Sc.xlsx as conditions, 16 conditions, 10 params
+25.4237 	EXP 	Created sequence: random, trialTypes=16, nReps=1, seed=None
+25.4240 	EXP 	New trial (rep=0, index=0): {'center': 'images/1F1_Sc_OS.jpg', 'surround': 'images/1F1_Sc_OS.jpg', 'rotCenter': 0, 'rotSurround': 0, 'blueCenter': 0, 'blueSurround': 0, 'ethnicity': 1, 'male': 0, 'identity': 1, 'scramFace': 1}
+25.6646 	EXP 	LeftReminder_text_6: autoDraw = False
+25.6646 	EXP 	rightReminder_text_6: autoDraw = False
+25.6646 	EXP 	LeftReminder_text_6: autoDraw = False
+25.6646 	EXP 	rightReminder_text_6: autoDraw = False
+25.6646 	EXP 	cuePresented_2: autoDraw = False
+25.6646 	EXP 	LeftReminder_text_7: text = 'BLUE - SQUARE'
+25.6646 	EXP 	rightReminder_text_7: text = 'ORANGE - DIAMOND'
+25.6646 	EXP 	centerPresented_2: ori = 0.0
+25.6646 	EXP 	centerPresented_2: image = 'images/1F1_Sc_OS.jpg'
+25.6646 	EXP 	topPresented_2: ori = 0.0
+25.6646 	EXP 	topPresented_2: image = 'images/1F1_Sc_OS.jpg'
+25.6646 	EXP 	rightPresented_2: ori = 0.0
+25.6646 	EXP 	rightPresented_2: image = 'images/1F1_Sc_OS.jpg'
+25.6646 	EXP 	bottomPresented_2: ori = 0.0
+25.6646 	EXP 	bottomPresented_2: image = 'images/1F1_Sc_OS.jpg'
+25.6646 	EXP 	leftPresented_2: ori = 0.0
+25.6646 	EXP 	leftPresented_2: image = 'images/1F1_Sc_OS.jpg'
+25.6646 	EXP 	LeftReminder_text_7: autoDraw = True
+25.6646 	EXP 	rightReminder_text_7: autoDraw = True
+27.0146 	EXP 	centerPresented_2: autoDraw = True
+27.0146 	EXP 	topPresented_2: autoDraw = True
+27.0146 	EXP 	rightPresented_2: autoDraw = True
+27.0146 	EXP 	bottomPresented_2: autoDraw = True
+27.0146 	EXP 	leftPresented_2: autoDraw = True
+27.9722 	EXP 	New trial (rep=0, index=1): OrderedDict([('whichFace', 'face2M1_Sc.xlsx')])
+27.9873 	DEBUG 	Read excel file with openpyxl: color.xlsx
+27.9874 	EXP 	Imported color.xlsx as conditions, 1 conditions, 1 params
+27.9877 	EXP 	Created sequence: fullRandom, trialTypes=1, nReps=1, seed=None
+27.9879 	EXP 	New trial (rep=0, index=0): {'whichCue': 'COLOR'}
+27.9916 	DATA 	Keypress: m
+27.9979 	EXP 	LeftReminder_text_7: autoDraw = False
+27.9979 	EXP 	rightReminder_text_7: autoDraw = False
+27.9979 	EXP 	centerPresented_2: autoDraw = False
+27.9979 	EXP 	topPresented_2: autoDraw = False
+27.9979 	EXP 	rightPresented_2: autoDraw = False
+27.9979 	EXP 	bottomPresented_2: autoDraw = False
+27.9979 	EXP 	leftPresented_2: autoDraw = False
+27.9979 	EXP 	LeftReminder_text_6: text = 'BLUE - SQUARE'
+27.9979 	EXP 	rightReminder_text_6: text = 'ORANGE - DIAMOND'
+27.9979 	EXP 	cuePresented_2: text = 'COLOR'
+27.9979 	EXP 	LeftReminder_text_6: autoDraw = True
+27.9979 	EXP 	rightReminder_text_6: autoDraw = True
+29.4645 	EXP 	cuePresented_2: autoDraw = True
+30.4645 	EXP 	cuePresented_2: autoDraw = False
+30.4868 	DEBUG 	Read excel file with openpyxl: face2M1_Sc.xlsx
+30.4903 	EXP 	Imported face2M1_Sc.xlsx as conditions, 16 conditions, 10 params
+30.4907 	EXP 	Created sequence: random, trialTypes=16, nReps=1, seed=None
+30.4910 	EXP 	New trial (rep=0, index=0): {'center': 'images/2M1_Sc_BD.jpg', 'surround': 'images/2M1_Sc_OD.jpg', 'rotCenter': 45, 'rotSurround': 45, 'blueCenter': 1, 'blueSurround': 0, 'ethnicity': 2, 'male': 1, 'identity': 1, 'scramFace': 1}
+30.5647 	EXP 	LeftReminder_text_6: autoDraw = False
+30.5647 	EXP 	rightReminder_text_6: autoDraw = False
+30.5647 	EXP 	LeftReminder_text_6: autoDraw = False
+30.5647 	EXP 	rightReminder_text_6: autoDraw = False
+30.5647 	EXP 	cuePresented_2: autoDraw = False
+30.5647 	EXP 	LeftReminder_text_7: text = 'BLUE - SQUARE'
+30.5647 	EXP 	rightReminder_text_7: text = 'ORANGE - DIAMOND'
+30.5647 	EXP 	centerPresented_2: ori = 45.0
+30.5647 	EXP 	centerPresented_2: image = 'images/2M1_Sc_BD.jpg'
+30.5647 	EXP 	topPresented_2: ori = 45.0
+30.5647 	EXP 	topPresented_2: image = 'images/2M1_Sc_OD.jpg'
+30.5647 	EXP 	rightPresented_2: ori = 45.0
+30.5647 	EXP 	rightPresented_2: image = 'images/2M1_Sc_OD.jpg'
+30.5647 	EXP 	bottomPresented_2: ori = 45.0
+30.5647 	EXP 	bottomPresented_2: image = 'images/2M1_Sc_OD.jpg'
+30.5647 	EXP 	leftPresented_2: ori = 45.0
+30.5647 	EXP 	leftPresented_2: image = 'images/2M1_Sc_OD.jpg'
+30.5647 	EXP 	LeftReminder_text_7: autoDraw = True
+30.5647 	EXP 	rightReminder_text_7: autoDraw = True
+31.7645 	EXP 	centerPresented_2: autoDraw = True
+31.7645 	EXP 	topPresented_2: autoDraw = True
+31.7645 	EXP 	rightPresented_2: autoDraw = True
+31.7645 	EXP 	bottomPresented_2: autoDraw = True
+31.7645 	EXP 	leftPresented_2: autoDraw = True
+32.1229 	EXP 	New trial (rep=0, index=2): OrderedDict([('whichFace', 'face1F1_Fa.xlsx')])
+32.1379 	DEBUG 	Read excel file with openpyxl: color.xlsx
+32.1380 	EXP 	Imported color.xlsx as conditions, 1 conditions, 1 params
+32.1383 	EXP 	Created sequence: fullRandom, trialTypes=1, nReps=1, seed=None
+32.1385 	EXP 	New trial (rep=0, index=0): {'whichCue': 'COLOR'}
+32.1423 	DATA 	Keypress: z
+32.1479 	EXP 	LeftReminder_text_7: autoDraw = False
+32.1479 	EXP 	rightReminder_text_7: autoDraw = False
+32.1479 	EXP 	centerPresented_2: autoDraw = False
+32.1479 	EXP 	topPresented_2: autoDraw = False
+32.1479 	EXP 	rightPresented_2: autoDraw = False
+32.1479 	EXP 	bottomPresented_2: autoDraw = False
+32.1479 	EXP 	leftPresented_2: autoDraw = False
+32.1479 	EXP 	LeftReminder_text_6: text = 'BLUE - SQUARE'
+32.1479 	EXP 	rightReminder_text_6: text = 'ORANGE - DIAMOND'
+32.1479 	EXP 	cuePresented_2: text = 'COLOR'
+32.1479 	EXP 	LeftReminder_text_6: autoDraw = True
+32.1479 	EXP 	rightReminder_text_6: autoDraw = True
+33.3812 	EXP 	cuePresented_2: autoDraw = True
+34.3812 	EXP 	cuePresented_2: autoDraw = False
+34.4017 	DEBUG 	Read excel file with openpyxl: face1F1_Fa.xlsx
+34.4053 	EXP 	Imported face1F1_Fa.xlsx as conditions, 16 conditions, 10 params
+34.4056 	EXP 	Created sequence: random, trialTypes=16, nReps=1, seed=None
+34.4060 	EXP 	New trial (rep=0, index=0): {'center': 'images/1F1_Fa_BS.jpg', 'surround': 'images/1F1_Fa_OD.jpg', 'rotCenter': 0, 'rotSurround': 45, 'blueCenter': 1, 'blueSurround': 0, 'ethnicity': 1, 'male': 0, 'identity': 1, 'scramFace': 0}
+34.4978 	EXP 	LeftReminder_text_6: autoDraw = False
+34.4978 	EXP 	rightReminder_text_6: autoDraw = False
+34.4978 	EXP 	LeftReminder_text_6: autoDraw = False
+34.4978 	EXP 	rightReminder_text_6: autoDraw = False
+34.4978 	EXP 	cuePresented_2: autoDraw = False
+34.4978 	EXP 	LeftReminder_text_7: text = 'BLUE - SQUARE'
+34.4978 	EXP 	rightReminder_text_7: text = 'ORANGE - DIAMOND'
+34.4978 	EXP 	centerPresented_2: ori = 0.0
+34.4978 	EXP 	centerPresented_2: image = 'images/1F1_Fa_BS.jpg'
+34.4978 	EXP 	topPresented_2: ori = 45.0
+34.4978 	EXP 	topPresented_2: image = 'images/1F1_Fa_OD.jpg'
+34.4978 	EXP 	rightPresented_2: ori = 45.0
+34.4978 	EXP 	rightPresented_2: image = 'images/1F1_Fa_OD.jpg'
+34.4978 	EXP 	bottomPresented_2: ori = 45.0
+34.4978 	EXP 	bottomPresented_2: image = 'images/1F1_Fa_OD.jpg'
+34.4978 	EXP 	leftPresented_2: ori = 45.0
+34.4978 	EXP 	leftPresented_2: image = 'images/1F1_Fa_OD.jpg'
+34.4978 	EXP 	LeftReminder_text_7: autoDraw = True
+34.4978 	EXP 	rightReminder_text_7: autoDraw = True
+35.9645 	EXP 	centerPresented_2: autoDraw = True
+35.9645 	EXP 	topPresented_2: autoDraw = True
+35.9645 	EXP 	rightPresented_2: autoDraw = True
+35.9645 	EXP 	bottomPresented_2: autoDraw = True
+35.9645 	EXP 	leftPresented_2: autoDraw = True
+36.9645 	EXP 	centerPresented_2: autoDraw = False
+36.9645 	EXP 	topPresented_2: autoDraw = False
+36.9645 	EXP 	rightPresented_2: autoDraw = False
+36.9645 	EXP 	bottomPresented_2: autoDraw = False
+36.9645 	EXP 	leftPresented_2: autoDraw = False
+37.4708 	EXP 	New trial (rep=0, index=3): OrderedDict([('whichFace', 'face4F1_Fa.xlsx')])
+37.4860 	DEBUG 	Read excel file with openpyxl: color.xlsx
+37.4861 	EXP 	Imported color.xlsx as conditions, 1 conditions, 1 params
+37.4864 	EXP 	Created sequence: fullRandom, trialTypes=1, nReps=1, seed=None
+37.4866 	EXP 	New trial (rep=0, index=0): {'whichCue': 'COLOR'}
+37.4979 	EXP 	LeftReminder_text_7: autoDraw = False
+37.4979 	EXP 	rightReminder_text_7: autoDraw = False
+37.4979 	EXP 	LeftReminder_text_7: autoDraw = False
+37.4979 	EXP 	rightReminder_text_7: autoDraw = False
+37.4979 	EXP 	centerPresented_2: autoDraw = False
+37.4979 	EXP 	topPresented_2: autoDraw = False
+37.4979 	EXP 	rightPresented_2: autoDraw = False
+37.4979 	EXP 	bottomPresented_2: autoDraw = False
+37.4979 	EXP 	leftPresented_2: autoDraw = False
+37.4979 	EXP 	LeftReminder_text_6: text = 'BLUE - SQUARE'
+37.4979 	EXP 	rightReminder_text_6: text = 'ORANGE - DIAMOND'
+37.4979 	EXP 	cuePresented_2: text = 'COLOR'
+37.4979 	EXP 	LeftReminder_text_6: autoDraw = True
+37.4979 	EXP 	rightReminder_text_6: autoDraw = True
+38.7483 	EXP 	cuePresented_2: autoDraw = True
+39.7478 	EXP 	cuePresented_2: autoDraw = False
+39.7698 	DEBUG 	Read excel file with openpyxl: face4F1_Fa.xlsx
+39.7733 	EXP 	Imported face4F1_Fa.xlsx as conditions, 16 conditions, 10 params
+39.7737 	EXP 	Created sequence: random, trialTypes=16, nReps=1, seed=None
+39.7740 	EXP 	New trial (rep=0, index=0): {'center': 'images/4F1_Fa_OS.jpg', 'surround': 'images/4F1_Fa_OS.jpg', 'rotCenter': 0, 'rotSurround': 0, 'blueCenter': 0, 'blueSurround': 0, 'ethnicity': 4, 'male': 0, 'identity': 1, 'scramFace': 0}
+39.8315 	EXP 	LeftReminder_text_6: autoDraw = False
+39.8315 	EXP 	rightReminder_text_6: autoDraw = False
+39.8315 	EXP 	LeftReminder_text_6: autoDraw = False
+39.8315 	EXP 	rightReminder_text_6: autoDraw = False
+39.8315 	EXP 	cuePresented_2: autoDraw = False
+39.8315 	EXP 	LeftReminder_text_7: text = 'BLUE - SQUARE'
+39.8315 	EXP 	rightReminder_text_7: text = 'ORANGE - DIAMOND'
+39.8315 	EXP 	centerPresented_2: ori = 0.0
+39.8315 	EXP 	centerPresented_2: image = 'images/4F1_Fa_OS.jpg'
+39.8315 	EXP 	topPresented_2: ori = 0.0
+39.8315 	EXP 	topPresented_2: image = 'images/4F1_Fa_OS.jpg'
+39.8315 	EXP 	rightPresented_2: ori = 0.0
+39.8315 	EXP 	rightPresented_2: image = 'images/4F1_Fa_OS.jpg'
+39.8315 	EXP 	bottomPresented_2: ori = 0.0
+39.8315 	EXP 	bottomPresented_2: image = 'images/4F1_Fa_OS.jpg'
+39.8315 	EXP 	leftPresented_2: ori = 0.0
+39.8315 	EXP 	leftPresented_2: image = 'images/4F1_Fa_OS.jpg'
+39.8315 	EXP 	LeftReminder_text_7: autoDraw = True
+39.8315 	EXP 	rightReminder_text_7: autoDraw = True
+41.0145 	EXP 	centerPresented_2: autoDraw = True
+41.0145 	EXP 	topPresented_2: autoDraw = True
+41.0145 	EXP 	rightPresented_2: autoDraw = True
+41.0145 	EXP 	bottomPresented_2: autoDraw = True
+41.0145 	EXP 	leftPresented_2: autoDraw = True
+42.0145 	EXP 	centerPresented_2: autoDraw = False
+42.0145 	EXP 	topPresented_2: autoDraw = False
+42.0145 	EXP 	rightPresented_2: autoDraw = False
+42.0145 	EXP 	bottomPresented_2: autoDraw = False
+42.0145 	EXP 	leftPresented_2: autoDraw = False
+42.5367 	EXP 	New trial (rep=0, index=4): OrderedDict([('whichFace', 'face2M1_Fa.xlsx')])
+42.5517 	DEBUG 	Read excel file with openpyxl: color.xlsx
+42.5518 	EXP 	Imported color.xlsx as conditions, 1 conditions, 1 params
+42.5521 	EXP 	Created sequence: fullRandom, trialTypes=1, nReps=1, seed=None
+42.5523 	EXP 	New trial (rep=0, index=0): {'whichCue': 'COLOR'}
+42.5645 	EXP 	LeftReminder_text_7: autoDraw = False
+42.5645 	EXP 	rightReminder_text_7: autoDraw = False
+42.5645 	EXP 	LeftReminder_text_7: autoDraw = False
+42.5645 	EXP 	rightReminder_text_7: autoDraw = False
+42.5645 	EXP 	centerPresented_2: autoDraw = False
+42.5645 	EXP 	topPresented_2: autoDraw = False
+42.5645 	EXP 	rightPresented_2: autoDraw = False
+42.5645 	EXP 	bottomPresented_2: autoDraw = False
+42.5645 	EXP 	leftPresented_2: autoDraw = False
+42.5645 	EXP 	LeftReminder_text_6: text = 'BLUE - SQUARE'
+42.5645 	EXP 	rightReminder_text_6: text = 'ORANGE - DIAMOND'
+42.5645 	EXP 	cuePresented_2: text = 'COLOR'
+42.5645 	EXP 	LeftReminder_text_6: autoDraw = True
+42.5645 	EXP 	rightReminder_text_6: autoDraw = True
+43.7812 	EXP 	cuePresented_2: autoDraw = True
+44.7812 	EXP 	cuePresented_2: autoDraw = False
+44.8182 	DEBUG 	Read excel file with openpyxl: face2M1_Fa.xlsx
+44.8218 	EXP 	Imported face2M1_Fa.xlsx as conditions, 16 conditions, 10 params
+44.8221 	EXP 	Created sequence: random, trialTypes=16, nReps=1, seed=None
+44.8225 	EXP 	New trial (rep=0, index=0): {'center': 'images/2M1_Fa_BD.jpg', 'surround': 'images/2M1_Fa_BD.jpg', 'rotCenter': 45, 'rotSurround': 45, 'blueCenter': 1, 'blueSurround': 1, 'ethnicity': 2, 'male': 1, 'identity': 1, 'scramFace': 0}
+44.8812 	EXP 	LeftReminder_text_6: autoDraw = False
+44.8812 	EXP 	rightReminder_text_6: autoDraw = False
+44.8812 	EXP 	LeftReminder_text_6: autoDraw = False
+44.8812 	EXP 	rightReminder_text_6: autoDraw = False
+44.8812 	EXP 	cuePresented_2: autoDraw = False
+44.8812 	EXP 	LeftReminder_text_7: text = 'BLUE - SQUARE'
+44.8812 	EXP 	rightReminder_text_7: text = 'ORANGE - DIAMOND'
+44.8812 	EXP 	centerPresented_2: ori = 45.0
+44.8812 	EXP 	centerPresented_2: image = 'images/2M1_Fa_BD.jpg'
+44.8812 	EXP 	topPresented_2: ori = 45.0
+44.8812 	EXP 	topPresented_2: image = 'images/2M1_Fa_BD.jpg'
+44.8812 	EXP 	rightPresented_2: ori = 45.0
+44.8812 	EXP 	rightPresented_2: image = 'images/2M1_Fa_BD.jpg'
+44.8812 	EXP 	bottomPresented_2: ori = 45.0
+44.8812 	EXP 	bottomPresented_2: image = 'images/2M1_Fa_BD.jpg'
+44.8812 	EXP 	leftPresented_2: ori = 45.0
+44.8812 	EXP 	leftPresented_2: image = 'images/2M1_Fa_BD.jpg'
+44.8812 	EXP 	LeftReminder_text_7: autoDraw = True
+44.8812 	EXP 	rightReminder_text_7: autoDraw = True
+46.1145 	EXP 	centerPresented_2: autoDraw = True
+46.1145 	EXP 	topPresented_2: autoDraw = True
+46.1145 	EXP 	rightPresented_2: autoDraw = True
+46.1145 	EXP 	bottomPresented_2: autoDraw = True
+46.1145 	EXP 	leftPresented_2: autoDraw = True
+47.1145 	EXP 	centerPresented_2: autoDraw = False
+47.1145 	EXP 	topPresented_2: autoDraw = False
+47.1145 	EXP 	rightPresented_2: autoDraw = False
+47.1145 	EXP 	bottomPresented_2: autoDraw = False
+47.1145 	EXP 	leftPresented_2: autoDraw = False
+47.6373 	EXP 	New trial (rep=0, index=5): OrderedDict([('whichFace', 'face3M1_Fa.xlsx')])
+47.6524 	DEBUG 	Read excel file with openpyxl: color.xlsx
+47.6525 	EXP 	Imported color.xlsx as conditions, 1 conditions, 1 params
+47.6528 	EXP 	Created sequence: fullRandom, trialTypes=1, nReps=1, seed=None
+47.6531 	EXP 	New trial (rep=0, index=0): {'whichCue': 'COLOR'}
+47.6645 	EXP 	LeftReminder_text_7: autoDraw = False
+47.6645 	EXP 	rightReminder_text_7: autoDraw = False
+47.6645 	EXP 	LeftReminder_text_7: autoDraw = False
+47.6645 	EXP 	rightReminder_text_7: autoDraw = False
+47.6645 	EXP 	centerPresented_2: autoDraw = False
+47.6645 	EXP 	topPresented_2: autoDraw = False
+47.6645 	EXP 	rightPresented_2: autoDraw = False
+47.6645 	EXP 	bottomPresented_2: autoDraw = False
+47.6645 	EXP 	leftPresented_2: autoDraw = False
+47.6645 	EXP 	LeftReminder_text_6: text = 'BLUE - SQUARE'
+47.6645 	EXP 	rightReminder_text_6: text = 'ORANGE - DIAMOND'
+47.6645 	EXP 	cuePresented_2: text = 'COLOR'
+47.6645 	EXP 	LeftReminder_text_6: autoDraw = True
+47.6645 	EXP 	rightReminder_text_6: autoDraw = True
+49.0144 	EXP 	cuePresented_2: autoDraw = True
+50.0145 	EXP 	cuePresented_2: autoDraw = False
+50.0363 	DEBUG 	Read excel file with openpyxl: face3M1_Fa.xlsx
+50.0398 	EXP 	Imported face3M1_Fa.xlsx as conditions, 16 conditions, 10 params
+50.0402 	EXP 	Created sequence: random, trialTypes=16, nReps=1, seed=None
+50.0405 	EXP 	New trial (rep=0, index=0): {'center': 'images/3M1_Fa_OS.jpg', 'surround': 'images/3M1_Fa_OS.jpg', 'rotCenter': 0, 'rotSurround': 0, 'blueCenter': 0, 'blueSurround': 0, 'ethnicity': 3, 'male': 1, 'identity': 1, 'scramFace': 0}
+50.0978 	EXP 	LeftReminder_text_6: autoDraw = False
+50.0978 	EXP 	rightReminder_text_6: autoDraw = False
+50.0978 	EXP 	LeftReminder_text_6: autoDraw = False
+50.0978 	EXP 	rightReminder_text_6: autoDraw = False
+50.0978 	EXP 	cuePresented_2: autoDraw = False
+50.0978 	EXP 	LeftReminder_text_7: text = 'BLUE - SQUARE'
+50.0978 	EXP 	rightReminder_text_7: text = 'ORANGE - DIAMOND'
+50.0978 	EXP 	centerPresented_2: ori = 0.0
+50.0978 	EXP 	centerPresented_2: image = 'images/3M1_Fa_OS.jpg'
+50.0978 	EXP 	topPresented_2: ori = 0.0
+50.0978 	EXP 	topPresented_2: image = 'images/3M1_Fa_OS.jpg'
+50.0978 	EXP 	rightPresented_2: ori = 0.0
+50.0978 	EXP 	rightPresented_2: image = 'images/3M1_Fa_OS.jpg'
+50.0978 	EXP 	bottomPresented_2: ori = 0.0
+50.0978 	EXP 	bottomPresented_2: image = 'images/3M1_Fa_OS.jpg'
+50.0978 	EXP 	leftPresented_2: ori = 0.0
+50.0978 	EXP 	leftPresented_2: image = 'images/3M1_Fa_OS.jpg'
+50.0978 	EXP 	LeftReminder_text_7: autoDraw = True
+50.0978 	EXP 	rightReminder_text_7: autoDraw = True
+51.4145 	EXP 	centerPresented_2: autoDraw = True
+51.4145 	EXP 	topPresented_2: autoDraw = True
+51.4145 	EXP 	rightPresented_2: autoDraw = True
+51.4145 	EXP 	bottomPresented_2: autoDraw = True
+51.4145 	EXP 	leftPresented_2: autoDraw = True
+52.4145 	EXP 	centerPresented_2: autoDraw = False
+52.4145 	EXP 	topPresented_2: autoDraw = False
+52.4145 	EXP 	rightPresented_2: autoDraw = False
+52.4145 	EXP 	bottomPresented_2: autoDraw = False
+52.4145 	EXP 	leftPresented_2: autoDraw = False
+52.9194 	EXP 	New trial (rep=0, index=6): OrderedDict([('whichFace', 'face3M1_Sc.xlsx')])
+52.9351 	DEBUG 	Read excel file with openpyxl: color.xlsx
+52.9352 	EXP 	Imported color.xlsx as conditions, 1 conditions, 1 params
+52.9356 	EXP 	Created sequence: fullRandom, trialTypes=1, nReps=1, seed=None
+52.9358 	EXP 	New trial (rep=0, index=0): {'whichCue': 'COLOR'}
+52.9478 	EXP 	LeftReminder_text_7: autoDraw = False
+52.9478 	EXP 	rightReminder_text_7: autoDraw = False
+52.9478 	EXP 	LeftReminder_text_7: autoDraw = False
+52.9478 	EXP 	rightReminder_text_7: autoDraw = False
+52.9478 	EXP 	centerPresented_2: autoDraw = False
+52.9478 	EXP 	topPresented_2: autoDraw = False
+52.9478 	EXP 	rightPresented_2: autoDraw = False
+52.9478 	EXP 	bottomPresented_2: autoDraw = False
+52.9478 	EXP 	leftPresented_2: autoDraw = False
+52.9478 	EXP 	LeftReminder_text_6: text = 'BLUE - SQUARE'
+52.9478 	EXP 	rightReminder_text_6: text = 'ORANGE - DIAMOND'
+52.9478 	EXP 	cuePresented_2: text = 'COLOR'
+52.9478 	EXP 	LeftReminder_text_6: autoDraw = True
+52.9478 	EXP 	rightReminder_text_6: autoDraw = True
+54.0145 	EXP 	cuePresented_2: autoDraw = True
+55.0144 	EXP 	cuePresented_2: autoDraw = False
+55.0367 	DEBUG 	Read excel file with openpyxl: face3M1_Sc.xlsx
+55.0403 	EXP 	Imported face3M1_Sc.xlsx as conditions, 16 conditions, 10 params
+55.0407 	EXP 	Created sequence: random, trialTypes=16, nReps=1, seed=None
+55.0410 	EXP 	New trial (rep=0, index=0): {'center': 'images/3M1_Sc_BS.jpg', 'surround': 'images/3M1_Sc_BS.jpg', 'rotCenter': 0, 'rotSurround': 0, 'blueCenter': 1, 'blueSurround': 1, 'ethnicity': 3, 'male': 1, 'identity': 1, 'scramFace': 1}
+55.0978 	EXP 	LeftReminder_text_6: autoDraw = False
+55.0978 	EXP 	rightReminder_text_6: autoDraw = False
+55.0978 	EXP 	LeftReminder_text_6: autoDraw = False
+55.0978 	EXP 	rightReminder_text_6: autoDraw = False
+55.0978 	EXP 	cuePresented_2: autoDraw = False
+55.0978 	EXP 	LeftReminder_text_7: text = 'BLUE - SQUARE'
+55.0978 	EXP 	rightReminder_text_7: text = 'ORANGE - DIAMOND'
+55.0978 	EXP 	centerPresented_2: ori = 0.0
+55.0978 	EXP 	centerPresented_2: image = 'images/3M1_Sc_BS.jpg'
+55.0978 	EXP 	topPresented_2: ori = 0.0
+55.0978 	EXP 	topPresented_2: image = 'images/3M1_Sc_BS.jpg'
+55.0978 	EXP 	rightPresented_2: ori = 0.0
+55.0978 	EXP 	rightPresented_2: image = 'images/3M1_Sc_BS.jpg'
+55.0978 	EXP 	bottomPresented_2: ori = 0.0
+55.0978 	EXP 	bottomPresented_2: image = 'images/3M1_Sc_BS.jpg'
+55.0978 	EXP 	leftPresented_2: ori = 0.0
+55.0978 	EXP 	leftPresented_2: image = 'images/3M1_Sc_BS.jpg'
+55.0978 	EXP 	LeftReminder_text_7: autoDraw = True
+55.0978 	EXP 	rightReminder_text_7: autoDraw = True
+56.3645 	EXP 	centerPresented_2: autoDraw = True
+56.3645 	EXP 	topPresented_2: autoDraw = True
+56.3645 	EXP 	rightPresented_2: autoDraw = True
+56.3645 	EXP 	bottomPresented_2: autoDraw = True
+56.3645 	EXP 	leftPresented_2: autoDraw = True
+57.3644 	EXP 	centerPresented_2: autoDraw = False
+57.3644 	EXP 	topPresented_2: autoDraw = False
+57.3644 	EXP 	rightPresented_2: autoDraw = False
+57.3644 	EXP 	bottomPresented_2: autoDraw = False
+57.3644 	EXP 	leftPresented_2: autoDraw = False
+57.8862 	EXP 	New trial (rep=0, index=7): OrderedDict([('whichFace', 'face4F1_Sc.xlsx')])
+57.9017 	DEBUG 	Read excel file with openpyxl: color.xlsx
+57.9018 	EXP 	Imported color.xlsx as conditions, 1 conditions, 1 params
+57.9022 	EXP 	Created sequence: fullRandom, trialTypes=1, nReps=1, seed=None
+57.9025 	EXP 	New trial (rep=0, index=0): {'whichCue': 'COLOR'}
+57.9145 	EXP 	LeftReminder_text_7: autoDraw = False
+57.9145 	EXP 	rightReminder_text_7: autoDraw = False
+57.9145 	EXP 	LeftReminder_text_7: autoDraw = False
+57.9145 	EXP 	rightReminder_text_7: autoDraw = False
+57.9145 	EXP 	centerPresented_2: autoDraw = False
+57.9145 	EXP 	topPresented_2: autoDraw = False
+57.9145 	EXP 	rightPresented_2: autoDraw = False
+57.9145 	EXP 	bottomPresented_2: autoDraw = False
+57.9145 	EXP 	leftPresented_2: autoDraw = False
+57.9145 	EXP 	LeftReminder_text_6: text = 'BLUE - SQUARE'
+57.9145 	EXP 	rightReminder_text_6: text = 'ORANGE - DIAMOND'
+57.9145 	EXP 	cuePresented_2: text = 'COLOR'
+57.9145 	EXP 	LeftReminder_text_6: autoDraw = True
+57.9145 	EXP 	rightReminder_text_6: autoDraw = True
+58.9818 	EXP 	cuePresented_2: autoDraw = True
+59.9815 	EXP 	cuePresented_2: autoDraw = False
+60.0030 	DEBUG 	Read excel file with openpyxl: face4F1_Sc.xlsx
+60.0066 	EXP 	Imported face4F1_Sc.xlsx as conditions, 16 conditions, 10 params
+60.0070 	EXP 	Created sequence: random, trialTypes=16, nReps=1, seed=None
+60.0073 	EXP 	New trial (rep=0, index=0): {'center': 'images/4F1_Sc_OD.jpg', 'surround': 'images/4F1_Sc_OD.jpg', 'rotCenter': 45, 'rotSurround': 45, 'blueCenter': 0, 'blueSurround': 0, 'ethnicity': 4, 'male': 0, 'identity': 1, 'scramFace': 1}
+60.0833 	EXP 	LeftReminder_text_6: autoDraw = False
+60.0833 	EXP 	rightReminder_text_6: autoDraw = False
+60.0833 	EXP 	LeftReminder_text_6: autoDraw = False
+60.0833 	EXP 	rightReminder_text_6: autoDraw = False
+60.0833 	EXP 	cuePresented_2: autoDraw = False
+60.0833 	EXP 	LeftReminder_text_7: text = 'BLUE - SQUARE'
+60.0833 	EXP 	rightReminder_text_7: text = 'ORANGE - DIAMOND'
+60.0833 	EXP 	centerPresented_2: ori = 45.0
+60.0833 	EXP 	centerPresented_2: image = 'images/4F1_Sc_OD.jpg'
+60.0833 	EXP 	topPresented_2: ori = 45.0
+60.0833 	EXP 	topPresented_2: image = 'images/4F1_Sc_OD.jpg'
+60.0833 	EXP 	rightPresented_2: ori = 45.0
+60.0833 	EXP 	rightPresented_2: image = 'images/4F1_Sc_OD.jpg'
+60.0833 	EXP 	bottomPresented_2: ori = 45.0
+60.0833 	EXP 	bottomPresented_2: image = 'images/4F1_Sc_OD.jpg'
+60.0833 	EXP 	leftPresented_2: ori = 45.0
+60.0833 	EXP 	leftPresented_2: image = 'images/4F1_Sc_OD.jpg'
+60.0833 	EXP 	LeftReminder_text_7: autoDraw = True
+60.0833 	EXP 	rightReminder_text_7: autoDraw = True
+61.3987 	EXP 	centerPresented_2: autoDraw = True
+61.3987 	EXP 	topPresented_2: autoDraw = True
+61.3987 	EXP 	rightPresented_2: autoDraw = True
+61.3987 	EXP 	bottomPresented_2: autoDraw = True
+61.3987 	EXP 	leftPresented_2: autoDraw = True
+62.3984 	EXP 	centerPresented_2: autoDraw = False
+62.3984 	EXP 	topPresented_2: autoDraw = False
+62.3984 	EXP 	rightPresented_2: autoDraw = False
+62.3984 	EXP 	bottomPresented_2: autoDraw = False
+62.3984 	EXP 	leftPresented_2: autoDraw = False
+62.9045 	EXP 	New trial (rep=0, index=1): OrderedDict([('whichBlock', 'switch.xlsx'), ('practice', 1), ('numberReps', 1), ('taskNameSource', 'SWITCH Game Practice'), ('taskTextSource', '\n\n\n\n\n\nIn this game, you have to SWITCH your focus\nto either the COLOR or SHAPE or the center image.\nIf the word appearing before the image says COLOR,\nthen focus on the COLOR of the center image.\nHowever, if the word appearing before the image says SHAPE,\nthen focus on the SHAPE of the center image.\n\nPress the Z key with your left index finger, if:\n\n\nPress the M key with your right index finger, if:\n\n\n\nLabels in the lower-left and lower-right of the screen will remind you \nwhich hand to use for which COLOR and SHAPE.\n'), ('cueReminderTextSource', '\n\n\n\n\n\n\n\n\nThe word COLOR or SHAPE will be presented before each image to inform you how to respond.')])
+62.9509 	EXP 	LeftReminder_text_7: autoDraw = False
+62.9509 	EXP 	rightReminder_text_7: autoDraw = False
+62.9509 	EXP 	LeftReminder_text_7: autoDraw = False
+62.9509 	EXP 	rightReminder_text_7: autoDraw = False
+62.9509 	EXP 	centerPresented_2: autoDraw = False
+62.9509 	EXP 	topPresented_2: autoDraw = False
+62.9509 	EXP 	rightPresented_2: autoDraw = False
+62.9509 	EXP 	bottomPresented_2: autoDraw = False
+62.9509 	EXP 	leftPresented_2: autoDraw = False
+62.9509 	EXP 	taskName: text = 'SWITCH Game Practice'
+62.9509 	EXP 	task_Text: text = '\n\n\n\n\n\nIn this game, you have to SWITCH your focus\nto either the COLOR or SHAPE or the center image.\nIf the word appearing before the image says COLOR,\nthen focus on the COLOR of the center image.\nHowever, if the word appearing before the image says SHAPE,\nthen focus on the SHAPE of the center image.\n\nPress the Z key with your left index finger, if:\n\n\nPress the M key with your right index finger, if:\n\n\n\nLabels in the lower-left and lower-right of the screen will remind you \nwhich hand to use for which COLOR and SHAPE.\n'
+62.9509 	EXP 	leftKey_text: text = '\n \n \n \n \n the word says COLOR and the image is BLUE, \n or if the word says SHAPE and the image is a SQUARE \n'
+62.9509 	EXP 	rightKey_text: text = '\n \n \n \n \n \n \n \n \n \n \n \n \n the word says COLOR and the image is ORANGE, \n or if the word says SHAPE and the image is a DIAMOND'
+62.9509 	EXP 	LeftReminder_text: text = 'BLUE - SQUARE'
+62.9509 	EXP 	rightReminder_text: text = 'ORANGE - DIAMOND'
+62.9509 	EXP 	taskName: autoDraw = True
+62.9509 	EXP 	task_Text: autoDraw = True
+62.9509 	EXP 	leftKey_text: autoDraw = True
+62.9509 	EXP 	rightKey_text: autoDraw = True
+62.9509 	EXP 	task_text5: autoDraw = True
+62.9509 	EXP 	LeftReminder_text: autoDraw = True
+62.9509 	EXP 	rightReminder_text: autoDraw = True
+66.8113 	DATA 	Mouse: Left button down, pos=(1717,639)
+66.9181 	DATA 	Mouse:  Left button up, pos=(1717,639)
+68.0237 	DATA 	Keypress: space
+68.0644 	EXP 	taskName: autoDraw = False
+68.0644 	EXP 	task_Text: autoDraw = False
+68.0644 	EXP 	leftKey_text: autoDraw = False
+68.0644 	EXP 	rightKey_text: autoDraw = False
+68.0644 	EXP 	task_text5: autoDraw = False
+68.0644 	EXP 	LeftReminder_text: autoDraw = False
+68.0644 	EXP 	rightReminder_text: autoDraw = False
+68.0644 	EXP 	taskName_2: text = 'SWITCH Game Practice'
+68.0644 	EXP 	task_Text_2: text = '\n\nPlease rest your left finger on the Z key and your right finger on the M key.\nWhen an image is shown, you should respond as quickly as you can while also being correct.'
+68.0644 	EXP 	task_text_3: text = '\n\n\n\n\n\n\n\n\nThe word COLOR or SHAPE will be presented before each image to inform you how to respond.'
+68.0644 	EXP 	task_text_4: text = '\n \n \n \n \n \n \n \n \n \n \n \n \n \n Press either the Z or M key to practice this game'
+68.0644 	EXP 	LeftReminder_text_5: text = 'BLUE - SQUARE'
+68.0644 	EXP 	rightReminder_text_5: text = 'ORANGE - DIAMOND'
+68.0644 	EXP 	taskName_2: autoDraw = True
+68.0644 	EXP 	task_Text_2: autoDraw = True
+68.0644 	EXP 	task_text_3: autoDraw = True
+68.0644 	EXP 	task_text_4: autoDraw = True
+68.0644 	EXP 	LeftReminder_text_5: autoDraw = True
+68.0644 	EXP 	rightReminder_text_5: autoDraw = True
+79.4227 	DATA 	Keypress: z
+79.4384 	DEBUG 	Read csv file with pandas: practice_faceSelect.csv
+79.4393 	DEBUG 	Clearing unnamed columns from practice_faceSelect.csv
+79.4396 	EXP 	Imported practice_faceSelect.csv as conditions, 8 conditions, 1 params
+79.4399 	EXP 	Created sequence: random, trialTypes=8, nReps=1, seed=None
+79.4402 	EXP 	New trial (rep=0, index=0): OrderedDict([('whichFace', 'face1F1_Fa.xlsx')])
+79.4566 	DEBUG 	Read excel file with openpyxl: switch.xlsx
+79.4567 	EXP 	Imported switch.xlsx as conditions, 2 conditions, 1 params
+79.4570 	EXP 	Created sequence: fullRandom, trialTypes=2, nReps=1, seed=None
+79.4573 	EXP 	New trial (rep=0, index=0): {'whichCue': 'COLOR'}
+79.4644 	EXP 	taskName_2: autoDraw = False
+79.4644 	EXP 	task_Text_2: autoDraw = False
+79.4644 	EXP 	task_text_3: autoDraw = False
+79.4644 	EXP 	task_text_4: autoDraw = False
+79.4644 	EXP 	LeftReminder_text_5: autoDraw = False
+79.4644 	EXP 	rightReminder_text_5: autoDraw = False
+79.4644 	EXP 	LeftReminder_text_6: text = 'BLUE - SQUARE'
+79.4644 	EXP 	rightReminder_text_6: text = 'ORANGE - DIAMOND'
+79.4644 	EXP 	cuePresented_2: text = 'COLOR'
+79.4644 	EXP 	LeftReminder_text_6: autoDraw = True
+79.4644 	EXP 	rightReminder_text_6: autoDraw = True
+80.9144 	EXP 	cuePresented_2: autoDraw = True
+81.9144 	EXP 	cuePresented_2: autoDraw = False
+81.9352 	DEBUG 	Read excel file with openpyxl: face1F1_Fa.xlsx
+81.9386 	EXP 	Imported face1F1_Fa.xlsx as conditions, 16 conditions, 10 params
+81.9390 	EXP 	Created sequence: random, trialTypes=16, nReps=1, seed=None
+81.9394 	EXP 	New trial (rep=0, index=0): {'center': 'images/1F1_Fa_OD.jpg', 'surround': 'images/1F1_Fa_OD.jpg', 'rotCenter': 45, 'rotSurround': 45, 'blueCenter': 0, 'blueSurround': 0, 'ethnicity': 1, 'male': 0, 'identity': 1, 'scramFace': 0}
+81.9977 	EXP 	LeftReminder_text_6: autoDraw = False
+81.9977 	EXP 	rightReminder_text_6: autoDraw = False
+81.9977 	EXP 	LeftReminder_text_6: autoDraw = False
+81.9977 	EXP 	rightReminder_text_6: autoDraw = False
+81.9977 	EXP 	cuePresented_2: autoDraw = False
+81.9977 	EXP 	LeftReminder_text_7: text = 'BLUE - SQUARE'
+81.9977 	EXP 	rightReminder_text_7: text = 'ORANGE - DIAMOND'
+81.9977 	EXP 	centerPresented_2: ori = 45.0
+81.9977 	EXP 	centerPresented_2: image = 'images/1F1_Fa_OD.jpg'
+81.9977 	EXP 	topPresented_2: ori = 45.0
+81.9977 	EXP 	topPresented_2: image = 'images/1F1_Fa_OD.jpg'
+81.9977 	EXP 	rightPresented_2: ori = 45.0
+81.9977 	EXP 	rightPresented_2: image = 'images/1F1_Fa_OD.jpg'
+81.9977 	EXP 	bottomPresented_2: ori = 45.0
+81.9977 	EXP 	bottomPresented_2: image = 'images/1F1_Fa_OD.jpg'
+81.9977 	EXP 	leftPresented_2: ori = 45.0
+81.9977 	EXP 	leftPresented_2: image = 'images/1F1_Fa_OD.jpg'
+81.9977 	EXP 	LeftReminder_text_7: autoDraw = True
+81.9977 	EXP 	rightReminder_text_7: autoDraw = True
+83.0810 	EXP 	centerPresented_2: autoDraw = True
+83.0810 	EXP 	topPresented_2: autoDraw = True
+83.0810 	EXP 	rightPresented_2: autoDraw = True
+83.0810 	EXP 	bottomPresented_2: autoDraw = True
+83.0810 	EXP 	leftPresented_2: autoDraw = True
+84.0810 	EXP 	centerPresented_2: autoDraw = False
+84.0810 	EXP 	topPresented_2: autoDraw = False
+84.0810 	EXP 	rightPresented_2: autoDraw = False
+84.0810 	EXP 	bottomPresented_2: autoDraw = False
+84.0810 	EXP 	leftPresented_2: autoDraw = False
+84.5861 	EXP 	New trial (rep=0, index=1): OrderedDict([('whichFace', 'face4F1_Sc.xlsx')])
+84.6013 	DEBUG 	Read excel file with openpyxl: switch.xlsx
+84.6014 	EXP 	Imported switch.xlsx as conditions, 2 conditions, 1 params
+84.6017 	EXP 	Created sequence: fullRandom, trialTypes=2, nReps=1, seed=None
+84.6019 	EXP 	New trial (rep=0, index=0): {'whichCue': 'COLOR'}
+84.6144 	EXP 	LeftReminder_text_7: autoDraw = False
+84.6144 	EXP 	rightReminder_text_7: autoDraw = False
+84.6144 	EXP 	LeftReminder_text_7: autoDraw = False
+84.6144 	EXP 	rightReminder_text_7: autoDraw = False
+84.6144 	EXP 	centerPresented_2: autoDraw = False
+84.6144 	EXP 	topPresented_2: autoDraw = False
+84.6144 	EXP 	rightPresented_2: autoDraw = False
+84.6144 	EXP 	bottomPresented_2: autoDraw = False
+84.6144 	EXP 	leftPresented_2: autoDraw = False
+84.6144 	EXP 	LeftReminder_text_6: text = 'BLUE - SQUARE'
+84.6144 	EXP 	rightReminder_text_6: text = 'ORANGE - DIAMOND'
+84.6144 	EXP 	cuePresented_2: text = 'COLOR'
+84.6144 	EXP 	LeftReminder_text_6: autoDraw = True
+84.6144 	EXP 	rightReminder_text_6: autoDraw = True
+85.6143 	EXP 	cuePresented_2: autoDraw = True
+86.6144 	EXP 	cuePresented_2: autoDraw = False
+86.6374 	DEBUG 	Read excel file with openpyxl: face4F1_Sc.xlsx
+86.6411 	EXP 	Imported face4F1_Sc.xlsx as conditions, 16 conditions, 10 params
+86.6416 	EXP 	Created sequence: random, trialTypes=16, nReps=1, seed=None
+86.6420 	EXP 	New trial (rep=0, index=0): {'center': 'images/4F1_Sc_OS.jpg', 'surround': 'images/4F1_Sc_OS.jpg', 'rotCenter': 0, 'rotSurround': 0, 'blueCenter': 0, 'blueSurround': 0, 'ethnicity': 4, 'male': 0, 'identity': 1, 'scramFace': 1}
+86.7144 	EXP 	LeftReminder_text_6: autoDraw = False
+86.7144 	EXP 	rightReminder_text_6: autoDraw = False
+86.7144 	EXP 	LeftReminder_text_6: autoDraw = False
+86.7144 	EXP 	rightReminder_text_6: autoDraw = False
+86.7144 	EXP 	cuePresented_2: autoDraw = False
+86.7144 	EXP 	LeftReminder_text_7: text = 'BLUE - SQUARE'
+86.7144 	EXP 	rightReminder_text_7: text = 'ORANGE - DIAMOND'
+86.7144 	EXP 	centerPresented_2: ori = 0.0
+86.7144 	EXP 	centerPresented_2: image = 'images/4F1_Sc_OS.jpg'
+86.7144 	EXP 	topPresented_2: ori = 0.0
+86.7144 	EXP 	topPresented_2: image = 'images/4F1_Sc_OS.jpg'
+86.7144 	EXP 	rightPresented_2: ori = 0.0
+86.7144 	EXP 	rightPresented_2: image = 'images/4F1_Sc_OS.jpg'
+86.7144 	EXP 	bottomPresented_2: ori = 0.0
+86.7144 	EXP 	bottomPresented_2: image = 'images/4F1_Sc_OS.jpg'
+86.7144 	EXP 	leftPresented_2: ori = 0.0
+86.7144 	EXP 	leftPresented_2: image = 'images/4F1_Sc_OS.jpg'
+86.7144 	EXP 	LeftReminder_text_7: autoDraw = True
+86.7144 	EXP 	rightReminder_text_7: autoDraw = True
+88.1477 	EXP 	centerPresented_2: autoDraw = True
+88.1477 	EXP 	topPresented_2: autoDraw = True
+88.1477 	EXP 	rightPresented_2: autoDraw = True
+88.1477 	EXP 	bottomPresented_2: autoDraw = True
+88.1477 	EXP 	leftPresented_2: autoDraw = True
+89.1477 	EXP 	centerPresented_2: autoDraw = False
+89.1477 	EXP 	topPresented_2: autoDraw = False
+89.1477 	EXP 	rightPresented_2: autoDraw = False
+89.1477 	EXP 	bottomPresented_2: autoDraw = False
+89.1477 	EXP 	leftPresented_2: autoDraw = False
+89.6701 	EXP 	New trial (rep=0, index=2): OrderedDict([('whichFace', 'face1F1_Sc.xlsx')])
+89.6862 	DEBUG 	Read excel file with openpyxl: switch.xlsx
+89.6863 	EXP 	Imported switch.xlsx as conditions, 2 conditions, 1 params
+89.6866 	EXP 	Created sequence: fullRandom, trialTypes=2, nReps=1, seed=None
+89.6869 	EXP 	New trial (rep=0, index=0): {'whichCue': 'COLOR'}
+89.6977 	EXP 	LeftReminder_text_7: autoDraw = False
+89.6977 	EXP 	rightReminder_text_7: autoDraw = False
+89.6977 	EXP 	LeftReminder_text_7: autoDraw = False
+89.6977 	EXP 	rightReminder_text_7: autoDraw = False
+89.6977 	EXP 	centerPresented_2: autoDraw = False
+89.6977 	EXP 	topPresented_2: autoDraw = False
+89.6977 	EXP 	rightPresented_2: autoDraw = False
+89.6977 	EXP 	bottomPresented_2: autoDraw = False
+89.6977 	EXP 	leftPresented_2: autoDraw = False
+89.6977 	EXP 	LeftReminder_text_6: text = 'BLUE - SQUARE'
+89.6977 	EXP 	rightReminder_text_6: text = 'ORANGE - DIAMOND'
+89.6977 	EXP 	cuePresented_2: text = 'COLOR'
+89.6977 	EXP 	LeftReminder_text_6: autoDraw = True
+89.6977 	EXP 	rightReminder_text_6: autoDraw = True
+90.6977 	EXP 	cuePresented_2: autoDraw = True
+91.6977 	EXP 	cuePresented_2: autoDraw = False
+91.7350 	DEBUG 	Read excel file with openpyxl: face1F1_Sc.xlsx
+91.7384 	EXP 	Imported face1F1_Sc.xlsx as conditions, 16 conditions, 10 params
+91.7388 	EXP 	Created sequence: random, trialTypes=16, nReps=1, seed=None
+91.7392 	EXP 	New trial (rep=0, index=0): {'center': 'images/1F1_Sc_OD.jpg', 'surround': 'images/1F1_Sc_BD.jpg', 'rotCenter': 45, 'rotSurround': 45, 'blueCenter': 0, 'blueSurround': 1, 'ethnicity': 1, 'male': 0, 'identity': 1, 'scramFace': 1}
+91.7977 	EXP 	LeftReminder_text_6: autoDraw = False
+91.7977 	EXP 	rightReminder_text_6: autoDraw = False
+91.7977 	EXP 	LeftReminder_text_6: autoDraw = False
+91.7977 	EXP 	rightReminder_text_6: autoDraw = False
+91.7977 	EXP 	cuePresented_2: autoDraw = False
+91.7977 	EXP 	LeftReminder_text_7: text = 'BLUE - SQUARE'
+91.7977 	EXP 	rightReminder_text_7: text = 'ORANGE - DIAMOND'
+91.7977 	EXP 	centerPresented_2: ori = 45.0
+91.7977 	EXP 	centerPresented_2: image = 'images/1F1_Sc_OD.jpg'
+91.7977 	EXP 	topPresented_2: ori = 45.0
+91.7977 	EXP 	topPresented_2: image = 'images/1F1_Sc_BD.jpg'
+91.7977 	EXP 	rightPresented_2: ori = 45.0
+91.7977 	EXP 	rightPresented_2: image = 'images/1F1_Sc_BD.jpg'
+91.7977 	EXP 	bottomPresented_2: ori = 45.0
+91.7977 	EXP 	bottomPresented_2: image = 'images/1F1_Sc_BD.jpg'
+91.7977 	EXP 	leftPresented_2: ori = 45.0
+91.7977 	EXP 	leftPresented_2: image = 'images/1F1_Sc_BD.jpg'
+91.7977 	EXP 	LeftReminder_text_7: autoDraw = True
+91.7977 	EXP 	rightReminder_text_7: autoDraw = True
+93.1643 	EXP 	centerPresented_2: autoDraw = True
+93.1643 	EXP 	topPresented_2: autoDraw = True
+93.1643 	EXP 	rightPresented_2: autoDraw = True
+93.1643 	EXP 	bottomPresented_2: autoDraw = True
+93.1643 	EXP 	leftPresented_2: autoDraw = True
+94.1643 	EXP 	centerPresented_2: autoDraw = False
+94.1643 	EXP 	topPresented_2: autoDraw = False
+94.1643 	EXP 	rightPresented_2: autoDraw = False
+94.1643 	EXP 	bottomPresented_2: autoDraw = False
+94.1643 	EXP 	leftPresented_2: autoDraw = False
+94.6687 	EXP 	New trial (rep=0, index=3): OrderedDict([('whichFace', 'face2M1_Fa.xlsx')])
+94.6839 	DEBUG 	Read excel file with openpyxl: switch.xlsx
+94.6840 	EXP 	Imported switch.xlsx as conditions, 2 conditions, 1 params
+94.6844 	EXP 	Created sequence: fullRandom, trialTypes=2, nReps=1, seed=None
+94.6846 	EXP 	New trial (rep=0, index=0): {'whichCue': 'SHAPE'}
+94.6977 	EXP 	LeftReminder_text_7: autoDraw = False
+94.6977 	EXP 	rightReminder_text_7: autoDraw = False
+94.6977 	EXP 	LeftReminder_text_7: autoDraw = False
+94.6977 	EXP 	rightReminder_text_7: autoDraw = False
+94.6977 	EXP 	centerPresented_2: autoDraw = False
+94.6977 	EXP 	topPresented_2: autoDraw = False
+94.6977 	EXP 	rightPresented_2: autoDraw = False
+94.6977 	EXP 	bottomPresented_2: autoDraw = False
+94.6977 	EXP 	leftPresented_2: autoDraw = False
+94.6977 	EXP 	LeftReminder_text_6: text = 'BLUE - SQUARE'
+94.6977 	EXP 	rightReminder_text_6: text = 'ORANGE - DIAMOND'
+94.6977 	EXP 	cuePresented_2: text = 'SHAPE'
+94.6977 	EXP 	LeftReminder_text_6: autoDraw = True
+94.6977 	EXP 	rightReminder_text_6: autoDraw = True
+95.7643 	EXP 	cuePresented_2: autoDraw = True
+96.7643 	EXP 	cuePresented_2: autoDraw = False
+96.8018 	DEBUG 	Read excel file with openpyxl: face2M1_Fa.xlsx
+96.8054 	EXP 	Imported face2M1_Fa.xlsx as conditions, 16 conditions, 10 params
+96.8057 	EXP 	Created sequence: random, trialTypes=16, nReps=1, seed=None
+96.8060 	EXP 	New trial (rep=0, index=0): {'center': 'images/2M1_Fa_OD.jpg', 'surround': 'images/2M1_Fa_OS.jpg', 'rotCenter': 45, 'rotSurround': 0, 'blueCenter': 0, 'blueSurround': 0, 'ethnicity': 2, 'male': 1, 'identity': 1, 'scramFace': 0}
+96.8868 	EXP 	LeftReminder_text_6: autoDraw = False
+96.8868 	EXP 	rightReminder_text_6: autoDraw = False
+96.8868 	EXP 	LeftReminder_text_6: autoDraw = False
+96.8868 	EXP 	rightReminder_text_6: autoDraw = False
+96.8868 	EXP 	cuePresented_2: autoDraw = False
+96.8868 	EXP 	LeftReminder_text_7: text = 'BLUE - SQUARE'
+96.8868 	EXP 	rightReminder_text_7: text = 'ORANGE - DIAMOND'
+96.8868 	EXP 	centerPresented_2: ori = 45.0
+96.8868 	EXP 	centerPresented_2: image = 'images/2M1_Fa_OD.jpg'
+96.8868 	EXP 	topPresented_2: ori = 0.0
+96.8868 	EXP 	topPresented_2: image = 'images/2M1_Fa_OS.jpg'
+96.8868 	EXP 	rightPresented_2: ori = 0.0
+96.8868 	EXP 	rightPresented_2: image = 'images/2M1_Fa_OS.jpg'
+96.8868 	EXP 	bottomPresented_2: ori = 0.0
+96.8868 	EXP 	bottomPresented_2: image = 'images/2M1_Fa_OS.jpg'
+96.8868 	EXP 	leftPresented_2: ori = 0.0
+96.8868 	EXP 	leftPresented_2: image = 'images/2M1_Fa_OS.jpg'
+96.8868 	EXP 	LeftReminder_text_7: autoDraw = True
+96.8868 	EXP 	rightReminder_text_7: autoDraw = True
+97.9483 	EXP 	centerPresented_2: autoDraw = True
+97.9483 	EXP 	topPresented_2: autoDraw = True
+97.9483 	EXP 	rightPresented_2: autoDraw = True
+97.9483 	EXP 	bottomPresented_2: autoDraw = True
+97.9483 	EXP 	leftPresented_2: autoDraw = True
+98.9479 	EXP 	centerPresented_2: autoDraw = False
+98.9479 	EXP 	topPresented_2: autoDraw = False
+98.9479 	EXP 	rightPresented_2: autoDraw = False
+98.9479 	EXP 	bottomPresented_2: autoDraw = False
+98.9479 	EXP 	leftPresented_2: autoDraw = False
+99.4705 	EXP 	New trial (rep=0, index=4): OrderedDict([('whichFace', 'face3M1_Fa.xlsx')])
+99.4860 	DEBUG 	Read excel file with openpyxl: switch.xlsx
+99.4861 	EXP 	Imported switch.xlsx as conditions, 2 conditions, 1 params
+99.4865 	EXP 	Created sequence: fullRandom, trialTypes=2, nReps=1, seed=None
+99.4867 	EXP 	New trial (rep=0, index=0): {'whichCue': 'SHAPE'}
+99.4905 	EXP 	LeftReminder_text_7: autoDraw = False
+99.4905 	EXP 	rightReminder_text_7: autoDraw = False
+99.4905 	EXP 	LeftReminder_text_7: autoDraw = False
+99.4905 	EXP 	rightReminder_text_7: autoDraw = False
+99.4905 	EXP 	centerPresented_2: autoDraw = False
+99.4905 	EXP 	topPresented_2: autoDraw = False
+99.4905 	EXP 	rightPresented_2: autoDraw = False
+99.4905 	EXP 	bottomPresented_2: autoDraw = False
+99.4905 	EXP 	leftPresented_2: autoDraw = False
+99.4905 	EXP 	LeftReminder_text_6: text = 'BLUE - SQUARE'
+99.4905 	EXP 	rightReminder_text_6: text = 'ORANGE - DIAMOND'
+99.4905 	EXP 	cuePresented_2: text = 'SHAPE'
+99.4905 	EXP 	LeftReminder_text_6: autoDraw = True
+99.4905 	EXP 	rightReminder_text_6: autoDraw = True
+100.6812 	EXP 	cuePresented_2: autoDraw = True
+101.6812 	EXP 	cuePresented_2: autoDraw = False
+101.7078 	DEBUG 	Read excel file with openpyxl: face3M1_Fa.xlsx
+101.7150 	EXP 	Imported face3M1_Fa.xlsx as conditions, 16 conditions, 10 params
+101.7155 	EXP 	Created sequence: random, trialTypes=16, nReps=1, seed=None
+101.7160 	EXP 	New trial (rep=0, index=0): {'center': 'images/3M1_Fa_OD.jpg', 'surround': 'images/3M1_Fa_OD.jpg', 'rotCenter': 45, 'rotSurround': 45, 'blueCenter': 0, 'blueSurround': 0, 'ethnicity': 3, 'male': 1, 'identity': 1, 'scramFace': 0}
+101.7707 	EXP 	LeftReminder_text_6: autoDraw = False
+101.7707 	EXP 	rightReminder_text_6: autoDraw = False
+101.7707 	EXP 	LeftReminder_text_6: autoDraw = False
+101.7707 	EXP 	rightReminder_text_6: autoDraw = False
+101.7707 	EXP 	cuePresented_2: autoDraw = False
+101.7707 	EXP 	LeftReminder_text_7: text = 'BLUE - SQUARE'
+101.7707 	EXP 	rightReminder_text_7: text = 'ORANGE - DIAMOND'
+101.7707 	EXP 	centerPresented_2: ori = 45.0
+101.7707 	EXP 	centerPresented_2: image = 'images/3M1_Fa_OD.jpg'
+101.7707 	EXP 	topPresented_2: ori = 45.0
+101.7707 	EXP 	topPresented_2: image = 'images/3M1_Fa_OD.jpg'
+101.7707 	EXP 	rightPresented_2: ori = 45.0
+101.7707 	EXP 	rightPresented_2: image = 'images/3M1_Fa_OD.jpg'
+101.7707 	EXP 	bottomPresented_2: ori = 45.0
+101.7707 	EXP 	bottomPresented_2: image = 'images/3M1_Fa_OD.jpg'
+101.7707 	EXP 	leftPresented_2: ori = 45.0
+101.7707 	EXP 	leftPresented_2: image = 'images/3M1_Fa_OD.jpg'
+101.7707 	EXP 	LeftReminder_text_7: autoDraw = True
+101.7707 	EXP 	rightReminder_text_7: autoDraw = True
+102.8979 	EXP 	centerPresented_2: autoDraw = True
+102.8979 	EXP 	topPresented_2: autoDraw = True
+102.8979 	EXP 	rightPresented_2: autoDraw = True
+102.8979 	EXP 	bottomPresented_2: autoDraw = True
+102.8979 	EXP 	leftPresented_2: autoDraw = True
+103.8980 	EXP 	centerPresented_2: autoDraw = False
+103.8980 	EXP 	topPresented_2: autoDraw = False
+103.8980 	EXP 	rightPresented_2: autoDraw = False
+103.8980 	EXP 	bottomPresented_2: autoDraw = False
+103.8980 	EXP 	leftPresented_2: autoDraw = False
+104.4040 	EXP 	New trial (rep=0, index=5): OrderedDict([('whichFace', 'face2M1_Sc.xlsx')])
+104.4211 	DEBUG 	Read excel file with openpyxl: switch.xlsx
+104.4213 	EXP 	Imported switch.xlsx as conditions, 2 conditions, 1 params
+104.4218 	EXP 	Created sequence: fullRandom, trialTypes=2, nReps=1, seed=None
+104.4221 	EXP 	New trial (rep=0, index=0): {'whichCue': 'SHAPE'}
+104.4272 	EXP 	LeftReminder_text_7: autoDraw = False
+104.4272 	EXP 	rightReminder_text_7: autoDraw = False
+104.4272 	EXP 	LeftReminder_text_7: autoDraw = False
+104.4272 	EXP 	rightReminder_text_7: autoDraw = False
+104.4272 	EXP 	centerPresented_2: autoDraw = False
+104.4272 	EXP 	topPresented_2: autoDraw = False
+104.4272 	EXP 	rightPresented_2: autoDraw = False
+104.4272 	EXP 	bottomPresented_2: autoDraw = False
+104.4272 	EXP 	leftPresented_2: autoDraw = False
+104.4272 	EXP 	LeftReminder_text_6: text = 'BLUE - SQUARE'
+104.4272 	EXP 	rightReminder_text_6: text = 'ORANGE - DIAMOND'
+104.4272 	EXP 	cuePresented_2: text = 'SHAPE'
+104.4272 	EXP 	LeftReminder_text_6: autoDraw = True
+104.4272 	EXP 	rightReminder_text_6: autoDraw = True
+105.7978 	EXP 	cuePresented_2: autoDraw = True
+106.7979 	EXP 	cuePresented_2: autoDraw = False
+106.8185 	DEBUG 	Read excel file with openpyxl: face2M1_Sc.xlsx
+106.8218 	EXP 	Imported face2M1_Sc.xlsx as conditions, 16 conditions, 10 params
+106.8222 	EXP 	Created sequence: random, trialTypes=16, nReps=1, seed=None
+106.8226 	EXP 	New trial (rep=0, index=0): {'center': 'images/2M1_Sc_OD.jpg', 'surround': 'images/2M1_Sc_BD.jpg', 'rotCenter': 45, 'rotSurround': 45, 'blueCenter': 0, 'blueSurround': 1, 'ethnicity': 2, 'male': 1, 'identity': 1, 'scramFace': 1}
+106.8720 	EXP 	LeftReminder_text_6: autoDraw = False
+106.8720 	EXP 	rightReminder_text_6: autoDraw = False
+106.8720 	EXP 	LeftReminder_text_6: autoDraw = False
+106.8720 	EXP 	rightReminder_text_6: autoDraw = False
+106.8720 	EXP 	cuePresented_2: autoDraw = False
+106.8720 	EXP 	LeftReminder_text_7: text = 'BLUE - SQUARE'
+106.8720 	EXP 	rightReminder_text_7: text = 'ORANGE - DIAMOND'
+106.8720 	EXP 	centerPresented_2: ori = 45.0
+106.8720 	EXP 	centerPresented_2: image = 'images/2M1_Sc_OD.jpg'
+106.8720 	EXP 	topPresented_2: ori = 45.0
+106.8720 	EXP 	topPresented_2: image = 'images/2M1_Sc_BD.jpg'
+106.8720 	EXP 	rightPresented_2: ori = 45.0
+106.8720 	EXP 	rightPresented_2: image = 'images/2M1_Sc_BD.jpg'
+106.8720 	EXP 	bottomPresented_2: ori = 45.0
+106.8720 	EXP 	bottomPresented_2: image = 'images/2M1_Sc_BD.jpg'
+106.8720 	EXP 	leftPresented_2: ori = 45.0
+106.8720 	EXP 	leftPresented_2: image = 'images/2M1_Sc_BD.jpg'
+106.8720 	EXP 	LeftReminder_text_7: autoDraw = True
+106.8720 	EXP 	rightReminder_text_7: autoDraw = True
+107.9478 	EXP 	centerPresented_2: autoDraw = True
+107.9478 	EXP 	topPresented_2: autoDraw = True
+107.9478 	EXP 	rightPresented_2: autoDraw = True
+107.9478 	EXP 	bottomPresented_2: autoDraw = True
+107.9478 	EXP 	leftPresented_2: autoDraw = True
+108.9477 	EXP 	centerPresented_2: autoDraw = False
+108.9477 	EXP 	topPresented_2: autoDraw = False
+108.9477 	EXP 	rightPresented_2: autoDraw = False
+108.9477 	EXP 	bottomPresented_2: autoDraw = False
+108.9477 	EXP 	leftPresented_2: autoDraw = False
+109.4544 	EXP 	New trial (rep=0, index=6): OrderedDict([('whichFace', 'face4F1_Fa.xlsx')])
+109.4702 	DEBUG 	Read excel file with openpyxl: switch.xlsx
+109.4704 	EXP 	Imported switch.xlsx as conditions, 2 conditions, 1 params
+109.4707 	EXP 	Created sequence: fullRandom, trialTypes=2, nReps=1, seed=None
+109.4710 	EXP 	New trial (rep=0, index=0): {'whichCue': 'SHAPE'}
+109.4756 	EXP 	LeftReminder_text_7: autoDraw = False
+109.4756 	EXP 	rightReminder_text_7: autoDraw = False
+109.4756 	EXP 	LeftReminder_text_7: autoDraw = False
+109.4756 	EXP 	rightReminder_text_7: autoDraw = False
+109.4756 	EXP 	centerPresented_2: autoDraw = False
+109.4756 	EXP 	topPresented_2: autoDraw = False
+109.4756 	EXP 	rightPresented_2: autoDraw = False
+109.4756 	EXP 	bottomPresented_2: autoDraw = False
+109.4756 	EXP 	leftPresented_2: autoDraw = False
+109.4756 	EXP 	LeftReminder_text_6: text = 'BLUE - SQUARE'
+109.4756 	EXP 	rightReminder_text_6: text = 'ORANGE - DIAMOND'
+109.4756 	EXP 	cuePresented_2: text = 'SHAPE'
+109.4756 	EXP 	LeftReminder_text_6: autoDraw = True
+109.4756 	EXP 	rightReminder_text_6: autoDraw = True
+110.6646 	EXP 	cuePresented_2: autoDraw = True
+111.6645 	EXP 	cuePresented_2: autoDraw = False
+111.6864 	DEBUG 	Read excel file with openpyxl: face4F1_Fa.xlsx
+111.6899 	EXP 	Imported face4F1_Fa.xlsx as conditions, 16 conditions, 10 params
+111.6903 	EXP 	Created sequence: random, trialTypes=16, nReps=1, seed=None
+111.6906 	EXP 	New trial (rep=0, index=0): {'center': 'images/4F1_Fa_BS.jpg', 'surround': 'images/4F1_Fa_OS.jpg', 'rotCenter': 0, 'rotSurround': 0, 'blueCenter': 1, 'blueSurround': 0, 'ethnicity': 4, 'male': 0, 'identity': 1, 'scramFace': 0}
+111.7467 	EXP 	LeftReminder_text_6: autoDraw = False
+111.7467 	EXP 	rightReminder_text_6: autoDraw = False
+111.7467 	EXP 	LeftReminder_text_6: autoDraw = False
+111.7467 	EXP 	rightReminder_text_6: autoDraw = False
+111.7467 	EXP 	cuePresented_2: autoDraw = False
+111.7467 	EXP 	LeftReminder_text_7: text = 'BLUE - SQUARE'
+111.7467 	EXP 	rightReminder_text_7: text = 'ORANGE - DIAMOND'
+111.7467 	EXP 	centerPresented_2: ori = 0.0
+111.7467 	EXP 	centerPresented_2: image = 'images/4F1_Fa_BS.jpg'
+111.7467 	EXP 	topPresented_2: ori = 0.0
+111.7467 	EXP 	topPresented_2: image = 'images/4F1_Fa_OS.jpg'
+111.7467 	EXP 	rightPresented_2: ori = 0.0
+111.7467 	EXP 	rightPresented_2: image = 'images/4F1_Fa_OS.jpg'
+111.7467 	EXP 	bottomPresented_2: ori = 0.0
+111.7467 	EXP 	bottomPresented_2: image = 'images/4F1_Fa_OS.jpg'
+111.7467 	EXP 	leftPresented_2: ori = 0.0
+111.7467 	EXP 	leftPresented_2: image = 'images/4F1_Fa_OS.jpg'
+111.7467 	EXP 	LeftReminder_text_7: autoDraw = True
+111.7467 	EXP 	rightReminder_text_7: autoDraw = True
+113.0813 	EXP 	centerPresented_2: autoDraw = True
+113.0813 	EXP 	topPresented_2: autoDraw = True
+113.0813 	EXP 	rightPresented_2: autoDraw = True
+113.0813 	EXP 	bottomPresented_2: autoDraw = True
+113.0813 	EXP 	leftPresented_2: autoDraw = True
+114.0814 	EXP 	centerPresented_2: autoDraw = False
+114.0814 	EXP 	topPresented_2: autoDraw = False
+114.0814 	EXP 	rightPresented_2: autoDraw = False
+114.0814 	EXP 	bottomPresented_2: autoDraw = False
+114.0814 	EXP 	leftPresented_2: autoDraw = False
+114.5873 	EXP 	New trial (rep=0, index=7): OrderedDict([('whichFace', 'face3M1_Sc.xlsx')])
+114.6029 	DEBUG 	Read excel file with openpyxl: switch.xlsx
+114.6030 	EXP 	Imported switch.xlsx as conditions, 2 conditions, 1 params
+114.6034 	EXP 	Created sequence: fullRandom, trialTypes=2, nReps=1, seed=None
+114.6036 	EXP 	New trial (rep=0, index=0): {'whichCue': 'COLOR'}
+114.6103 	EXP 	LeftReminder_text_7: autoDraw = False
+114.6103 	EXP 	rightReminder_text_7: autoDraw = False
+114.6103 	EXP 	LeftReminder_text_7: autoDraw = False
+114.6103 	EXP 	rightReminder_text_7: autoDraw = False
+114.6103 	EXP 	centerPresented_2: autoDraw = False
+114.6103 	EXP 	topPresented_2: autoDraw = False
+114.6103 	EXP 	rightPresented_2: autoDraw = False
+114.6103 	EXP 	bottomPresented_2: autoDraw = False
+114.6103 	EXP 	leftPresented_2: autoDraw = False
+114.6103 	EXP 	LeftReminder_text_6: text = 'BLUE - SQUARE'
+114.6103 	EXP 	rightReminder_text_6: text = 'ORANGE - DIAMOND'
+114.6103 	EXP 	cuePresented_2: text = 'COLOR'
+114.6103 	EXP 	LeftReminder_text_6: autoDraw = True
+114.6103 	EXP 	rightReminder_text_6: autoDraw = True
+115.9644 	EXP 	cuePresented_2: autoDraw = True
+116.9704 	DEBUG 	Read excel file with openpyxl: face3M1_Sc.xlsx
+116.9741 	EXP 	Imported face3M1_Sc.xlsx as conditions, 16 conditions, 10 params
+116.9746 	EXP 	Created sequence: random, trialTypes=16, nReps=1, seed=None
+116.9750 	EXP 	New trial (rep=0, index=0): {'center': 'images/3M1_Sc_OS.jpg', 'surround': 'images/3M1_Sc_OD.jpg', 'rotCenter': 0, 'rotSurround': 45, 'blueCenter': 0, 'blueSurround': 0, 'ethnicity': 3, 'male': 1, 'identity': 1, 'scramFace': 1}
+117.0521 	EXP 	LeftReminder_text_6: autoDraw = False
+117.0521 	EXP 	rightReminder_text_6: autoDraw = False
+117.0521 	EXP 	cuePresented_2: autoDraw = False
+117.0521 	EXP 	LeftReminder_text_6: autoDraw = False
+117.0521 	EXP 	rightReminder_text_6: autoDraw = False
+117.0521 	EXP 	cuePresented_2: autoDraw = False
+117.0521 	EXP 	LeftReminder_text_7: text = 'BLUE - SQUARE'
+117.0521 	EXP 	rightReminder_text_7: text = 'ORANGE - DIAMOND'
+117.0521 	EXP 	centerPresented_2: ori = 0.0
+117.0521 	EXP 	centerPresented_2: image = 'images/3M1_Sc_OS.jpg'
+117.0521 	EXP 	topPresented_2: ori = 45.0
+117.0521 	EXP 	topPresented_2: image = 'images/3M1_Sc_OD.jpg'
+117.0521 	EXP 	rightPresented_2: ori = 45.0
+117.0521 	EXP 	rightPresented_2: image = 'images/3M1_Sc_OD.jpg'
+117.0521 	EXP 	bottomPresented_2: ori = 45.0
+117.0521 	EXP 	bottomPresented_2: image = 'images/3M1_Sc_OD.jpg'
+117.0521 	EXP 	leftPresented_2: ori = 45.0
+117.0521 	EXP 	leftPresented_2: image = 'images/3M1_Sc_OD.jpg'
+117.0521 	EXP 	LeftReminder_text_7: autoDraw = True
+117.0521 	EXP 	rightReminder_text_7: autoDraw = True
+118.2645 	EXP 	centerPresented_2: autoDraw = True
+118.2645 	EXP 	topPresented_2: autoDraw = True
+118.2645 	EXP 	rightPresented_2: autoDraw = True
+118.2645 	EXP 	bottomPresented_2: autoDraw = True
+118.2645 	EXP 	leftPresented_2: autoDraw = True
+119.2653 	EXP 	centerPresented_2: autoDraw = False
+119.2653 	EXP 	topPresented_2: autoDraw = False
+119.2653 	EXP 	rightPresented_2: autoDraw = False
+119.2653 	EXP 	bottomPresented_2: autoDraw = False
+119.2653 	EXP 	leftPresented_2: autoDraw = False
+119.7697 	EXP 	New trial (rep=0, index=2): OrderedDict([('whichBlock', 'shape.xlsx'), ('practice', 1), ('numberReps', 1), ('taskNameSource', 'SHAPE Game Practice'), ('taskTextSource', '\n\n\n\nIn this game, you have to focus on the SHAPE of the center image\n\nPress the Z key with your left index finger, if:\n\nPress the M key with your right index finger, if:\n\n\nLabels in the lower-left and lower-right of the screen will remind you\nwhich hand to use for which SHAPE. Ignore the color words for now.'), ('cueReminderTextSource', '\n\n\n\n\n\n\nThe word SHAPE will be presented before each image to remind you what to do.')])
+119.7999 	EXP 	LeftReminder_text_7: autoDraw = False
+119.7999 	EXP 	rightReminder_text_7: autoDraw = False
+119.7999 	EXP 	LeftReminder_text_7: autoDraw = False
+119.7999 	EXP 	rightReminder_text_7: autoDraw = False
+119.7999 	EXP 	centerPresented_2: autoDraw = False
+119.7999 	EXP 	topPresented_2: autoDraw = False
+119.7999 	EXP 	rightPresented_2: autoDraw = False
+119.7999 	EXP 	bottomPresented_2: autoDraw = False
+119.7999 	EXP 	leftPresented_2: autoDraw = False
+119.7999 	EXP 	taskName: text = 'SHAPE Game Practice'
+119.7999 	EXP 	task_Text: text = '\n\n\n\nIn this game, you have to focus on the SHAPE of the center image\n\nPress the Z key with your left index finger, if:\n\nPress the M key with your right index finger, if:\n\n\nLabels in the lower-left and lower-right of the screen will remind you\nwhich hand to use for which SHAPE. Ignore the color words for now.'
+119.7999 	EXP 	leftKey_text: text = 'the center image is a SQUARE \n'
+119.7999 	EXP 	rightKey_text: text = '\n \n \n \n \n \n the center image is DIAMOND'
+119.7999 	EXP 	LeftReminder_text: text = 'BLUE - SQUARE'
+119.7999 	EXP 	rightReminder_text: text = 'ORANGE - DIAMOND'
+119.7999 	EXP 	taskName: autoDraw = True
+119.7999 	EXP 	task_Text: autoDraw = True
+119.7999 	EXP 	leftKey_text: autoDraw = True
+119.7999 	EXP 	rightKey_text: autoDraw = True
+119.7999 	EXP 	task_text5: autoDraw = True
+119.7999 	EXP 	LeftReminder_text: autoDraw = True
+119.7999 	EXP 	rightReminder_text: autoDraw = True
+128.7777 	EXP 	window1: mouseVisible = True
+128.7778 	DEBUG 	Saving data for multiEF ExperimentHandler
+128.7857 	INFO 	saved data to C:\Users\Alycia Winters\Documents\NDC Lab\SC-EEG\multi-ef-o_s1_r2_e1-master - EEG Study Test Copy\multi-ef-o_s1_r2_e1-master_EEG-Test\data/_multiEF_2022_Jan_18_1455.psydat
+128.8002 	INFO 	saved data to 'C:\\Users\\Alycia Winters\\Documents\\NDC Lab\\SC-EEG\\multi-ef-o_s1_r2_e1-master - EEG Study Test Copy\\multi-ef-o_s1_r2_e1-master_EEG-Test\\data/_multiEF_2022_Jan_18_1455.csv'

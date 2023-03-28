@@ -1,0 +1,1175 @@
+﻿whichBlock,practice,numberReps,taskNameSource,taskTextSource,cueReminderTextSource,whichFace,whichCue,center,surround,rotCenter,rotSurround,blueCenter,blueSurround,ethnicity,male,identity,scramFace,colorblockLoop.thisRepN,colorblockLoop.thisTrialN,colorblockLoop.thisN,colorblockLoop.thisIndex,trialLoop.thisRepN,trialLoop.thisTrialN,trialLoop.thisN,trialLoop.thisIndex,cueLoop.thisRepN,cueLoop.thisTrialN,cueLoop.thisN,cueLoop.thisIndex,stimLoop.thisRepN,stimLoop.thisTrialN,stimLoop.thisN,stimLoop.thisIndex,shapeblockLoop.thisRepN,shapeblockLoop.thisTrialN,shapeblockLoop.thisN,shapeblockLoop.thisIndex,shapetrialLoop.thisRepN,shapetrialLoop.thisTrialN,shapetrialLoop.thisN,shapetrialLoop.thisIndex,shapecueLoop.thisRepN,shapecueLoop.thisTrialN,shapecueLoop.thisN,shapecueLoop.thisIndex,shapeStimLoop.thisRepN,shapeStimLoop.thisTrialN,shapeStimLoop.thisN,shapeStimLoop.thisIndex,begin_text1.started,begin_text1.stopped,pracImage_center.started,pracImage_center.stopped,pracImage_top.started,pracImage_top.stopped,pracImage_right.started,pracImage_right.stopped,pracImage_bottom.started,pracImage_bottom.stopped,pracImage_left.started,pracImage_left.stopped,begin_keyResp.keys,begin_keyResp.rt,begin_keyResp.started,begin_keyResp.stopped,begin_text2.started,begin_text2.stopped,begin_text1_4.started,begin_text1_4.stopped,pracImage_center_2.started,pracImage_center_2.stopped,pracImage_top_2.started,pracImage_top_2.stopped,pracImage_right_2.started,pracImage_right_2.stopped,pracImage_bottom_2.started,pracImage_bottom_2.stopped,pracImage_left_2.started,pracImage_left_2.stopped,begin_keyResp_4.keys,begin_keyResp_4.rt,begin_keyResp_4.started,begin_keyResp_4.stopped,begin_text2_4.started,begin_text2_4.stopped,begin_text1_3a.started,begin_text1_3a.stopped,begin_text2_3a.started,begin_text2_3a.stopped,begin_keyResp_3a.keys,begin_keyResp_3a.rt,begin_keyResp_3a.started,begin_keyResp_3a.stopped,taskName.started,taskName.stopped,task_Text.started,task_Text.stopped,leftKey_text.started,leftKey_text.stopped,rightKey_text.started,rightKey_text.stopped,task_text5.started,task_text5.stopped,LeftReminder_text.started,LeftReminder_text.stopped,rightReminder_text.started,rightReminder_text.stopped,pracOrMain_keyResp.keys,pracOrMain_keyResp.rt,pracOrMain_keyResp.started,pracOrMain_keyResp.stopped,taskName_2.started,taskName_2.stopped,task_Text_2.started,task_Text_2.stopped,task_text_3.started,task_text_3.stopped,task_text_4.started,task_text_4.stopped,LeftReminder_text_5.started,LeftReminder_text_5.stopped,rightReminder_text_5.started,rightReminder_text_5.stopped,pracOrMain_keyResp_3.keys,pracOrMain_keyResp_3.rt,pracOrMain_keyResp_3.started,pracOrMain_keyResp_3.stopped,RSI,LeftReminder_text_3.started,LeftReminder_text_3.stopped,rightReminder_text_3.started,rightReminder_text_3.stopped,cuePresented.started,cuePresented.stopped,ISI,corrAns,LeftReminder_text_4.started,LeftReminder_text_4.stopped,rightReminder_text_4.started,rightReminder_text_4.stopped,centerPresented.started,centerPresented.stopped,topPresented.started,topPresented.stopped,rightPresented.started,rightPresented.stopped,bottomPresented.started,bottomPresented.stopped,leftPresented.started,leftPresented.stopped,keyResp.keys,keyResp.corr,keyResp.started,keyResp.stopped,taskEnd_text.started,taskEnd_text.stopped,key_resp.keys,key_resp.rt,key_resp.started,key_resp.stopped,participant,session,date,expName,psychopyVersion,frameRate,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,15.244715800043195,None,15.244715800043195,None,15.244715800043195,None,15.244715800043195,None,15.244715800043195,None,15.244715800043195,None,1,9.519866899820045,15.244715800043195,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,15.244715800043195,None,24.783671099925414,None,24.783671099925414,None,24.783671099925414,None,24.783671099925414,None,24.783671099925414,None,24.783671099925414,None,1,0.9839212999213487,24.783671099925414,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,24.783671099925414,None,25.783660700079054,None,25.783660700079054,None,1,0.22793409996666014,25.783660700079054,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face1F1_Fa.xlsx,COLOR,,,,,,,,,,,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,26.10032119997777,None,26.10032119997777,None,26.10032119997777,None,26.10032119997777,None,26.10032119997777,None,26.10032119997777,None,26.10032119997777,None,1,0.2172711999155581,26.10032119997777,None,26.367005799897015,None,26.367005799897015,None,26.367005799897015,None,26.367005799897015,None,26.367005799897015,None,26.367005799897015,None,1,0.1006044999230653,26.367005799897015,None,1.4208416833667334,26.51698060007766,None,26.51698060007766,None,27.933693199884146,28.933661699993536,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face1F1_Fa.xlsx,,images/1F1_Fa_BS.jpg,images/1F1_Fa_BS.jpg,0,0,1,1,1,0,1,0,0,0,0,0,0,0,0,0,,,,,0,0,0,10,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0410821643286572,1,29.200309900101274,None,29.200309900101274,None,30.23365049995482,31.23530810000375,30.23365049995482,31.23530810000375,30.23365049995482,31.23530810000375,30.23365049995482,31.23530810000375,30.23365049995482,31.23530810000375,None,0,30.23365049995482,31.733652000082657,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face1F1_Fa.xlsx,,,,,,,,,,,,0,0,0,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face2M1_Sc.xlsx,COLOR,,,,,,,,,,,0,0,0,0,0,1,1,3,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.404809619238477,31.767004600027576,None,31.767004600027576,None,33.16697039990686,34.166948799975216,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face2M1_Sc.xlsx,,images/2M1_Sc_OS.jpg,images/2M1_Sc_OD.jpg,0,45,0,0,2,1,1,1,0,0,0,0,0,1,1,3,,,,,0,0,0,13,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.4258517034068137,8,34.2671145000495,None,34.2671145000495,None,35.683617499889806,36.68360139988363,35.683617499889806,36.68360139988363,35.683617499889806,36.68360139988363,35.683617499889806,36.68360139988363,35.683617499889806,36.68360139988363,None,0,35.683617499889806,37.183589099906385,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face2M1_Sc.xlsx,,,,,,,,,,,,0,0,0,0,0,1,1,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face4F1_Fa.xlsx,COLOR,,,,,,,,,,,0,0,0,0,0,2,2,6,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.3557114228456912,37.21695540007204,None,37.21695540007204,None,38.56692030001432,39.56694480008446,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face4F1_Fa.xlsx,,images/4F1_Fa_OD.jpg,images/4F1_Fa_OD.jpg,45,45,0,0,4,0,1,0,0,0,0,0,0,2,2,6,,,,,0,0,0,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.3396793587174347,8,39.650264099938795,None,39.650264099938795,None,40.98359440010972,41.98360019992106,40.98359440010972,41.98360019992106,40.98359440010972,41.98360019992106,40.98359440010972,41.98360019992106,40.98359440010972,41.98360019992106,None,0,40.98359440010972,42.48358520003967,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face4F1_Fa.xlsx,,,,,,,,,,,,0,0,0,0,0,2,2,6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face4F1_Sc.xlsx,COLOR,,,,,,,,,,,0,0,0,0,0,3,3,7,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0851703406813626,42.51693799998611,None,42.51693799998611,None,43.600263099884614,44.60026829992421,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face4F1_Sc.xlsx,,images/4F1_Sc_OD.jpg,images/4F1_Sc_OS.jpg,45,0,0,0,4,0,1,1,0,0,0,0,0,3,3,7,,,,,0,0,0,7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0791583166332666,8,44.68359649996273,None,44.68359649996273,None,45.75025749998167,46.75025160005316,45.75025749998167,46.75025160005316,45.75025749998167,46.75025160005316,45.75025749998167,46.75025160005316,45.75025749998167,46.75025160005316,None,0,45.75025749998167,47.25023950007744,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face4F1_Sc.xlsx,,,,,,,,,,,,0,0,0,0,0,3,3,7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face1F1_Sc.xlsx,COLOR,,,,,,,,,,,0,0,0,0,0,4,4,1,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.1432865731462925,47.283583800075576,None,47.283583800075576,None,48.416910300031304,49.41690670000389,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face1F1_Sc.xlsx,,images/1F1_Sc_BD.jpg,images/1F1_Sc_OS.jpg,45,0,1,0,1,0,1,1,0,0,0,0,0,4,4,1,,,,,0,0,0,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.3957915831663326,1,49.517252299934626,None,49.517252299934626,None,50.900229200022295,51.900226699886844,50.900229200022295,51.900226699886844,50.900229200022295,51.900226699886844,50.900229200022295,51.900226699886844,50.900229200022295,51.900226699886844,None,0,50.900229200022295,52.400230600032955,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face1F1_Sc.xlsx,,,,,,,,,,,,0,0,0,0,0,4,4,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face2M1_Fa.xlsx,COLOR,,,,,,,,,,,0,0,0,0,0,5,5,2,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.4509018036072143,52.433566899970174,None,52.433566899970174,None,53.883553199935704,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face2M1_Fa.xlsx,,images/2M1_Fa_OS.jpg,images/2M1_Fa_OS.jpg,0,0,0,0,2,1,1,0,0,0,0,0,0,5,5,2,,,,,0,0,0,15,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.254509018036072,8,54.9502208000049,None,54.9502208000049,None,56.20021090004593,57.20023599988781,56.20021090004593,57.20023599988781,56.20021090004593,57.20023599988781,56.20021090004593,57.20023599988781,56.20021090004593,57.20023599988781,None,0,56.20021090004593,57.70020699989982,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face2M1_Fa.xlsx,,,,,,,,,,,,0,0,0,0,0,5,5,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face3M1_Fa.xlsx,COLOR,,,,,,,,,,,0,0,0,0,0,6,6,4,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.4218436873747493,57.7505512998905,None,57.7505512998905,None,59.15020149992779,60.15019210008904,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face3M1_Fa.xlsx,,images/3M1_Fa_BS.jpg,images/3M1_Fa_BS.jpg,0,0,1,1,3,1,1,0,0,0,0,0,0,6,6,4,,,,,0,0,0,10,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.1953907815631262,1,60.250207300065085,None,60.250207300065085,None,61.433519900077954,62.43352059996687,61.433519900077954,62.43352059996687,61.433519900077954,62.43352059996687,61.433519900077954,62.43352059996687,61.433519900077954,62.43352059996687,None,0,61.433519900077954,62.93352079996839,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face3M1_Fa.xlsx,,,,,,,,,,,,0,0,0,0,0,6,6,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face3M1_Sc.xlsx,COLOR,,,,,,,,,,,0,0,0,0,0,7,7,5,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0921843687374748,62.96683879988268,None,62.96683879988268,None,64.05016939993948,65.05016619991511,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face3M1_Sc.xlsx,,images/3M1_Sc_BD.jpg,images/3M1_Sc_BD.jpg,45,45,1,1,3,1,1,1,0,0,0,0,0,7,7,5,,,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.4859719438877754,1,65.13351559988223,None,65.13351559988223,None,66.6001734000165,67.60016390006058,66.6001734000165,67.60016390006058,66.6001734000165,67.60016390006058,66.6001734000165,67.60016390006058,66.6001734000165,67.60016390006058,None,0,66.6001734000165,68.10014949995093,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face3M1_Sc.xlsx,,,,,,,,,,,,0,0,0,0,0,7,7,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",,,,,,,,,,,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,68.15015730005689,None,1,3.403398600174114,68.15015730005689,None,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face3M1_Sc.xlsx,COLOR,,,,,,,,,,,1,0,1,0,0,0,0,5,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,71.58346790005453,None,71.58346790005453,None,71.58346790005453,None,71.58346790005453,None,71.58346790005453,None,71.58346790005453,None,71.58346790005453,None,1,0.9051091000437737,71.58346790005453,None,72.51681749988347,None,72.51681749988347,None,72.51681749988347,None,72.51681749988347,None,72.51681749988347,None,72.51681749988347,None,1,0.45376479998230934,72.51681749988347,None,1.0260521042084167,73.01681749988347,None,73.01681749988347,None,74.03345480002463,75.03345119999722,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face3M1_Sc.xlsx,,images/3M1_Sc_BS.jpg,images/3M1_Sc_BD.jpg,0,45,1,1,3,1,1,1,1,0,1,0,0,0,0,5,,,,,0,0,0,8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.3066132264529058,1,75.11681280005723,None,75.11681280005723,None,76.41678419988602,77.41679059993476,76.41678419988602,77.41679059993476,76.41678419988602,77.41679059993476,76.41678419988602,77.41679059993476,76.41678419988602,77.41679059993476,None,0,76.41678419988602,77.91679319995455,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face3M1_Sc.xlsx,,,,,,,,,,,,1,0,1,0,0,0,0,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face4F1_Sc.xlsx,COLOR,,,,,,,,,,,1,0,1,0,0,1,1,7,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.1773547094188377,77.9501251000911,None,77.9501251000911,None,79.11679299990647,80.11680399999022,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face4F1_Sc.xlsx,,images/4F1_Sc_OS.jpg,images/4F1_Sc_OD.jpg,0,45,0,0,4,0,1,1,1,0,1,0,0,1,1,7,,,,,0,0,0,13,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.094188376753507,8,80.20012439996935,None,80.20012439996935,None,81.28347339993343,82.28344290005043,81.28347339993343,82.28344290005043,81.28347339993343,82.28344290005043,81.28347339993343,82.28344290005043,81.28347339993343,82.28344290005043,None,0,81.28347339993343,82.78343690000474,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face4F1_Sc.xlsx,,,,,,,,,,,,1,0,1,0,0,1,1,7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face1F1_Fa.xlsx,COLOR,,,,,,,,,,,1,0,1,0,0,2,2,0,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.2214428857715431,82.81677279993892,None,82.81677279993892,None,84.03343049995601,85.03342700004578,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face1F1_Fa.xlsx,,images/1F1_Fa_BS.jpg,images/1F1_Fa_BS.jpg,0,0,1,1,1,0,1,0,1,0,1,0,0,2,2,0,,,,,0,0,0,10,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.088176352705411,1,85.11677429988049,None,85.11677429988049,None,86.18342499993742,87.18342370004393,86.18342499993742,87.18342370004393,86.18342499993742,87.18342370004393,86.18342499993742,87.18342370004393,86.18342499993742,87.18342370004393,None,0,86.18342499993742,87.68340320000425,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face1F1_Fa.xlsx,,,,,,,,,,,,1,0,1,0,0,2,2,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face2M1_Fa.xlsx,COLOR,,,,,,,,,,,1,0,1,0,0,3,3,2,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.4939879759519037,87.73342450009659,None,87.73342450009659,None,89.21693519991823,90.21688139997423,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face2M1_Fa.xlsx,,images/2M1_Fa_BS.jpg,images/2M1_Fa_BD.jpg,0,45,1,1,2,1,1,0,1,0,1,0,0,3,3,2,,,,,0,0,0,8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.4318637274549098,1,90.30183609994128,None,90.30183609994128,None,91.73353659990244,92.73349980008788,91.73353659990244,92.73349980008788,91.73353659990244,92.73349980008788,91.73353659990244,92.73349980008788,91.73353659990244,92.73349980008788,None,0,91.73353659990244,None,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face2M1_Fa.xlsx,,,,,,,,,,,,1,0,1,0,0,3,3,2,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face3M1_Fa.xlsx,COLOR,,,,,,,,,,,1,0,1,0,0,4,4,4,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.062124248496994,93.25041020009667,None,93.25041020009667,None,94.31716630002484,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face3M1_Fa.xlsx,,images/3M1_Fa_BD.jpg,images/3M1_Fa_BD.jpg,45,45,1,1,3,1,1,0,1,0,1,0,0,4,4,4,,,,,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0771543086172344,1,95.37892320007086,None,95.37892320007086,None,96.45044929999858,97.45013169990852,96.45044929999858,97.45013169990852,96.45044929999858,97.45013169990852,96.45044929999858,97.45013169990852,96.45044929999858,97.45013169990852,None,0,96.45044929999858,97.950169299962,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face3M1_Fa.xlsx,,,,,,,,,,,,1,0,1,0,0,4,4,4,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face4F1_Fa.xlsx,COLOR,,,,,,,,,,,1,0,1,0,0,5,5,6,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0080160320641283,97.98657769989222,None,97.98657769989222,None,99.00022879987955,None,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face4F1_Fa.xlsx,,images/4F1_Fa_BS.jpg,images/4F1_Fa_BS.jpg,0,0,1,1,4,0,1,0,1,0,1,0,0,5,5,6,,,,,0,0,0,10,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.3967935871743486,1,100.07173589989543,None,100.07173589989543,None,101.4669802999124,102.4668674999848,101.4669802999124,102.4668674999848,101.4669802999124,102.4668674999848,101.4669802999124,102.4668674999848,101.4669802999124,102.4668674999848,None,0,101.4669802999124,102.96689989999868,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face4F1_Fa.xlsx,,,,,,,,,,,,1,0,1,0,0,5,5,6,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face2M1_Sc.xlsx,COLOR,,,,,,,,,,,1,0,1,0,0,6,6,3,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.473947895791583,103.00006669992581,None,103.00006669992581,None,104.46721210004762,105.4670520001091,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face2M1_Sc.xlsx,,images/2M1_Sc_BS.jpg,images/2M1_Sc_BD.jpg,0,45,1,1,2,1,1,1,1,0,1,0,0,6,6,3,,,,,0,0,0,8,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.2645290581162323,1,105.54820890002884,None,105.54820890002884,None,106.80027849995531,107.80073009990156,106.80027849995531,107.80073009990156,106.80027849995531,107.80073009990156,106.80027849995531,107.80073009990156,106.80027849995531,107.80073009990156,None,0,106.80027849995531,108.30075290007517,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face2M1_Sc.xlsx,,,,,,,,,,,,1,0,1,0,0,6,6,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face1F1_Sc.xlsx,COLOR,,,,,,,,,,,1,0,1,0,0,7,7,1,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0220440881763526,108.33486189995892,None,108.33486189995892,None,109.35016290005296,110.35039260005578,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face1F1_Sc.xlsx,,images/1F1_Sc_BD.jpg,images/1F1_Sc_OD.jpg,45,45,1,0,1,0,1,1,1,0,1,0,0,7,7,1,,,,,0,0,0,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.0190380761523046,1,110.44331260002218,None,110.44331260002218,None,111.45067239995115,112.4501366999466,111.45067239995115,112.4501366999466,111.45067239995115,112.4501366999466,111.45067239995115,112.4501366999466,111.45067239995115,112.4501366999466,None,0,111.45067239995115,112.95062400004826,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",face1F1_Sc.xlsx,,,,,,,,,,,,1,0,1,0,0,7,7,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do.",,,,,,,,,,,,,1,0,1,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,112.96686509996653,None,1,9.840939000016078,112.96686509996653,None,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+shape.xlsx,1,1,SHAPE Game Practice,"
+
+
+
+In this game, you have to focus on the SHAPE of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which SHAPE. Ignore the color words for now.","
+
+
+
+
+
+
+The word SHAPE will be presented before each image to remind you what to do.",face3M1_Fa.xlsx,SHAPE,,,,,,,,,,,,,,,,,,,,,,,,,,,0,0,0,0,0,0,0,4,0,0,0,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,122.86394650000148,None,122.86394650000148,None,122.86394650000148,None,122.86394650000148,None,122.86394650000148,None,122.86394650000148,None,122.86394650000148,None,1,1.3486320998053998,122.86394650000148,None,124.24018170009367,None,124.24018170009367,None,124.24018170009367,None,124.24018170009367,None,124.24018170009367,None,124.24018170009367,None,1,0.46955899987369776,124.24018170009367,None,1.1082164328657313,124.74933620006777,None,124.74933620006777,None,125.8506289999932,126.85058180009946,,,,,,,,,,,,,,,,,,,,,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+shape.xlsx,1,1,SHAPE Game Practice,"
+
+
+
+In this game, you have to focus on the SHAPE of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which SHAPE. Ignore the color words for now.","
+
+
+
+
+
+
+The word SHAPE will be presented before each image to remind you what to do.",face3M1_Fa.xlsx,,images/3M1_Fa_BD.jpg,images/3M1_Fa_OS.jpg,45,0,1,0,3,1,1,0,,,,,,,,,,,,,,,,,0,0,0,0,0,0,0,4,,,,,0,0,0,3,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.251503006012024,1,126.93713460001163,None,126.93713460001163,None,128.18403370003216,129.1834988000337,128.18403370003216,129.1834988000337,128.18403370003216,129.1834988000337,128.18403370003216,129.1834988000337,128.18403370003216,129.1834988000337,None,0,128.18403370003216,129.68366959993728,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+shape.xlsx,1,1,SHAPE Game Practice,"
+
+
+
+In this game, you have to focus on the SHAPE of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which SHAPE. Ignore the color words for now.","
+
+
+
+
+
+
+The word SHAPE will be presented before each image to remind you what to do.",face3M1_Fa.xlsx,,images/3M1_Fa_OD.jpg,images/3M1_Fa_OD.jpg,45,45,0,0,3,1,1,0,,,,,,,,,,,,,,,,,0,0,0,0,0,0,0,4,,,,,0,1,1,5,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.374749498997996,1,129.7481650998816,129.7481650998816,129.7481650998816,129.7481650998816,131.11738059995696,132.11737979995087,131.11738059995696,132.11737979995087,131.11738059995696,132.11737979995087,131.11738059995696,132.11737979995087,131.11738059995696,132.11737979995087,None,0,131.11738059995696,132.61731050000526,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+shape.xlsx,1,1,SHAPE Game Practice,"
+
+
+
+In this game, you have to focus on the SHAPE of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which SHAPE. Ignore the color words for now.","
+
+
+
+
+
+
+The word SHAPE will be presented before each image to remind you what to do.",face3M1_Fa.xlsx,,images/3M1_Fa_BD.jpg,images/3M1_Fa_BD.jpg,45,45,1,1,3,1,1,0,,,,,,,,,,,,,,,,,0,0,0,0,0,0,0,4,,,,,0,2,2,0,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.413827655310621,1,132.68040680000558,132.68040680000558,132.68040680000558,132.68040680000558,134.08402019995265,135.0838989999611,134.08402019995265,135.0838989999611,134.08402019995265,135.0838989999611,134.08402019995265,135.0838989999611,134.08402019995265,135.0838989999611,None,0,134.08402019995265,135.58361100009643,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+shape.xlsx,1,1,SHAPE Game Practice,"
+
+
+
+In this game, you have to focus on the SHAPE of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which SHAPE. Ignore the color words for now.","
+
+
+
+
+
+
+The word SHAPE will be presented before each image to remind you what to do.",face3M1_Fa.xlsx,,images/3M1_Fa_OS.jpg,images/3M1_Fa_OS.jpg,0,0,0,0,3,1,1,0,,,,,,,,,,,,,,,,,0,0,0,0,0,0,0,4,,,,,0,3,3,15,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.187374749498998,1,135.6473302000668,135.6473302000668,135.6473302000668,135.6473302000668,136.83394029992633,137.83393980003893,136.83394029992633,137.83393980003893,136.83394029992633,137.83393980003893,136.83394029992633,137.83393980003893,136.83394029992633,137.83393980003893,None,0,136.83394029992633,138.33391260006465,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+shape.xlsx,1,1,SHAPE Game Practice,"
+
+
+
+In this game, you have to focus on the SHAPE of the center image
+
+Press the left button with your left index finger, if:
+
+Press the right button with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which SHAPE. Ignore the color words for now.","
+
+
+
+
+
+
+The word SHAPE will be presented before each image to remind you what to do.",face3M1_Fa.xlsx,,images/3M1_Fa_OD.jpg,images/3M1_Fa_OS.jpg,45,0,0,0,3,1,1,0,,,,,,,,,,,,,,,,,0,0,0,0,0,0,0,4,,,,,0,4,4,7,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.2775551102204408,1,138.3997009000741,138.3997009000741,138.3997009000741,138.3997009000741,139.66732080001384,140.6672465999145,139.66732080001384,140.6672465999145,139.66732080001384,140.6672465999145,139.66732080001384,140.6672465999145,139.66732080001384,140.6672465999145,None,0,139.66732080001384,141.16728430008516,,,,,,,,001,2022_Feb_08_2158,multiEF-Practice,2021.2.3,60.018821906126796,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,1.2865731462925851,1,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

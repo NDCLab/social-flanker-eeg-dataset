@@ -423,7 +423,7 @@
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="size" updates="constant" val="(.04, .04)" valType="code"/>
+        <Param name="size" updates="constant" val="[.04, .04]" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -449,7 +449,7 @@
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(.05, 0)" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="size" updates="constant" val="(.04, .04)" valType="code"/>
+        <Param name="size" updates="constant" val="[.04, .04]" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -475,7 +475,7 @@
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(.1, 0)" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="size" updates="constant" val="(.04, .04)" valType="code"/>
+        <Param name="size" updates="constant" val="[.04, .04]" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -501,7 +501,7 @@
         <Param name="ori" updates="constant" val="0" valType="code"/>
         <Param name="pos" updates="constant" val="(-.05, 0)" valType="code"/>
         <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
-        <Param name="size" updates="constant" val="(.04, .04)" valType="code"/>
+        <Param name="size" updates="constant" val="[.04, .04]" valType="code"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
         <Param name="startVal" updates="None" val="0.0" valType="code"/>
@@ -655,7 +655,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="You will now begin the actual game. &amp;#10;&amp;#10;Please ring bell and wait for experimenter to continue" valType="extendedStr"/>
+        <Param name="text" updates="constant" val="You will now begin the actual game. &amp;#10;&amp;#10;Experimenter: press key to continue" valType="extendedStr"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="1.3" valType="code"/>
       </TextComponent>
@@ -742,7 +742,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="You will now practice responding to the arrows. Remember to always respond to the direction of the MIDDLE arrow.&amp;#10;&amp;#10;Respond as quickly as you can without making mistakes.&amp;#10;&amp;#10;To get ready, rest your right and left index fingers on the right and left buttons, then press the right button when you are ready to begin.&amp;#10;" valType="extendedStr"/>
+        <Param name="text" updates="constant" val="You will now practice responding to the arrows. Remember to always respond to the direction of the MIDDLE arrow.&amp;#10;&amp;#10;Respond as quickly as you can without making mistakes.&amp;#10;&amp;#10;To get ready, rest your right and left thumbs on the right and left buttons, then press the right button when you are ready to begin.&amp;#10;" valType="extendedStr"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="1.3" valType="code"/>
       </TextComponent>
@@ -784,7 +784,7 @@
         <Param name="name" updates="None" val="task_blockReminder_code" valType="code"/>
       </CodeComponent>
       <TextComponent name="task_blockText">
-        <Param name="color" updates="constant" val="white" valType="color"/>
+        <Param name="color" updates="constant" val="$[-0.3,-0.3,-0.3]" valType="color"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="contrast" updates="constant" val="1" valType="num"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
@@ -821,7 +821,7 @@
         <Param name="name" updates="None" val="task_blockReminders_text" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
-        <Param name="pos" updates="constant" val="(0, -.1)" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, -.25)" valType="code"/>
         <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -829,7 +829,7 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Please rest your right and left index fingers on the right and left buttons. When you are ready, press the right button to begin.&amp;#10;" valType="extendedStr"/>
+        <Param name="text" updates="constant" val="Remember to limit blinking to about about once every ten seconds (or less).&amp;#10;&amp;#10;Please try to relax the muscles in your face, neck, and shoulders. &amp;#10;&amp;#10;Rest your right and left thumbs on the right and left buttons. When you are ready, press the right button to begin.&amp;#10;" valType="extendedStr"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="1.3" valType="code"/>
       </TextComponent>
@@ -871,7 +871,7 @@
         <Param name="name" updates="None" val="task_blockFeed_code" valType="code"/>
       </CodeComponent>
       <TextComponent name="task_blockFeed_text">
-        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="color" updates="constant" val="$[-0.3,-0.3,-0.3]" valType="str"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="contrast" updates="constant" val="1" valType="num"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
@@ -970,8 +970,8 @@
         <Param name="Before JS Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin JS Experiment" updates="constant" val="" valType="extendedCode"/>
-        <Param name="Begin JS Routine" updates="constant" val="blockAcc = (numCorr / trialNum);&amp;#10;if ((blockAcc &gt;= 0.75)) {&amp;#10;    outPut = &quot;You have completed the practice&quot;;&amp;#10;    prac_block_loop.finished = true;&amp;#10;} else {&amp;#10;    if ((blockAcc &lt;= 0.75)) {&amp;#10;        outPut = &quot;Please try the practice again&quot;;&amp;#10;        prac_block_loop.finished = false;&amp;#10;    }&amp;#10;}&amp;#10;trialNum = 0;&amp;#10;numCorr = 0;&amp;#10;" valType="extendedCode"/>
-        <Param name="Begin Routine" updates="constant" val="blockAcc = numCorr / trialNum #compute accuracy for this block&amp;#10;&amp;#10;if blockAcc &gt;= .75: #if accuracy &gt;= 75% then say practice is complete and end practice loop to continue to main exp&amp;#10;    outPut = 'You have completed the practice' #feedback presented&amp;#10;    prac_block_loop.finished = True #end practice loop to continue to main exp&amp;#10;elif blockAcc &lt;= .75: #if accuracy &lt; 75% then say that practice needs to be repeated and DO NOT end practice loop, instead, allow it to repeat&amp;#10;    outPut = 'Please try the practice again' #feedback presented&amp;#10;    prac_block_loop.finished = False #DO NOT end practice loop and allow to repeat&amp;#10;&amp;#10;#reset the following variables to zero before the next practice block starts&amp;#10;trialNum = 0&amp;#10;numCorr = 0" valType="extendedCode"/>
+        <Param name="Begin JS Routine" updates="constant" val="blockAcc = (numCorr / trialNum);&amp;#10;if ((blockAcc &gt;= 0.75)) {&amp;#10;    outPut = &quot;You will now play the real game&quot;;&amp;#10;    prac_block_loop.finished = true;&amp;#10;} else {&amp;#10;    if ((blockAcc &lt;= 0.75)) {&amp;#10;        outPut = &quot;Please try the practice again&quot;;&amp;#10;        prac_block_loop.finished = false;&amp;#10;    }&amp;#10;}&amp;#10;trialNum = 0;&amp;#10;numCorr = 0;&amp;#10;" valType="extendedCode"/>
+        <Param name="Begin Routine" updates="constant" val="blockAcc = numCorr / trialNum #compute accuracy for this block&amp;#10;&amp;#10;if blockAcc &gt;= .75: #if accuracy &gt;= 75% then say practice is complete and end practice loop to continue to main exp&amp;#10;    outPut = 'You will now play the real game' #feedback presented&amp;#10;    prac_block_loop.finished = True #end practice loop to continue to main exp&amp;#10;elif blockAcc &lt;= .75: #if accuracy &lt; 75% then say that practice needs to be repeated and DO NOT end practice loop, instead, allow it to repeat&amp;#10;    outPut = 'Please try the practice again' #feedback presented&amp;#10;    prac_block_loop.finished = False #DO NOT end practice loop and allow to repeat&amp;#10;&amp;#10;#reset the following variables to zero before the next practice block starts&amp;#10;trialNum = 0&amp;#10;numCorr = 0" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Auto-&gt;JS" valType="str"/>
         <Param name="Each Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
@@ -1028,12 +1028,12 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Press the right key to continue" valType="str"/>
+        <Param name="text" updates="constant" val="Experimenter: press key to continue" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
         <Param name="wrapWidth" updates="constant" val="1.3" valType="num"/>
       </TextComponent>
       <KeyboardComponent name="prac_blockFeed_keyResp">
-        <Param name="allowedKeys" updates="constant" val="'8'" valType="code"/>
+        <Param name="allowedKeys" updates="constant" val="'c'" valType="code"/>
         <Param name="correctAns" updates="constant" val="" valType="str"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="discard previous" updates="constant" val="True" valType="bool"/>
@@ -1817,7 +1817,7 @@
         <Param name="name" updates="None" val="condition_init_blockCounter" valType="code"/>
       </CodeComponent>
       <TextComponent name="condition_whichCondition_text">
-        <Param name="color" updates="constant" val="white" valType="color"/>
+        <Param name="color" updates="constant" val="$[-0.3,-0.3,-0.3]" valType="color"/>
         <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
         <Param name="contrast" updates="constant" val="1" valType="num"/>
         <Param name="disabled" updates="None" val="False" valType="bool"/>
@@ -1825,11 +1825,11 @@
         <Param name="flip" updates="constant" val="None" valType="str"/>
         <Param name="font" updates="constant" val="Arial" valType="str"/>
         <Param name="languageStyle" updates="None" val="LTR" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.06" valType="num"/>
+        <Param name="letterHeight" updates="constant" val="0.12" valType="num"/>
         <Param name="name" updates="None" val="condition_whichCondition_text" valType="code"/>
         <Param name="opacity" updates="constant" val="" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
-        <Param name="pos" updates="constant" val="(0, .3)" valType="list"/>
+        <Param name="pos" updates="constant" val="(0, 0.1)" valType="list"/>
         <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -1839,7 +1839,7 @@
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
         <Param name="text" updates="set every repeat" val="$conditionText" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
-        <Param name="wrapWidth" updates="constant" val="1.3" valType="num"/>
+        <Param name="wrapWidth" updates="constant" val="1.8" valType="num"/>
       </TextComponent>
       <TextComponent name="condition_reminder_text">
         <Param name="color" updates="constant" val="white" valType="color"/>
@@ -1854,7 +1854,7 @@
         <Param name="name" updates="None" val="condition_reminder_text" valType="code"/>
         <Param name="opacity" updates="constant" val="" valType="num"/>
         <Param name="ori" updates="constant" val="0" valType="num"/>
-        <Param name="pos" updates="constant" val="(0, 0)" valType="list"/>
+        <Param name="pos" updates="constant" val="(0, -.3)" valType="list"/>
         <Param name="saveStartStop" updates="None" val="False" valType="bool"/>
         <Param name="startEstim" updates="None" val="" valType="code"/>
         <Param name="startType" updates="None" val="time (s)" valType="str"/>
@@ -1862,9 +1862,9 @@
         <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
         <Param name="stopVal" updates="constant" val="" valType="code"/>
         <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
-        <Param name="text" updates="constant" val="Remember to always respond to the direction of the MIDDLE arrow.&amp;#10;&amp;#10;Respond as quickly as you can without making mistakes.&amp;#10;&amp;#10;Rest your right and left index fingers on the right and left buttons, then press the right button when you are ready to begin.&amp;#10;Please ring bell and wait for experimenter to continue" valType="str"/>
+        <Param name="text" updates="constant" val="Experimenter: provide instructions and then press key to continue" valType="str"/>
         <Param name="units" updates="None" val="from exp settings" valType="str"/>
-        <Param name="wrapWidth" updates="constant" val="" valType="num"/>
+        <Param name="wrapWidth" updates="constant" val="1.8" valType="num"/>
       </TextComponent>
       <KeyboardComponent name="condition_keyResp">
         <Param name="allowedKeys" updates="constant" val="'c'" valType="list"/>
@@ -1967,7 +1967,6 @@
     <LoopTerminator name="prac_trial_loop"/>
     <Routine name="prac_blockFeed"/>
     <LoopTerminator name="prac_block_loop"/>
-    <Routine name="instructMainTask"/>
     <LoopInitiator loopType="TrialHandler" name="task_condition_loop">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="None" valType="str"/>
@@ -2010,6 +2009,5 @@
     <LoopTerminator name="task_block_loop"/>
     <Routine name="task_conditionComplete"/>
     <LoopTerminator name="task_condition_loop"/>
-    <Routine name="finishMessage"/>
   </Flow>
 </PsychoPy2experiment>

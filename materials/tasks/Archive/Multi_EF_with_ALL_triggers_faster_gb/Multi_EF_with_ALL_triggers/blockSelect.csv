@@ -1,0 +1,146 @@
+whichBlock,practice,numberReps,taskNameSource,taskTextSource,cueReminderTextSource
+color.xlsx,1,1,COLOR Game Practice,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+Press the Z key with your left index finger, if:
+
+Press the M key with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each
+image to remind you what to do."
+color.xlsx,0,3,COLOR Game,"
+
+
+
+In this game, you have to focus on the COLOR of the center image
+
+ Press the Z key with your left index finger, if:
+
+ Press the M key with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR. Ignore the shape words for now.","
+
+
+
+
+
+
+The word COLOR will be presented before each image to remind you what to do."
+shape.xlsx,1,1,SHAPE Game Practice,"
+
+
+
+In this game, you have to focus on the SHAPE of the center image
+
+Press the Z key with your left index finger, if:
+
+Press the M key with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which SHAPE. Ignore the color words for now.","
+
+
+
+
+
+
+The word SHAPE will be presented before each image to remind you what to do."
+shape.xlsx,0,3,SHAPE Game,"
+
+
+
+In this game, you have to focus on the SHAPE of the center image
+
+Press the Z key with your left index finger, if:
+
+Press the M key with your right index finger, if:
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which SHAPE. Ignore the color words for now.","
+
+
+
+
+
+
+The word SHAPE will be presented before each image to remind you what to do."
+switch.xlsx,1,1,SWITCH Game Practice,"
+
+
+
+
+
+In this game, you have to SWITCH your focus
+to either the COLOR or SHAPE or the center image.
+If the word appearing before the image says COLOR,
+then focus on the COLOR of the center image.
+However, if the word appearing before the image says SHAPE,
+then focus on the SHAPE of the center image.
+
+Press the Z key with your left index finger, if:
+
+
+Press the M key with your right index finger, if:
+
+
+
+Labels in the lower-left and lower-right of the screen will remind you 
+which hand to use for which COLOR and SHAPE.
+","
+
+
+
+
+
+
+
+
+The word COLOR or SHAPE will be presented before each image to inform you how to respond."
+switch.xlsx,0,2,SWITCH Game,"
+
+
+
+
+
+In this game, you have to SWITCH your focus
+to either the COLOR or SHAPE or the center image.
+If the word appearing before the image says COLOR,
+then focus on the COLOR of the center image.
+However, if the word appearing before the image says SHAPE,
+then focus on the SHAPE of the center image.
+
+Press the Z key with your left index finger, if:
+
+
+Press the M key with your right index finger, if:
+
+
+
+Labels in the lower-left and lower-right of the screen will remind you
+which hand to use for which COLOR and SHAPE.
+","
+
+
+
+
+
+
+
+
+The word COLOR or SHAPE will be presented before each image to inform you how to respond."

@@ -1,8 +1,8 @@
 ﻿#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-This experiment was created using PsychoPy3 Experiment Builder (v2021.2.3),
-    on May 12, 2022, at 14:02
+This experiment was created using PsychoPy3 Experiment Builder (v2022.2.4),
+    on March 14, 2023, at 16:47
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -11,12 +11,11 @@ If you publish work using this script the most relevant publication is:
 
 """
 
-from __future__ import absolute_import, division
-
+# --- Import packages ---
 from psychopy import locale_setup
 from psychopy import prefs
 prefs.hardware['audioLib'] = 'ptb'
-from psychopy import sound, gui, visual, core, data, event, logging, clock, colors
+from psychopy import sound, gui, visual, core, data, event, logging, clock, colors, layout
 from psychopy.constants import (NOT_STARTED, STARTED, PLAYING, PAUSED,
                                 STOPPED, FINISHED, PRESSED, RELEASED, FOREVER)
 
@@ -27,6 +26,7 @@ from numpy.random import random, randint, normal, shuffle, choice as randchoice
 import os  # handy system and path functions
 import sys  # to get file system encoding
 
+import psychopy.iohub as io
 from psychopy.hardware import keyboard
 
 
@@ -34,11 +34,16 @@ from psychopy.hardware import keyboard
 # Ensure that relative paths start from the same directory as this script
 _thisDir = os.path.dirname(os.path.abspath(__file__))
 os.chdir(_thisDir)
-
 # Store info about the experiment session
-psychopyVersion = '2021.2.3'
+psychopyVersion = '2022.2.4'
 expName = 'flanker-basic_v5'  # from the Builder filename that created this script
-expInfo = {'id': '1', 'counterbalance': ['A', 'B'], 'session': '1', 'run': '1'}
+expInfo = {
+    'id': '1',
+    'counterbalance': ['A', 'B'],
+    'session': '1',
+    'run': '1',
+}
+# --- Show participant info dialog --
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
 if dlg.OK == False:
     core.quit()  # user pressed cancel
@@ -52,7 +57,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s_%s_%s_%s' % (expInfo['id'], expIn
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\Users\\NDClab\\Desktop\\Experiments\\social-flanker-eeg\\flanker-basic-v5\\flanker-basic_v5_lastrun.py',
+    originPath='C:\\Users\\NDClab\\Desktop\\Experiments\\SFE\\flanker-basic-v5\\flanker-basic_v5_lastrun.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 # save a log file for detail verbose info
@@ -64,31 +69,39 @@ frameTolerance = 0.001  # how close to onset before 'same' frame
 
 # Start Code - component code to be run after the window creation
 
-# Setup the Window
+# --- Setup the Window ---
 win = visual.Window(
     size=[1536, 864], fullscr=True, screen=0, 
-    winType='pyglet', allowGUI=False, allowStencil=False,
+    winType='pyglet', allowStencil=False,
     monitor='testMonitor', color=[-1,-1,-1], colorSpace='rgb',
     blendMode='avg', useFBO=True, 
     units='height')
+win.mouseVisible = False
 # store frame rate of monitor if we can measure it
 expInfo['frameRate'] = win.getActualFrameRate()
 if expInfo['frameRate'] != None:
     frameDur = 1.0 / round(expInfo['frameRate'])
 else:
     frameDur = 1.0 / 60.0  # could not measure, so guess
+# --- Setup input devices ---
+ioConfig = {}
 
-# Setup eyetracking
-ioDevice = ioConfig = ioSession = ioServer = eyetracker = None
+# Setup iohub keyboard
+ioConfig['Keyboard'] = dict(use_keymap='psychopy')
+
+ioSession = '1'
+if 'session' in expInfo:
+    ioSession = str(expInfo['session'])
+ioServer = io.launchHubServer(window=win, **ioConfig)
+eyetracker = None
 
 # create a default keyboard (e.g. to check for escape)
-defaultKeyboard = keyboard.Keyboard()
+defaultKeyboard = keyboard.Keyboard(backend='iohub')
 
-# Initialize components for Routine "JS_code"
-JS_codeClock = core.Clock()
+# --- Initialize components for Routine "JS_code" ---
 
-# Initialize components for Routine "setup"
-setupClock = core.Clock()
+# --- Initialize components for Routine "setup" ---
+# Run 'Begin Experiment' code from setup_code
 import serial #used for sending eeg triggers
 import time #indirerctly used for sending eeg triggers (how long to wait before clearing port)
 
@@ -99,8 +112,7 @@ PulseWidth = 0.002 #how long to wait before clearing port after sending trigger 
 port.write([0x00]) #clear serial port
 time.sleep(PulseWidth) #wait PulseWidth amount of time before doing anything else
 
-# Initialize components for Routine "welcome"
-welcomeClock = core.Clock()
+# --- Initialize components for Routine "welcome" ---
 welcome_text = visual.TextStim(win=win, name='welcome_text',
     text='Arrow Game\n\nWelcome to the arrow game. In this game, arrows will be quickly flashed on the screen. Your goal is to respond to the direction of the MIDDLE arrow, and to respond as quickly as you can without making mistakes. \n\nIf the MIDDLE arrow is pointing to the right, use your right hand to press the right button. If the MIDDLE arrow is pointing to the left, use your left hand to press the left button. \n\nPress the right button to continue\n',
     font='Arial',
@@ -110,8 +122,7 @@ welcome_text = visual.TextStim(win=win, name='welcome_text',
     depth=0.0);
 welcome_keyResp = keyboard.Keyboard()
 
-# Initialize components for Routine "instructRight"
-instructRightClock = core.Clock()
+# --- Initialize components for Routine "instructRight" ---
 instructRight_text = visual.TextStim(win=win, name='instructRight_text',
     text='Below, the MIDDLE arrow is pointing to the right, so you would respond by pressing the right button with your right hand.\n\nPress the right button to continue',
     font='Arial',
@@ -122,7 +133,7 @@ instructRight_text = visual.TextStim(win=win, name='instructRight_text',
 instructRight_centerImg = visual.ImageStim(
     win=win,
     name='instructRight_centerImg', 
-    image='img/rightArrow.png', mask=None,
+    image='img/rightArrow.png', mask=None, anchor='center',
     ori=0, pos=(0, -.3), size=(.04, .04),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
@@ -130,7 +141,7 @@ instructRight_centerImg = visual.ImageStim(
 instructRight_rightImg1 = visual.ImageStim(
     win=win,
     name='instructRight_rightImg1', 
-    image='img/rightArrow.png', mask=None,
+    image='img/rightArrow.png', mask=None, anchor='center',
     ori=0, pos=(.05, -.3), size=(.04, .04),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
@@ -138,7 +149,7 @@ instructRight_rightImg1 = visual.ImageStim(
 instructRight_rightImg2 = visual.ImageStim(
     win=win,
     name='instructRight_rightImg2', 
-    image='img/rightArrow.png', mask=None,
+    image='img/rightArrow.png', mask=None, anchor='center',
     ori=0, pos=(.1, -.3), size=(.04, .04),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
@@ -146,7 +157,7 @@ instructRight_rightImg2 = visual.ImageStim(
 instructRight_leftImg1 = visual.ImageStim(
     win=win,
     name='instructRight_leftImg1', 
-    image='img/rightArrow.png', mask=None,
+    image='img/rightArrow.png', mask=None, anchor='center',
     ori=0, pos=(-.05, -.3), size=(.04, .04),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
@@ -154,15 +165,14 @@ instructRight_leftImg1 = visual.ImageStim(
 instructRight_leftImg2 = visual.ImageStim(
     win=win,
     name='instructRight_leftImg2', 
-    image='img/rightArrow.png', mask=None,
+    image='img/rightArrow.png', mask=None, anchor='center',
     ori=0, pos=(-.1, -.3), size=(.04, .04),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=512, interpolate=True, depth=-5.0)
 insructRight_keyResp = keyboard.Keyboard()
 
-# Initialize components for Routine "instructLeft"
-instructLeftClock = core.Clock()
+# --- Initialize components for Routine "instructLeft" ---
 instructLeft_text = visual.TextStim(win=win, name='instructLeft_text',
     text='Below, the MIDDLE arrow is pointing to the left, so you would respond by pressing the left button with your left hand.\n\nPress the left button to continue',
     font='Arial',
@@ -173,7 +183,7 @@ instructLeft_text = visual.TextStim(win=win, name='instructLeft_text',
 instructLeft_centerImg = visual.ImageStim(
     win=win,
     name='instructLeft_centerImg', 
-    image='img/leftArrow.png', mask=None,
+    image='img/leftArrow.png', mask=None, anchor='center',
     ori=0, pos=(0, -.3), size=(.04, .04),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
@@ -181,7 +191,7 @@ instructLeft_centerImg = visual.ImageStim(
 instructLeft_rightImg1 = visual.ImageStim(
     win=win,
     name='instructLeft_rightImg1', 
-    image='img/leftArrow.png', mask=None,
+    image='img/leftArrow.png', mask=None, anchor='center',
     ori=0, pos=(.05, -.3), size=(.04, .04),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
@@ -189,7 +199,7 @@ instructLeft_rightImg1 = visual.ImageStim(
 instructLeft_rightImg2 = visual.ImageStim(
     win=win,
     name='instructLeft_rightImg2', 
-    image='img/leftArrow.png', mask=None,
+    image='img/leftArrow.png', mask=None, anchor='center',
     ori=0, pos=(.1, -.3), size=(.04, .04),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
@@ -197,7 +207,7 @@ instructLeft_rightImg2 = visual.ImageStim(
 instructLeft_leftImg1 = visual.ImageStim(
     win=win,
     name='instructLeft_leftImg1', 
-    image='img/leftArrow.png', mask=None,
+    image='img/leftArrow.png', mask=None, anchor='center',
     ori=0, pos=(-.05, -.3), size=(.04, .04),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
@@ -205,15 +215,14 @@ instructLeft_leftImg1 = visual.ImageStim(
 instructLeft_leftImg2 = visual.ImageStim(
     win=win,
     name='instructLeft_leftImg2', 
-    image='img/leftArrow.png', mask=None,
+    image='img/leftArrow.png', mask=None, anchor='center',
     ori=0, pos=(-.1, -.3), size=(.04, .04),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=512, interpolate=True, depth=-5.0)
 instructLeft_keyResp = keyboard.Keyboard()
 
-# Initialize components for Routine "instructInconRight"
-instructInconRightClock = core.Clock()
+# --- Initialize components for Routine "instructInconRight" ---
 instructInconRight_text = visual.TextStim(win=win, name='instructInconRight_text',
     text='Sometimes the MIDDLE arrow will point in a different direction from the other arrows. However, your goal is to always respond based on the direction of the MIDDLE arrow.\n\nBelow, the MIDDLE arrow is pointing to the right, so you would respond by pressing the right button with your right hand.\n\nPress the right button to continue',
     font='Arial',
@@ -224,7 +233,7 @@ instructInconRight_text = visual.TextStim(win=win, name='instructInconRight_text
 instructIncon_centerImg = visual.ImageStim(
     win=win,
     name='instructIncon_centerImg', 
-    image='img/rightArrow.png', mask=None,
+    image='img/rightArrow.png', mask=None, anchor='center',
     ori=0, pos=(0, -.3), size=(.04, .04),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
@@ -232,7 +241,7 @@ instructIncon_centerImg = visual.ImageStim(
 instructIncon_rightImg1 = visual.ImageStim(
     win=win,
     name='instructIncon_rightImg1', 
-    image='img/leftArrow.png', mask=None,
+    image='img/leftArrow.png', mask=None, anchor='center',
     ori=0, pos=(.05, -.3), size=(.04, .04),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
@@ -240,7 +249,7 @@ instructIncon_rightImg1 = visual.ImageStim(
 instructIncon_rightImg2 = visual.ImageStim(
     win=win,
     name='instructIncon_rightImg2', 
-    image='img/leftArrow.png', mask=None,
+    image='img/leftArrow.png', mask=None, anchor='center',
     ori=0, pos=(.1, -.3), size=(.04, .04),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
@@ -248,7 +257,7 @@ instructIncon_rightImg2 = visual.ImageStim(
 instructIncon_leftImg1 = visual.ImageStim(
     win=win,
     name='instructIncon_leftImg1', 
-    image='img/leftArrow.png', mask=None,
+    image='img/leftArrow.png', mask=None, anchor='center',
     ori=0, pos=(-.05, -.3), size=(.04, .04),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
@@ -256,15 +265,14 @@ instructIncon_leftImg1 = visual.ImageStim(
 instructInconRight_leftImg2 = visual.ImageStim(
     win=win,
     name='instructInconRight_leftImg2', 
-    image='img/leftArrow.png', mask=None,
+    image='img/leftArrow.png', mask=None, anchor='center',
     ori=0, pos=(-.1, -.3), size=(.04, .04),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=512, interpolate=True, depth=-5.0)
 insructInconRight_keyResp = keyboard.Keyboard()
 
-# Initialize components for Routine "instructInconLeft"
-instructInconLeftClock = core.Clock()
+# --- Initialize components for Routine "instructInconLeft" ---
 instructInconLeft_text = visual.TextStim(win=win, name='instructInconLeft_text',
     text='Below, the MIDDLE arrow is pointing to the left, so you would respond by pressing the left button with your left hand.\n\nPress the left button to continue',
     font='Arial',
@@ -275,7 +283,7 @@ instructInconLeft_text = visual.TextStim(win=win, name='instructInconLeft_text',
 instructInconLeft_centerImg = visual.ImageStim(
     win=win,
     name='instructInconLeft_centerImg', 
-    image='img/leftArrow.png', mask=None,
+    image='img/leftArrow.png', mask=None, anchor='center',
     ori=0, pos=(0, -.3), size=(.04, .04),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
@@ -283,7 +291,7 @@ instructInconLeft_centerImg = visual.ImageStim(
 instructInconLeft_rightImg1 = visual.ImageStim(
     win=win,
     name='instructInconLeft_rightImg1', 
-    image='img/rightArrow.png', mask=None,
+    image='img/rightArrow.png', mask=None, anchor='center',
     ori=0, pos=(.05, -.3), size=(.04, .04),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
@@ -291,7 +299,7 @@ instructInconLeft_rightImg1 = visual.ImageStim(
 instructInconLeft_rightImg2 = visual.ImageStim(
     win=win,
     name='instructInconLeft_rightImg2', 
-    image='img/rightArrow.png', mask=None,
+    image='img/rightArrow.png', mask=None, anchor='center',
     ori=0, pos=(.1, -.3), size=(.04, .04),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
@@ -299,7 +307,7 @@ instructInconLeft_rightImg2 = visual.ImageStim(
 instructInconLeft_leftImg1 = visual.ImageStim(
     win=win,
     name='instructInconLeft_leftImg1', 
-    image='img/rightArrow.png', mask=None,
+    image='img/rightArrow.png', mask=None, anchor='center',
     ori=0, pos=(-.05, -.3), size=(.04, .04),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
@@ -307,15 +315,15 @@ instructInconLeft_leftImg1 = visual.ImageStim(
 instructInconLeft_leftImg2 = visual.ImageStim(
     win=win,
     name='instructInconLeft_leftImg2', 
-    image='img/rightArrow.png', mask=None,
+    image='img/rightArrow.png', mask=None, anchor='center',
     ori=0, pos=(-.1, -.3), size=(.04, .04),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=512, interpolate=True, depth=-5.0)
 instructInconLeft_keyResp = keyboard.Keyboard()
 
-# Initialize components for Routine "prac_blockReminders"
-prac_blockRemindersClock = core.Clock()
+# --- Initialize components for Routine "prac_blockReminders" ---
+# Run 'Begin Experiment' code from prac_initAcc_code
 #initialize the following variables at the start of experiment
 trialNum = 0
 accuracy = 0
@@ -329,7 +337,7 @@ prac_blockText = visual.TextStim(win=win, name='prac_blockText',
     languageStyle='LTR',
     depth=-1.0);
 prac_reminder_text = visual.TextStim(win=win, name='prac_reminder_text',
-    text='You will now practice responding to the arrows. Remember to always respond to the direction of the MIDDLE arrow.\n\nRespond as quickly as you can without making mistakes.\n\nTo get ready, rest your right and left index fingers on the right and left buttons, then press the right button when you are ready to begin.\n',
+    text='You will now practice responding to the arrows. Remember to always respond to the direction of the MIDDLE arrow.\n\nRespond as quickly as you can without making mistakes.\n\nTo get ready, rest your right and left thumbs on the right and left buttons, then press the right button when you are ready to begin.\n',
     font='Arial',
     pos=(0, 0), height=0.04, wrapWidth=1.3, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
@@ -337,57 +345,56 @@ prac_reminder_text = visual.TextStim(win=win, name='prac_reminder_text',
     depth=-2.0);
 prac_reminder_keyResp = keyboard.Keyboard()
 
-# Initialize components for Routine "initFixation"
-initFixationClock = core.Clock()
+# --- Initialize components for Routine "initFixation" ---
 initFixation_img = visual.ImageStim(
     win=win,
     name='initFixation_img', 
-    image='sin', mask=None,
+    image='sin', mask=None, anchor='center',
     ori=0, pos=(0, -.05), size=(.015, .015),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=512, interpolate=True, depth=0.0)
 
-# Initialize components for Routine "prac_stimRoutine"
-prac_stimRoutineClock = core.Clock()
+# --- Initialize components for Routine "prac_stimRoutine" ---
+# Run 'Begin Experiment' code from prac_isi_code
 #initialize the thisISI variable
 thisISI = 0
 prac_centerImg = visual.ImageStim(
     win=win,
     name='prac_centerImg', 
-    image='sin', mask=None,
-    ori=0, pos=(0, 0), size=(.04, .04),
+    image='sin', mask=None, anchor='center',
+    ori=0, pos=(0, 0), size=[.04, .04],
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=512, interpolate=True, depth=-1.0)
 prac_rightImg1 = visual.ImageStim(
     win=win,
     name='prac_rightImg1', 
-    image='sin', mask=None,
-    ori=0, pos=(.05, 0), size=(.04, .04),
+    image='sin', mask=None, anchor='center',
+    ori=0, pos=(.05, 0), size=[.04, .04],
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=512, interpolate=True, depth=-2.0)
 prac_rightImg2 = visual.ImageStim(
     win=win,
     name='prac_rightImg2', 
-    image='sin', mask=None,
-    ori=0, pos=(.1, 0), size=(.04, .04),
+    image='sin', mask=None, anchor='center',
+    ori=0, pos=(.1, 0), size=[.04, .04],
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=512, interpolate=True, depth=-3.0)
 prac_leftImg1 = visual.ImageStim(
     win=win,
     name='prac_leftImg1', 
-    image='sin', mask=None,
-    ori=0, pos=(-.05, 0), size=(.04, .04),
+    image='sin', mask=None, anchor='center',
+    ori=0, pos=(-.05, 0), size=[.04, .04],
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=512, interpolate=True, depth=-4.0)
 prac_leftImg2 = visual.ImageStim(
     win=win,
     name='prac_leftImg2', 
-    image='sin', mask=None,
+    image='sin', mask=None, anchor='center',
     ori=0, pos=(-.1, 0), size=(.04, .04),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
@@ -395,15 +402,14 @@ prac_leftImg2 = visual.ImageStim(
 prac_fixImg = visual.ImageStim(
     win=win,
     name='prac_fixImg', 
-    image='sin', mask=None,
+    image='sin', mask=None, anchor='center',
     ori=0, pos=(0, -.05), size=(.015, .015),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=512, interpolate=True, depth=-6.0)
 prac_stim_keyResp = keyboard.Keyboard()
 
-# Initialize components for Routine "prac_blockFeed"
-prac_blockFeedClock = core.Clock()
+# --- Initialize components for Routine "prac_blockFeed" ---
 prac_blockFeed_text = visual.TextStim(win=win, name='prac_blockFeed_text',
     text='',
     font='Arial',
@@ -412,7 +418,7 @@ prac_blockFeed_text = visual.TextStim(win=win, name='prac_blockFeed_text',
     languageStyle='LTR',
     depth=-1.0);
 prac_pressContinue = visual.TextStim(win=win, name='prac_pressContinue',
-    text='Press the right key to continue',
+    text='Experimenter: press key to continue',
     font='Arial',
     pos=(0, -.3), height=0.04, wrapWidth=1.3, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
@@ -420,73 +426,60 @@ prac_pressContinue = visual.TextStim(win=win, name='prac_pressContinue',
     depth=-2.0);
 prac_blockFeed_keyResp = keyboard.Keyboard()
 
-# Initialize components for Routine "instructMainTask"
-instructMainTaskClock = core.Clock()
-instructMainTask_text = visual.TextStim(win=win, name='instructMainTask_text',
-    text='You will now begin the actual game. \n\nPlease ring bell and wait for experimenter to continue',
-    font='Arial',
-    pos=(0, 0), height=0.04, wrapWidth=1.3, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=0.0);
-instructMainTask_keyResp = keyboard.Keyboard()
-
-# Initialize components for Routine "task_condition"
-task_conditionClock = core.Clock()
+# --- Initialize components for Routine "task_condition" ---
+# Run 'Begin Experiment' code from condition_init_blockCounter
 #initialize the following variables at the start of the condition
 blockCounter = 0
 condition_whichCondition_text = visual.TextStim(win=win, name='condition_whichCondition_text',
     text='',
     font='Arial',
-    pos=(0, .3), height=0.06, wrapWidth=1.3, ori=0.0, 
-    color='white', colorSpace='rgb', opacity=None, 
+    pos=(0, 0.1), height=0.12, wrapWidth=1.8, ori=0.0, 
+    color=[-0.3,-0.3,-0.3], colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=-1.0);
 condition_reminder_text = visual.TextStim(win=win, name='condition_reminder_text',
-    text='Remember to always respond to the direction of the MIDDLE arrow.\n\nRespond as quickly as you can without making mistakes.\n\nRest your right and left index fingers on the right and left buttons, then press the right button when you are ready to begin.\nPlease ring bell and wait for experimenter to continue',
+    text='Experimenter: provide instructions and then press key to continue',
     font='Arial',
-    pos=(0, 0), height=0.04, wrapWidth=None, ori=0.0, 
+    pos=(0, -.3), height=0.04, wrapWidth=1.8, ori=0.0, 
     color='white', colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=-2.0);
 condition_keyResp = keyboard.Keyboard()
 
-# Initialize components for Routine "task_blockReminders"
-task_blockRemindersClock = core.Clock()
+# --- Initialize components for Routine "task_blockReminders" ---
 task_blockText = visual.TextStim(win=win, name='task_blockText',
     text='',
     font='Arial',
     pos=(0, .1), height=0.12, wrapWidth=1.8, ori=0.0, 
-    color='white', colorSpace='rgb', opacity=None, 
+    color=[-0.3,-0.3,-0.3], colorSpace='rgb', opacity=None, 
     languageStyle='LTR',
     depth=-1.0);
 task_blockReminders_text = visual.TextStim(win=win, name='task_blockReminders_text',
-    text='Please rest your right and left index fingers on the right and left buttons. When you are ready, press the right button to begin.\n',
+    text='Remember to limit blinking to about about once every ten seconds (or less).\n\nPlease try to relax the muscles in your face, neck, and shoulders. \n\nRest your right and left thumbs on the right and left buttons. When you are ready, press the right button to begin.\n',
     font='Arial',
-    pos=(0, -.1), height=0.04, wrapWidth=1.3, ori=0, 
+    pos=(0, -.25), height=0.04, wrapWidth=1.3, ori=0, 
     color='white', colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-2.0);
 task_blockReminders_keyResp = keyboard.Keyboard()
 
-# Initialize components for Routine "initFixation"
-initFixationClock = core.Clock()
+# --- Initialize components for Routine "initFixation" ---
 initFixation_img = visual.ImageStim(
     win=win,
     name='initFixation_img', 
-    image='sin', mask=None,
+    image='sin', mask=None, anchor='center',
     ori=0, pos=(0, -.05), size=(.015, .015),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=512, interpolate=True, depth=0.0)
 
-# Initialize components for Routine "task_stimRoutine"
-task_stimRoutineClock = core.Clock()
+# --- Initialize components for Routine "task_stimRoutine" ---
+# Run 'Begin Experiment' code from task_isi_code
 #no need to initialize thisISI, as already done in practice code snippit
 task_centerImg = visual.ImageStim(
     win=win,
     name='task_centerImg', 
-    image='sin', mask=None,
+    image='sin', mask=None, anchor='center',
     ori=0, pos=(0, 0), size=(.04, .04),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
@@ -494,7 +487,7 @@ task_centerImg = visual.ImageStim(
 task_rightImg1 = visual.ImageStim(
     win=win,
     name='task_rightImg1', 
-    image='sin', mask=None,
+    image='sin', mask=None, anchor='center',
     ori=0, pos=(.05, 0), size=(.04, .04),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
@@ -502,7 +495,7 @@ task_rightImg1 = visual.ImageStim(
 task_rightImg2 = visual.ImageStim(
     win=win,
     name='task_rightImg2', 
-    image='sin', mask=None,
+    image='sin', mask=None, anchor='center',
     ori=0, pos=(.1, 0), size=(.04, .04),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
@@ -510,7 +503,7 @@ task_rightImg2 = visual.ImageStim(
 task_leftImg1 = visual.ImageStim(
     win=win,
     name='task_leftImg1', 
-    image='sin', mask=None,
+    image='sin', mask=None, anchor='center',
     ori=0, pos=(-.05, 0), size=(.04, .04),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
@@ -518,7 +511,7 @@ task_leftImg1 = visual.ImageStim(
 task_leftImg2 = visual.ImageStim(
     win=win,
     name='task_leftImg2', 
-    image='sin', mask=None,
+    image='sin', mask=None, anchor='center',
     ori=0, pos=(-.1, 0), size=(.04, .04),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
@@ -526,20 +519,19 @@ task_leftImg2 = visual.ImageStim(
 task_fixImg = visual.ImageStim(
     win=win,
     name='task_fixImg', 
-    image='sin', mask=None,
+    image='sin', mask=None, anchor='center',
     ori=0, pos=(0, -.05), size=(.015, .015),
     color=[1,1,1], colorSpace='rgb', opacity=1,
     flipHoriz=False, flipVert=False,
     texRes=512, interpolate=True, depth=-6.0)
 task_stim_keyResp = keyboard.Keyboard()
 
-# Initialize components for Routine "task_blockFeed"
-task_blockFeedClock = core.Clock()
+# --- Initialize components for Routine "task_blockFeed" ---
 task_blockFeed_text = visual.TextStim(win=win, name='task_blockFeed_text',
     text='',
     font='Arial',
     pos=(0, 0.1), height=0.12, wrapWidth=1.8, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
+    color=[-0.3,-0.3,-0.3], colorSpace='rgb', opacity=1, 
     languageStyle='LTR',
     depth=-1.0);
 task_blackFeed_text3 = visual.TextStim(win=win, name='task_blackFeed_text3',
@@ -558,8 +550,7 @@ task_blockFeed_text2 = visual.TextStim(win=win, name='task_blockFeed_text2',
     depth=-3.0);
 task_blockFeed_keyResp = keyboard.Keyboard()
 
-# Initialize components for Routine "task_conditionComplete"
-task_conditionCompleteClock = core.Clock()
+# --- Initialize components for Routine "task_conditionComplete" ---
 conditionComplete_text = visual.TextStim(win=win, name='conditionComplete_text',
     text='Please ring bell and wait for experimenter to continue',
     font='Arial',
@@ -569,22 +560,13 @@ conditionComplete_text = visual.TextStim(win=win, name='conditionComplete_text',
     depth=0.0);
 conditionComplete_key_resp = keyboard.Keyboard()
 
-# Initialize components for Routine "finishMessage"
-finishMessageClock = core.Clock()
-finishMessage_text = visual.TextStim(win=win, name='finishMessage_text',
-    text='Thank you for your participation!',
-    font='Arial',
-    pos=(0, 0), height=0.04, wrapWidth=1.3, ori=0, 
-    color='white', colorSpace='rgb', opacity=1, 
-    languageStyle='LTR',
-    depth=0.0);
-
 # Create some handy timers
 globalClock = core.Clock()  # to track the time since experiment started
-routineTimer = core.CountdownTimer()  # to track time remaining of each (non-slip) routine 
+routineTimer = core.Clock()  # to track time remaining of each (possibly non-slip) routine 
 
-# ------Prepare to start Routine "JS_code"-------
+# --- Prepare to start Routine "JS_code" ---
 continueRoutine = True
+routineForceEnded = False
 # update component parameters for each repeat
 # keep track of which components have finished
 JS_codeComponents = []
@@ -598,14 +580,13 @@ for thisComponent in JS_codeComponents:
 # reset timers
 t = 0
 _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-JS_codeClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
 frameN = -1
 
-# -------Run Routine "JS_code"-------
+# --- Run Routine "JS_code" ---
 while continueRoutine:
     # get current time
-    t = JS_codeClock.getTime()
-    tThisFlip = win.getFutureFlipTime(clock=JS_codeClock)
+    t = routineTimer.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=routineTimer)
     tThisFlipGlobal = win.getFutureFlipTime(clock=None)
     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
     # update/draw components on each frame
@@ -616,6 +597,7 @@ while continueRoutine:
     
     # check if all components have finished
     if not continueRoutine:  # a component has requested a forced-end of Routine
+        routineForceEnded = True
         break
     continueRoutine = False  # will revert to True if at least one component still running
     for thisComponent in JS_codeComponents:
@@ -627,15 +609,16 @@ while continueRoutine:
     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
         win.flip()
 
-# -------Ending Routine "JS_code"-------
+# --- Ending Routine "JS_code" ---
 for thisComponent in JS_codeComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
 # the Routine "JS_code" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
-# ------Prepare to start Routine "setup"-------
+# --- Prepare to start Routine "setup" ---
 continueRoutine = True
+routineForceEnded = False
 # update component parameters for each repeat
 # keep track of which components have finished
 setupComponents = []
@@ -649,14 +632,13 @@ for thisComponent in setupComponents:
 # reset timers
 t = 0
 _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-setupClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
 frameN = -1
 
-# -------Run Routine "setup"-------
+# --- Run Routine "setup" ---
 while continueRoutine:
     # get current time
-    t = setupClock.getTime()
-    tThisFlip = win.getFutureFlipTime(clock=setupClock)
+    t = routineTimer.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=routineTimer)
     tThisFlipGlobal = win.getFutureFlipTime(clock=None)
     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
     # update/draw components on each frame
@@ -667,6 +649,7 @@ while continueRoutine:
     
     # check if all components have finished
     if not continueRoutine:  # a component has requested a forced-end of Routine
+        routineForceEnded = True
         break
     continueRoutine = False  # will revert to True if at least one component still running
     for thisComponent in setupComponents:
@@ -678,15 +661,16 @@ while continueRoutine:
     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
         win.flip()
 
-# -------Ending Routine "setup"-------
+# --- Ending Routine "setup" ---
 for thisComponent in setupComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
 # the Routine "setup" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
-# ------Prepare to start Routine "welcome"-------
+# --- Prepare to start Routine "welcome" ---
 continueRoutine = True
+routineForceEnded = False
 # update component parameters for each repeat
 welcome_keyResp.keys = []
 welcome_keyResp.rt = []
@@ -703,14 +687,13 @@ for thisComponent in welcomeComponents:
 # reset timers
 t = 0
 _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-welcomeClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
 frameN = -1
 
-# -------Run Routine "welcome"-------
+# --- Run Routine "welcome" ---
 while continueRoutine:
     # get current time
-    t = welcomeClock.getTime()
-    tThisFlip = win.getFutureFlipTime(clock=welcomeClock)
+    t = routineTimer.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=routineTimer)
     tThisFlipGlobal = win.getFutureFlipTime(clock=None)
     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
     # update/draw components on each frame
@@ -752,6 +735,7 @@ while continueRoutine:
     
     # check if all components have finished
     if not continueRoutine:  # a component has requested a forced-end of Routine
+        routineForceEnded = True
         break
     continueRoutine = False  # will revert to True if at least one component still running
     for thisComponent in welcomeComponents:
@@ -763,15 +747,16 @@ while continueRoutine:
     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
         win.flip()
 
-# -------Ending Routine "welcome"-------
+# --- Ending Routine "welcome" ---
 for thisComponent in welcomeComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
 # the Routine "welcome" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
-# ------Prepare to start Routine "instructRight"-------
+# --- Prepare to start Routine "instructRight" ---
 continueRoutine = True
+routineForceEnded = False
 # update component parameters for each repeat
 insructRight_keyResp.keys = []
 insructRight_keyResp.rt = []
@@ -788,14 +773,13 @@ for thisComponent in instructRightComponents:
 # reset timers
 t = 0
 _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-instructRightClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
 frameN = -1
 
-# -------Run Routine "instructRight"-------
+# --- Run Routine "instructRight" ---
 while continueRoutine:
     # get current time
-    t = instructRightClock.getTime()
-    tThisFlip = win.getFutureFlipTime(clock=instructRightClock)
+    t = routineTimer.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=routineTimer)
     tThisFlipGlobal = win.getFutureFlipTime(clock=None)
     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
     # update/draw components on each frame
@@ -882,6 +866,7 @@ while continueRoutine:
     
     # check if all components have finished
     if not continueRoutine:  # a component has requested a forced-end of Routine
+        routineForceEnded = True
         break
     continueRoutine = False  # will revert to True if at least one component still running
     for thisComponent in instructRightComponents:
@@ -893,15 +878,16 @@ while continueRoutine:
     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
         win.flip()
 
-# -------Ending Routine "instructRight"-------
+# --- Ending Routine "instructRight" ---
 for thisComponent in instructRightComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
 # the Routine "instructRight" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
-# ------Prepare to start Routine "instructLeft"-------
+# --- Prepare to start Routine "instructLeft" ---
 continueRoutine = True
+routineForceEnded = False
 # update component parameters for each repeat
 instructLeft_keyResp.keys = []
 instructLeft_keyResp.rt = []
@@ -918,14 +904,13 @@ for thisComponent in instructLeftComponents:
 # reset timers
 t = 0
 _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-instructLeftClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
 frameN = -1
 
-# -------Run Routine "instructLeft"-------
+# --- Run Routine "instructLeft" ---
 while continueRoutine:
     # get current time
-    t = instructLeftClock.getTime()
-    tThisFlip = win.getFutureFlipTime(clock=instructLeftClock)
+    t = routineTimer.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=routineTimer)
     tThisFlipGlobal = win.getFutureFlipTime(clock=None)
     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
     # update/draw components on each frame
@@ -1012,6 +997,7 @@ while continueRoutine:
     
     # check if all components have finished
     if not continueRoutine:  # a component has requested a forced-end of Routine
+        routineForceEnded = True
         break
     continueRoutine = False  # will revert to True if at least one component still running
     for thisComponent in instructLeftComponents:
@@ -1023,15 +1009,16 @@ while continueRoutine:
     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
         win.flip()
 
-# -------Ending Routine "instructLeft"-------
+# --- Ending Routine "instructLeft" ---
 for thisComponent in instructLeftComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
 # the Routine "instructLeft" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
-# ------Prepare to start Routine "instructInconRight"-------
+# --- Prepare to start Routine "instructInconRight" ---
 continueRoutine = True
+routineForceEnded = False
 # update component parameters for each repeat
 insructInconRight_keyResp.keys = []
 insructInconRight_keyResp.rt = []
@@ -1048,14 +1035,13 @@ for thisComponent in instructInconRightComponents:
 # reset timers
 t = 0
 _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-instructInconRightClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
 frameN = -1
 
-# -------Run Routine "instructInconRight"-------
+# --- Run Routine "instructInconRight" ---
 while continueRoutine:
     # get current time
-    t = instructInconRightClock.getTime()
-    tThisFlip = win.getFutureFlipTime(clock=instructInconRightClock)
+    t = routineTimer.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=routineTimer)
     tThisFlipGlobal = win.getFutureFlipTime(clock=None)
     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
     # update/draw components on each frame
@@ -1142,6 +1128,7 @@ while continueRoutine:
     
     # check if all components have finished
     if not continueRoutine:  # a component has requested a forced-end of Routine
+        routineForceEnded = True
         break
     continueRoutine = False  # will revert to True if at least one component still running
     for thisComponent in instructInconRightComponents:
@@ -1153,15 +1140,16 @@ while continueRoutine:
     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
         win.flip()
 
-# -------Ending Routine "instructInconRight"-------
+# --- Ending Routine "instructInconRight" ---
 for thisComponent in instructInconRightComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
 # the Routine "instructInconRight" was not non-slip safe, so reset the non-slip timer
 routineTimer.reset()
 
-# ------Prepare to start Routine "instructInconLeft"-------
+# --- Prepare to start Routine "instructInconLeft" ---
 continueRoutine = True
+routineForceEnded = False
 # update component parameters for each repeat
 instructInconLeft_keyResp.keys = []
 instructInconLeft_keyResp.rt = []
@@ -1178,14 +1166,13 @@ for thisComponent in instructInconLeftComponents:
 # reset timers
 t = 0
 _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-instructInconLeftClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
 frameN = -1
 
-# -------Run Routine "instructInconLeft"-------
+# --- Run Routine "instructInconLeft" ---
 while continueRoutine:
     # get current time
-    t = instructInconLeftClock.getTime()
-    tThisFlip = win.getFutureFlipTime(clock=instructInconLeftClock)
+    t = routineTimer.getTime()
+    tThisFlip = win.getFutureFlipTime(clock=routineTimer)
     tThisFlipGlobal = win.getFutureFlipTime(clock=None)
     frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
     # update/draw components on each frame
@@ -1272,6 +1259,7 @@ while continueRoutine:
     
     # check if all components have finished
     if not continueRoutine:  # a component has requested a forced-end of Routine
+        routineForceEnded = True
         break
     continueRoutine = False  # will revert to True if at least one component still running
     for thisComponent in instructInconLeftComponents:
@@ -1283,7 +1271,7 @@ while continueRoutine:
     if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
         win.flip()
 
-# -------Ending Routine "instructInconLeft"-------
+# --- Ending Routine "instructInconLeft" ---
 for thisComponent in instructInconLeftComponents:
     if hasattr(thisComponent, "setAutoDraw"):
         thisComponent.setAutoDraw(False)
@@ -1309,8 +1297,9 @@ for thisPrac_block_loop in prac_block_loop:
         for paramName in thisPrac_block_loop:
             exec('{} = thisPrac_block_loop[paramName]'.format(paramName))
     
-    # ------Prepare to start Routine "prac_blockReminders"-------
+    # --- Prepare to start Routine "prac_blockReminders" ---
     continueRoutine = True
+    routineForceEnded = False
     # update component parameters for each repeat
     prac_reminder_keyResp.keys = []
     prac_reminder_keyResp.rt = []
@@ -1327,14 +1316,13 @@ for thisPrac_block_loop in prac_block_loop:
     # reset timers
     t = 0
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    prac_blockRemindersClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
     frameN = -1
     
-    # -------Run Routine "prac_blockReminders"-------
+    # --- Run Routine "prac_blockReminders" ---
     while continueRoutine:
         # get current time
-        t = prac_blockRemindersClock.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=prac_blockRemindersClock)
+        t = routineTimer.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
@@ -1346,6 +1334,8 @@ for thisPrac_block_loop in prac_block_loop:
             prac_blockText.tStart = t  # local t and not account for scr refresh
             prac_blockText.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(prac_blockText, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'prac_blockText.started')
             prac_blockText.setAutoDraw(True)
         
         # *prac_reminder_text* updates
@@ -1355,6 +1345,8 @@ for thisPrac_block_loop in prac_block_loop:
             prac_reminder_text.tStart = t  # local t and not account for scr refresh
             prac_reminder_text.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(prac_reminder_text, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'prac_reminder_text.started')
             prac_reminder_text.setAutoDraw(True)
         
         # *prac_reminder_keyResp* updates
@@ -1365,6 +1357,8 @@ for thisPrac_block_loop in prac_block_loop:
             prac_reminder_keyResp.tStart = t  # local t and not account for scr refresh
             prac_reminder_keyResp.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(prac_reminder_keyResp, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'prac_reminder_keyResp.started')
             prac_reminder_keyResp.status = STARTED
             # keyboard checking is just starting
             waitOnFlip = True
@@ -1385,6 +1379,7 @@ for thisPrac_block_loop in prac_block_loop:
         
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
+            routineForceEnded = True
             break
         continueRoutine = False  # will revert to True if at least one component still running
         for thisComponent in prac_blockRemindersComponents:
@@ -1396,28 +1391,22 @@ for thisPrac_block_loop in prac_block_loop:
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
     
-    # -------Ending Routine "prac_blockReminders"-------
+    # --- Ending Routine "prac_blockReminders" ---
     for thisComponent in prac_blockRemindersComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    prac_block_loop.addData('prac_blockText.started', prac_blockText.tStartRefresh)
-    prac_block_loop.addData('prac_blockText.stopped', prac_blockText.tStopRefresh)
-    prac_block_loop.addData('prac_reminder_text.started', prac_reminder_text.tStartRefresh)
-    prac_block_loop.addData('prac_reminder_text.stopped', prac_reminder_text.tStopRefresh)
     # check responses
     if prac_reminder_keyResp.keys in ['', [], None]:  # No response was made
         prac_reminder_keyResp.keys = None
     prac_block_loop.addData('prac_reminder_keyResp.keys',prac_reminder_keyResp.keys)
     if prac_reminder_keyResp.keys != None:  # we had a response
         prac_block_loop.addData('prac_reminder_keyResp.rt', prac_reminder_keyResp.rt)
-    prac_block_loop.addData('prac_reminder_keyResp.started', prac_reminder_keyResp.tStartRefresh)
-    prac_block_loop.addData('prac_reminder_keyResp.stopped', prac_reminder_keyResp.tStopRefresh)
     # the Routine "prac_blockReminders" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     
-    # ------Prepare to start Routine "initFixation"-------
+    # --- Prepare to start Routine "initFixation" ---
     continueRoutine = True
-    routineTimer.add(3.000000)
+    routineForceEnded = False
     # update component parameters for each repeat
     initFixation_img.setImage('img/fixationCross.png')
     # keep track of which components have finished
@@ -1432,14 +1421,13 @@ for thisPrac_block_loop in prac_block_loop:
     # reset timers
     t = 0
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    initFixationClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
     frameN = -1
     
-    # -------Run Routine "initFixation"-------
-    while continueRoutine and routineTimer.getTime() > 0:
+    # --- Run Routine "initFixation" ---
+    while continueRoutine and routineTimer.getTime() < 3.0:
         # get current time
-        t = initFixationClock.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=initFixationClock)
+        t = routineTimer.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
@@ -1451,6 +1439,8 @@ for thisPrac_block_loop in prac_block_loop:
             initFixation_img.tStart = t  # local t and not account for scr refresh
             initFixation_img.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(initFixation_img, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'initFixation_img.started')
             initFixation_img.setAutoDraw(True)
         if initFixation_img.status == STARTED:
             # is it time to stop? (based on global clock, using actual start)
@@ -1458,7 +1448,8 @@ for thisPrac_block_loop in prac_block_loop:
                 # keep track of stop time/frame for later
                 initFixation_img.tStop = t  # not accounting for scr refresh
                 initFixation_img.frameNStop = frameN  # exact frame index
-                win.timeOnFlip(initFixation_img, 'tStopRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'initFixation_img.stopped')
                 initFixation_img.setAutoDraw(False)
         
         # check for quit (typically the Esc key)
@@ -1467,6 +1458,7 @@ for thisPrac_block_loop in prac_block_loop:
         
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
+            routineForceEnded = True
             break
         continueRoutine = False  # will revert to True if at least one component still running
         for thisComponent in initFixationComponents:
@@ -1478,12 +1470,15 @@ for thisPrac_block_loop in prac_block_loop:
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
     
-    # -------Ending Routine "initFixation"-------
+    # --- Ending Routine "initFixation" ---
     for thisComponent in initFixationComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    prac_block_loop.addData('initFixation_img.started', initFixation_img.tStartRefresh)
-    prac_block_loop.addData('initFixation_img.stopped', initFixation_img.tStopRefresh)
+    # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
+    if routineForceEnded:
+        routineTimer.reset()
+    else:
+        routineTimer.addTime(-3.000000)
     
     # set up handler to look after randomisation of conditions etc
     prac_trial_loop = data.TrialHandler(nReps=10, method='random', 
@@ -1504,9 +1499,11 @@ for thisPrac_block_loop in prac_block_loop:
             for paramName in thisPrac_trial_loop:
                 exec('{} = thisPrac_trial_loop[paramName]'.format(paramName))
         
-        # ------Prepare to start Routine "prac_stimRoutine"-------
+        # --- Prepare to start Routine "prac_stimRoutine" ---
         continueRoutine = True
+        routineForceEnded = False
         # update component parameters for each repeat
+        # Run 'Begin Routine' code from prac_isi_code
         # pick the ISI for the next routine
         # this code component is set to 'both' because we need to remove the 'np'
         # at the start of np.linspace (this is a python library JS won't know what to call. 
@@ -1530,6 +1527,7 @@ for thisPrac_block_loop in prac_block_loop:
         prac_leftImg1.setImage(leftStim1)
         prac_leftImg2.setImage(leftStim1)
         prac_fixImg.setImage('img/fixationCross.png')
+        # Run 'Begin Routine' code from prac_stimTrigger_code
         #set stimTriggerSent to false at the start of the trial. this way
         #when the stimulus is shown, we can change it to True. This variable
         #is used to ensure we only throw the stimulus EEG trigger once.
@@ -1537,6 +1535,7 @@ for thisPrac_block_loop in prac_block_loop:
         prac_stim_keyResp.keys = []
         prac_stim_keyResp.rt = []
         _prac_stim_keyResp_allKeys = []
+        # Run 'Begin Routine' code from prac_respTrigger_code
         #clear out the keys_counbted variable at the start of the trial
         #this variable will hold the keys that have had eeg triggers thrown
         #already within a given trial.
@@ -1553,14 +1552,13 @@ for thisPrac_block_loop in prac_block_loop:
         # reset timers
         t = 0
         _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-        prac_stimRoutineClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
         frameN = -1
         
-        # -------Run Routine "prac_stimRoutine"-------
+        # --- Run Routine "prac_stimRoutine" ---
         while continueRoutine:
             # get current time
-            t = prac_stimRoutineClock.getTime()
-            tThisFlip = win.getFutureFlipTime(clock=prac_stimRoutineClock)
+            t = routineTimer.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=routineTimer)
             tThisFlipGlobal = win.getFutureFlipTime(clock=None)
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
@@ -1572,6 +1570,8 @@ for thisPrac_block_loop in prac_block_loop:
                 prac_centerImg.tStart = t  # local t and not account for scr refresh
                 prac_centerImg.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(prac_centerImg, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'prac_centerImg.started')
                 prac_centerImg.setAutoDraw(True)
             if prac_centerImg.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
@@ -1579,7 +1579,8 @@ for thisPrac_block_loop in prac_block_loop:
                     # keep track of stop time/frame for later
                     prac_centerImg.tStop = t  # not accounting for scr refresh
                     prac_centerImg.frameNStop = frameN  # exact frame index
-                    win.timeOnFlip(prac_centerImg, 'tStopRefresh')  # time at next scr refresh
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'prac_centerImg.stopped')
                     prac_centerImg.setAutoDraw(False)
             
             # *prac_rightImg1* updates
@@ -1589,6 +1590,8 @@ for thisPrac_block_loop in prac_block_loop:
                 prac_rightImg1.tStart = t  # local t and not account for scr refresh
                 prac_rightImg1.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(prac_rightImg1, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'prac_rightImg1.started')
                 prac_rightImg1.setAutoDraw(True)
             if prac_rightImg1.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
@@ -1596,7 +1599,8 @@ for thisPrac_block_loop in prac_block_loop:
                     # keep track of stop time/frame for later
                     prac_rightImg1.tStop = t  # not accounting for scr refresh
                     prac_rightImg1.frameNStop = frameN  # exact frame index
-                    win.timeOnFlip(prac_rightImg1, 'tStopRefresh')  # time at next scr refresh
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'prac_rightImg1.stopped')
                     prac_rightImg1.setAutoDraw(False)
             
             # *prac_rightImg2* updates
@@ -1606,6 +1610,8 @@ for thisPrac_block_loop in prac_block_loop:
                 prac_rightImg2.tStart = t  # local t and not account for scr refresh
                 prac_rightImg2.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(prac_rightImg2, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'prac_rightImg2.started')
                 prac_rightImg2.setAutoDraw(True)
             if prac_rightImg2.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
@@ -1613,7 +1619,8 @@ for thisPrac_block_loop in prac_block_loop:
                     # keep track of stop time/frame for later
                     prac_rightImg2.tStop = t  # not accounting for scr refresh
                     prac_rightImg2.frameNStop = frameN  # exact frame index
-                    win.timeOnFlip(prac_rightImg2, 'tStopRefresh')  # time at next scr refresh
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'prac_rightImg2.stopped')
                     prac_rightImg2.setAutoDraw(False)
             
             # *prac_leftImg1* updates
@@ -1623,6 +1630,8 @@ for thisPrac_block_loop in prac_block_loop:
                 prac_leftImg1.tStart = t  # local t and not account for scr refresh
                 prac_leftImg1.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(prac_leftImg1, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'prac_leftImg1.started')
                 prac_leftImg1.setAutoDraw(True)
             if prac_leftImg1.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
@@ -1630,7 +1639,8 @@ for thisPrac_block_loop in prac_block_loop:
                     # keep track of stop time/frame for later
                     prac_leftImg1.tStop = t  # not accounting for scr refresh
                     prac_leftImg1.frameNStop = frameN  # exact frame index
-                    win.timeOnFlip(prac_leftImg1, 'tStopRefresh')  # time at next scr refresh
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'prac_leftImg1.stopped')
                     prac_leftImg1.setAutoDraw(False)
             
             # *prac_leftImg2* updates
@@ -1640,6 +1650,8 @@ for thisPrac_block_loop in prac_block_loop:
                 prac_leftImg2.tStart = t  # local t and not account for scr refresh
                 prac_leftImg2.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(prac_leftImg2, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'prac_leftImg2.started')
                 prac_leftImg2.setAutoDraw(True)
             if prac_leftImg2.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
@@ -1647,7 +1659,8 @@ for thisPrac_block_loop in prac_block_loop:
                     # keep track of stop time/frame for later
                     prac_leftImg2.tStop = t  # not accounting for scr refresh
                     prac_leftImg2.frameNStop = frameN  # exact frame index
-                    win.timeOnFlip(prac_leftImg2, 'tStopRefresh')  # time at next scr refresh
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'prac_leftImg2.stopped')
                     prac_leftImg2.setAutoDraw(False)
             
             # *prac_fixImg* updates
@@ -1657,6 +1670,8 @@ for thisPrac_block_loop in prac_block_loop:
                 prac_fixImg.tStart = t  # local t and not account for scr refresh
                 prac_fixImg.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(prac_fixImg, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'prac_fixImg.started')
                 prac_fixImg.setAutoDraw(True)
             if prac_fixImg.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
@@ -1664,8 +1679,10 @@ for thisPrac_block_loop in prac_block_loop:
                     # keep track of stop time/frame for later
                     prac_fixImg.tStop = t  # not accounting for scr refresh
                     prac_fixImg.frameNStop = frameN  # exact frame index
-                    win.timeOnFlip(prac_fixImg, 'tStopRefresh')  # time at next scr refresh
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'prac_fixImg.stopped')
                     prac_fixImg.setAutoDraw(False)
+            # Run 'Each Frame' code from prac_stimTrigger_code
             #the first if statement below ensures that the subsequent if statements (and throwing of triggers)
             #only occurs once per trial. That is, only when the stimulus is presented (.status = STARTED) and
             #stimTriggerSent is still False. Once a trigger is sent, we change stimTriggerSent to True so that 
@@ -1700,6 +1717,8 @@ for thisPrac_block_loop in prac_block_loop:
                 prac_stim_keyResp.tStart = t  # local t and not account for scr refresh
                 prac_stim_keyResp.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(prac_stim_keyResp, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'prac_stim_keyResp.started')
                 prac_stim_keyResp.status = STARTED
                 # keyboard checking is just starting
                 waitOnFlip = True
@@ -1711,14 +1730,16 @@ for thisPrac_block_loop in prac_block_loop:
                     # keep track of stop time/frame for later
                     prac_stim_keyResp.tStop = t  # not accounting for scr refresh
                     prac_stim_keyResp.frameNStop = frameN  # exact frame index
-                    win.timeOnFlip(prac_stim_keyResp, 'tStopRefresh')  # time at next scr refresh
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'prac_stim_keyResp.stopped')
                     prac_stim_keyResp.status = FINISHED
             if prac_stim_keyResp.status == STARTED and not waitOnFlip:
-                theseKeys = prac_stim_keyResp.getKeys(keyList=['1', '8'], waitRelease=False)
+                theseKeys = prac_stim_keyResp.getKeys(keyList=['1','8'], waitRelease=False)
                 _prac_stim_keyResp_allKeys.extend(theseKeys)
                 if len(_prac_stim_keyResp_allKeys):
                     prac_stim_keyResp.keys = [key.name for key in _prac_stim_keyResp_allKeys]  # storing all keys
                     prac_stim_keyResp.rt = [key.rt for key in _prac_stim_keyResp_allKeys]
+            # Run 'Each Frame' code from prac_respTrigger_code
             if prac_stim_keyResp.keys and len(prac_stim_keyResp.keys) > len(keys_counted):# A key response has been made but we haven't yet "counted" it
                 keys_counted.append(prac_stim_keyResp.keys[-1]) #add this response to list of keys pressed this trial
                 if len(prac_stim_keyResp.keys) < 2: #if this is  the first response
@@ -1766,6 +1787,7 @@ for thisPrac_block_loop in prac_block_loop:
             
             # check if all components have finished
             if not continueRoutine:  # a component has requested a forced-end of Routine
+                routineForceEnded = True
                 break
             continueRoutine = False  # will revert to True if at least one component still running
             for thisComponent in prac_stimRoutineComponents:
@@ -1777,30 +1799,17 @@ for thisPrac_block_loop in prac_block_loop:
             if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
                 win.flip()
         
-        # -------Ending Routine "prac_stimRoutine"-------
+        # --- Ending Routine "prac_stimRoutine" ---
         for thisComponent in prac_stimRoutineComponents:
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
-        prac_trial_loop.addData('prac_centerImg.started', prac_centerImg.tStartRefresh)
-        prac_trial_loop.addData('prac_centerImg.stopped', prac_centerImg.tStopRefresh)
-        prac_trial_loop.addData('prac_rightImg1.started', prac_rightImg1.tStartRefresh)
-        prac_trial_loop.addData('prac_rightImg1.stopped', prac_rightImg1.tStopRefresh)
-        prac_trial_loop.addData('prac_rightImg2.started', prac_rightImg2.tStartRefresh)
-        prac_trial_loop.addData('prac_rightImg2.stopped', prac_rightImg2.tStopRefresh)
-        prac_trial_loop.addData('prac_leftImg1.started', prac_leftImg1.tStartRefresh)
-        prac_trial_loop.addData('prac_leftImg1.stopped', prac_leftImg1.tStopRefresh)
-        prac_trial_loop.addData('prac_leftImg2.started', prac_leftImg2.tStartRefresh)
-        prac_trial_loop.addData('prac_leftImg2.stopped', prac_leftImg2.tStopRefresh)
-        prac_trial_loop.addData('prac_fixImg.started', prac_fixImg.tStartRefresh)
-        prac_trial_loop.addData('prac_fixImg.stopped', prac_fixImg.tStopRefresh)
         # check responses
         if prac_stim_keyResp.keys in ['', [], None]:  # No response was made
             prac_stim_keyResp.keys = None
         prac_trial_loop.addData('prac_stim_keyResp.keys',prac_stim_keyResp.keys)
         if prac_stim_keyResp.keys != None:  # we had a response
             prac_trial_loop.addData('prac_stim_keyResp.rt', prac_stim_keyResp.rt)
-        prac_trial_loop.addData('prac_stim_keyResp.started', prac_stim_keyResp.tStartRefresh)
-        prac_trial_loop.addData('prac_stim_keyResp.stopped', prac_stim_keyResp.tStopRefresh)
+        # Run 'End Routine' code from prac_respTrigger_code
         
         #instead of including here, should instead include something
         #in each frame section that computes t at stim onset and then
@@ -1811,6 +1820,7 @@ for thisPrac_block_loop in prac_block_loop:
         #            port.write([0x63]) # 99
         #            time.sleep(PulseWidth)
         #            port.write([0x00])
+        # Run 'End Routine' code from prac_accuracy_code
         trialNum = trialNum + 1 #iterate trial number for this block
         
         if prac_stim_keyResp.keys: #if at least one response was made this trial
@@ -1836,13 +1846,15 @@ for thisPrac_block_loop in prac_block_loop:
     # completed 10 repeats of 'prac_trial_loop'
     
     
-    # ------Prepare to start Routine "prac_blockFeed"-------
+    # --- Prepare to start Routine "prac_blockFeed" ---
     continueRoutine = True
+    routineForceEnded = False
     # update component parameters for each repeat
+    # Run 'Begin Routine' code from prac_blockFeed_code
     blockAcc = numCorr / trialNum #compute accuracy for this block
     
     if blockAcc >= .75: #if accuracy >= 75% then say practice is complete and end practice loop to continue to main exp
-        outPut = 'You have completed the practice' #feedback presented
+        outPut = 'You will now play the real game' #feedback presented
         prac_block_loop.finished = True #end practice loop to continue to main exp
     elif blockAcc <= .75: #if accuracy < 75% then say that practice needs to be repeated and DO NOT end practice loop, instead, allow it to repeat
         outPut = 'Please try the practice again' #feedback presented
@@ -1867,14 +1879,13 @@ for thisPrac_block_loop in prac_block_loop:
     # reset timers
     t = 0
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    prac_blockFeedClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
     frameN = -1
     
-    # -------Run Routine "prac_blockFeed"-------
+    # --- Run Routine "prac_blockFeed" ---
     while continueRoutine:
         # get current time
-        t = prac_blockFeedClock.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=prac_blockFeedClock)
+        t = routineTimer.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
@@ -1886,6 +1897,8 @@ for thisPrac_block_loop in prac_block_loop:
             prac_blockFeed_text.tStart = t  # local t and not account for scr refresh
             prac_blockFeed_text.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(prac_blockFeed_text, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'prac_blockFeed_text.started')
             prac_blockFeed_text.setAutoDraw(True)
         
         # *prac_pressContinue* updates
@@ -1895,6 +1908,8 @@ for thisPrac_block_loop in prac_block_loop:
             prac_pressContinue.tStart = t  # local t and not account for scr refresh
             prac_pressContinue.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(prac_pressContinue, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'prac_pressContinue.started')
             prac_pressContinue.setAutoDraw(True)
         
         # *prac_blockFeed_keyResp* updates
@@ -1905,13 +1920,15 @@ for thisPrac_block_loop in prac_block_loop:
             prac_blockFeed_keyResp.tStart = t  # local t and not account for scr refresh
             prac_blockFeed_keyResp.tStartRefresh = tThisFlipGlobal  # on global time
             win.timeOnFlip(prac_blockFeed_keyResp, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'prac_blockFeed_keyResp.started')
             prac_blockFeed_keyResp.status = STARTED
             # keyboard checking is just starting
             waitOnFlip = True
             win.callOnFlip(prac_blockFeed_keyResp.clock.reset)  # t=0 on next screen flip
             win.callOnFlip(prac_blockFeed_keyResp.clearEvents, eventType='keyboard')  # clear events on next screen flip
         if prac_blockFeed_keyResp.status == STARTED and not waitOnFlip:
-            theseKeys = prac_blockFeed_keyResp.getKeys(keyList=['8'], waitRelease=False)
+            theseKeys = prac_blockFeed_keyResp.getKeys(keyList=['c'], waitRelease=False)
             _prac_blockFeed_keyResp_allKeys.extend(theseKeys)
             if len(_prac_blockFeed_keyResp_allKeys):
                 prac_blockFeed_keyResp.keys = _prac_blockFeed_keyResp_allKeys[-1].name  # just the last key pressed
@@ -1925,6 +1942,7 @@ for thisPrac_block_loop in prac_block_loop:
         
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
+            routineForceEnded = True
             break
         continueRoutine = False  # will revert to True if at least one component still running
         for thisComponent in prac_blockFeedComponents:
@@ -1936,120 +1954,22 @@ for thisPrac_block_loop in prac_block_loop:
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
     
-    # -------Ending Routine "prac_blockFeed"-------
+    # --- Ending Routine "prac_blockFeed" ---
     for thisComponent in prac_blockFeedComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
-    prac_block_loop.addData('prac_blockFeed_text.started', prac_blockFeed_text.tStartRefresh)
-    prac_block_loop.addData('prac_blockFeed_text.stopped', prac_blockFeed_text.tStopRefresh)
-    prac_block_loop.addData('prac_pressContinue.started', prac_pressContinue.tStartRefresh)
-    prac_block_loop.addData('prac_pressContinue.stopped', prac_pressContinue.tStopRefresh)
     # check responses
     if prac_blockFeed_keyResp.keys in ['', [], None]:  # No response was made
         prac_blockFeed_keyResp.keys = None
     prac_block_loop.addData('prac_blockFeed_keyResp.keys',prac_blockFeed_keyResp.keys)
     if prac_blockFeed_keyResp.keys != None:  # we had a response
         prac_block_loop.addData('prac_blockFeed_keyResp.rt', prac_blockFeed_keyResp.rt)
-    prac_block_loop.addData('prac_blockFeed_keyResp.started', prac_blockFeed_keyResp.tStartRefresh)
-    prac_block_loop.addData('prac_blockFeed_keyResp.stopped', prac_blockFeed_keyResp.tStopRefresh)
     # the Routine "prac_blockFeed" was not non-slip safe, so reset the non-slip timer
     routineTimer.reset()
     thisExp.nextEntry()
     
 # completed 99 repeats of 'prac_block_loop'
 
-
-# ------Prepare to start Routine "instructMainTask"-------
-continueRoutine = True
-# update component parameters for each repeat
-instructMainTask_keyResp.keys = []
-instructMainTask_keyResp.rt = []
-_instructMainTask_keyResp_allKeys = []
-# keep track of which components have finished
-instructMainTaskComponents = [instructMainTask_text, instructMainTask_keyResp]
-for thisComponent in instructMainTaskComponents:
-    thisComponent.tStart = None
-    thisComponent.tStop = None
-    thisComponent.tStartRefresh = None
-    thisComponent.tStopRefresh = None
-    if hasattr(thisComponent, 'status'):
-        thisComponent.status = NOT_STARTED
-# reset timers
-t = 0
-_timeToFirstFrame = win.getFutureFlipTime(clock="now")
-instructMainTaskClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
-frameN = -1
-
-# -------Run Routine "instructMainTask"-------
-while continueRoutine:
-    # get current time
-    t = instructMainTaskClock.getTime()
-    tThisFlip = win.getFutureFlipTime(clock=instructMainTaskClock)
-    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-    # update/draw components on each frame
-    
-    # *instructMainTask_text* updates
-    if instructMainTask_text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-        # keep track of start time/frame for later
-        instructMainTask_text.frameNStart = frameN  # exact frame index
-        instructMainTask_text.tStart = t  # local t and not account for scr refresh
-        instructMainTask_text.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(instructMainTask_text, 'tStartRefresh')  # time at next scr refresh
-        instructMainTask_text.setAutoDraw(True)
-    
-    # *instructMainTask_keyResp* updates
-    waitOnFlip = False
-    if instructMainTask_keyResp.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-        # keep track of start time/frame for later
-        instructMainTask_keyResp.frameNStart = frameN  # exact frame index
-        instructMainTask_keyResp.tStart = t  # local t and not account for scr refresh
-        instructMainTask_keyResp.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(instructMainTask_keyResp, 'tStartRefresh')  # time at next scr refresh
-        instructMainTask_keyResp.status = STARTED
-        # keyboard checking is just starting
-        waitOnFlip = True
-        win.callOnFlip(instructMainTask_keyResp.clock.reset)  # t=0 on next screen flip
-        win.callOnFlip(instructMainTask_keyResp.clearEvents, eventType='keyboard')  # clear events on next screen flip
-    if instructMainTask_keyResp.status == STARTED and not waitOnFlip:
-        theseKeys = instructMainTask_keyResp.getKeys(keyList=['c'], waitRelease=False)
-        _instructMainTask_keyResp_allKeys.extend(theseKeys)
-        if len(_instructMainTask_keyResp_allKeys):
-            instructMainTask_keyResp.keys = _instructMainTask_keyResp_allKeys[-1].name  # just the last key pressed
-            instructMainTask_keyResp.rt = _instructMainTask_keyResp_allKeys[-1].rt
-            # a response ends the routine
-            continueRoutine = False
-    
-    # check for quit (typically the Esc key)
-    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-        core.quit()
-    
-    # check if all components have finished
-    if not continueRoutine:  # a component has requested a forced-end of Routine
-        break
-    continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in instructMainTaskComponents:
-        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-            continueRoutine = True
-            break  # at least one component has not yet finished
-    
-    # refresh the screen
-    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-        win.flip()
-
-# -------Ending Routine "instructMainTask"-------
-for thisComponent in instructMainTaskComponents:
-    if hasattr(thisComponent, "setAutoDraw"):
-        thisComponent.setAutoDraw(False)
-# check responses
-if instructMainTask_keyResp.keys in ['', [], None]:  # No response was made
-    instructMainTask_keyResp.keys = None
-thisExp.addData('instructMainTask_keyResp.keys',instructMainTask_keyResp.keys)
-if instructMainTask_keyResp.keys != None:  # we had a response
-    thisExp.addData('instructMainTask_keyResp.rt', instructMainTask_keyResp.rt)
-thisExp.nextEntry()
-# the Routine "instructMainTask" was not non-slip safe, so reset the non-slip timer
-routineTimer.reset()
 
 # set up handler to look after randomisation of conditions etc
 task_condition_loop = data.TrialHandler(nReps=1.0, method='sequential', 
@@ -2070,9 +1990,11 @@ for thisTask_condition_loop in task_condition_loop:
         for paramName in thisTask_condition_loop:
             exec('{} = thisTask_condition_loop[paramName]'.format(paramName))
     
-    # ------Prepare to start Routine "task_condition"-------
+    # --- Prepare to start Routine "task_condition" ---
     continueRoutine = True
+    routineForceEnded = False
     # update component parameters for each repeat
+    # Run 'Begin Routine' code from condition_init_blockCounter
     #reset the following variables at the start of the experiment
     blockCounter = 0
     condition_whichCondition_text.setText(conditionText)
@@ -2091,14 +2013,13 @@ for thisTask_condition_loop in task_condition_loop:
     # reset timers
     t = 0
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    task_conditionClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
     frameN = -1
     
-    # -------Run Routine "task_condition"-------
+    # --- Run Routine "task_condition" ---
     while continueRoutine:
         # get current time
-        t = task_conditionClock.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=task_conditionClock)
+        t = routineTimer.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
@@ -2149,6 +2070,7 @@ for thisTask_condition_loop in task_condition_loop:
         
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
+            routineForceEnded = True
             break
         continueRoutine = False  # will revert to True if at least one component still running
         for thisComponent in task_conditionComponents:
@@ -2160,7 +2082,7 @@ for thisTask_condition_loop in task_condition_loop:
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
     
-    # -------Ending Routine "task_condition"-------
+    # --- Ending Routine "task_condition" ---
     for thisComponent in task_conditionComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
@@ -2192,9 +2114,11 @@ for thisTask_condition_loop in task_condition_loop:
             for paramName in thisTask_block_loop:
                 exec('{} = thisTask_block_loop[paramName]'.format(paramName))
         
-        # ------Prepare to start Routine "task_blockReminders"-------
+        # --- Prepare to start Routine "task_blockReminders" ---
         continueRoutine = True
+        routineForceEnded = False
         # update component parameters for each repeat
+        # Run 'Begin Routine' code from task_blockReminder_code
         blockCounter = blockCounter +1
         
         if blockCounter == 1:
@@ -2233,14 +2157,13 @@ for thisTask_condition_loop in task_condition_loop:
         # reset timers
         t = 0
         _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-        task_blockRemindersClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
         frameN = -1
         
-        # -------Run Routine "task_blockReminders"-------
+        # --- Run Routine "task_blockReminders" ---
         while continueRoutine:
             # get current time
-            t = task_blockRemindersClock.getTime()
-            tThisFlip = win.getFutureFlipTime(clock=task_blockRemindersClock)
+            t = routineTimer.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=routineTimer)
             tThisFlipGlobal = win.getFutureFlipTime(clock=None)
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
@@ -2252,6 +2175,8 @@ for thisTask_condition_loop in task_condition_loop:
                 task_blockText.tStart = t  # local t and not account for scr refresh
                 task_blockText.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(task_blockText, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'task_blockText.started')
                 task_blockText.setAutoDraw(True)
             
             # *task_blockReminders_text* updates
@@ -2271,6 +2196,8 @@ for thisTask_condition_loop in task_condition_loop:
                 task_blockReminders_keyResp.tStart = t  # local t and not account for scr refresh
                 task_blockReminders_keyResp.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(task_blockReminders_keyResp, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'task_blockReminders_keyResp.started')
                 task_blockReminders_keyResp.status = STARTED
                 # keyboard checking is just starting
                 waitOnFlip = True
@@ -2291,6 +2218,7 @@ for thisTask_condition_loop in task_condition_loop:
             
             # check if all components have finished
             if not continueRoutine:  # a component has requested a forced-end of Routine
+                routineForceEnded = True
                 break
             continueRoutine = False  # will revert to True if at least one component still running
             for thisComponent in task_blockRemindersComponents:
@@ -2302,26 +2230,22 @@ for thisTask_condition_loop in task_condition_loop:
             if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
                 win.flip()
         
-        # -------Ending Routine "task_blockReminders"-------
+        # --- Ending Routine "task_blockReminders" ---
         for thisComponent in task_blockRemindersComponents:
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
-        task_block_loop.addData('task_blockText.started', task_blockText.tStartRefresh)
-        task_block_loop.addData('task_blockText.stopped', task_blockText.tStopRefresh)
         # check responses
         if task_blockReminders_keyResp.keys in ['', [], None]:  # No response was made
             task_blockReminders_keyResp.keys = None
         task_block_loop.addData('task_blockReminders_keyResp.keys',task_blockReminders_keyResp.keys)
         if task_blockReminders_keyResp.keys != None:  # we had a response
             task_block_loop.addData('task_blockReminders_keyResp.rt', task_blockReminders_keyResp.rt)
-        task_block_loop.addData('task_blockReminders_keyResp.started', task_blockReminders_keyResp.tStartRefresh)
-        task_block_loop.addData('task_blockReminders_keyResp.stopped', task_blockReminders_keyResp.tStopRefresh)
         # the Routine "task_blockReminders" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         
-        # ------Prepare to start Routine "initFixation"-------
+        # --- Prepare to start Routine "initFixation" ---
         continueRoutine = True
-        routineTimer.add(3.000000)
+        routineForceEnded = False
         # update component parameters for each repeat
         initFixation_img.setImage('img/fixationCross.png')
         # keep track of which components have finished
@@ -2336,14 +2260,13 @@ for thisTask_condition_loop in task_condition_loop:
         # reset timers
         t = 0
         _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-        initFixationClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
         frameN = -1
         
-        # -------Run Routine "initFixation"-------
-        while continueRoutine and routineTimer.getTime() > 0:
+        # --- Run Routine "initFixation" ---
+        while continueRoutine and routineTimer.getTime() < 3.0:
             # get current time
-            t = initFixationClock.getTime()
-            tThisFlip = win.getFutureFlipTime(clock=initFixationClock)
+            t = routineTimer.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=routineTimer)
             tThisFlipGlobal = win.getFutureFlipTime(clock=None)
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
@@ -2355,6 +2278,8 @@ for thisTask_condition_loop in task_condition_loop:
                 initFixation_img.tStart = t  # local t and not account for scr refresh
                 initFixation_img.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(initFixation_img, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'initFixation_img.started')
                 initFixation_img.setAutoDraw(True)
             if initFixation_img.status == STARTED:
                 # is it time to stop? (based on global clock, using actual start)
@@ -2362,7 +2287,8 @@ for thisTask_condition_loop in task_condition_loop:
                     # keep track of stop time/frame for later
                     initFixation_img.tStop = t  # not accounting for scr refresh
                     initFixation_img.frameNStop = frameN  # exact frame index
-                    win.timeOnFlip(initFixation_img, 'tStopRefresh')  # time at next scr refresh
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'initFixation_img.stopped')
                     initFixation_img.setAutoDraw(False)
             
             # check for quit (typically the Esc key)
@@ -2371,6 +2297,7 @@ for thisTask_condition_loop in task_condition_loop:
             
             # check if all components have finished
             if not continueRoutine:  # a component has requested a forced-end of Routine
+                routineForceEnded = True
                 break
             continueRoutine = False  # will revert to True if at least one component still running
             for thisComponent in initFixationComponents:
@@ -2382,12 +2309,15 @@ for thisTask_condition_loop in task_condition_loop:
             if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
                 win.flip()
         
-        # -------Ending Routine "initFixation"-------
+        # --- Ending Routine "initFixation" ---
         for thisComponent in initFixationComponents:
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
-        task_block_loop.addData('initFixation_img.started', initFixation_img.tStartRefresh)
-        task_block_loop.addData('initFixation_img.stopped', initFixation_img.tStopRefresh)
+        # using non-slip timing so subtract the expected duration of this Routine (unless ended on request)
+        if routineForceEnded:
+            routineTimer.reset()
+        else:
+            routineTimer.addTime(-3.000000)
         
         # set up handler to look after randomisation of conditions etc
         task_trial_loop = data.TrialHandler(nReps=10.0, method='random', 
@@ -2408,9 +2338,11 @@ for thisTask_condition_loop in task_condition_loop:
                 for paramName in thisTask_trial_loop:
                     exec('{} = thisTask_trial_loop[paramName]'.format(paramName))
             
-            # ------Prepare to start Routine "task_stimRoutine"-------
+            # --- Prepare to start Routine "task_stimRoutine" ---
             continueRoutine = True
+            routineForceEnded = False
             # update component parameters for each repeat
+            # Run 'Begin Routine' code from task_isi_code
             # pick the ISI for the next routine
             # this code component is set to 'both' because we need to remove the 'np'
             # at the start of np.linspace (this is a python library JS won't know what to call. 
@@ -2431,6 +2363,7 @@ for thisTask_condition_loop in task_condition_loop:
             task_leftImg1.setImage(leftStim1)
             task_leftImg2.setImage(leftStim1)
             task_fixImg.setImage('img/fixationCross.png')
+            # Run 'Begin Routine' code from task_stimTrigger_code
             #set stimTriggerSent to false at the start of the trial. this way
             #when the stimulus is shown, we can change it to True. This variable
             #is used to ensure we only throw the stimulus EEG trigger once.
@@ -2438,6 +2371,7 @@ for thisTask_condition_loop in task_condition_loop:
             task_stim_keyResp.keys = []
             task_stim_keyResp.rt = []
             _task_stim_keyResp_allKeys = []
+            # Run 'Begin Routine' code from task_respTrigger_code
             #clear out the keys_counbted variable at the start of the trial
             #this variable will hold the keys that have had eeg triggers thrown
             #already within a given trial.
@@ -2454,14 +2388,13 @@ for thisTask_condition_loop in task_condition_loop:
             # reset timers
             t = 0
             _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-            task_stimRoutineClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
             frameN = -1
             
-            # -------Run Routine "task_stimRoutine"-------
+            # --- Run Routine "task_stimRoutine" ---
             while continueRoutine:
                 # get current time
-                t = task_stimRoutineClock.getTime()
-                tThisFlip = win.getFutureFlipTime(clock=task_stimRoutineClock)
+                t = routineTimer.getTime()
+                tThisFlip = win.getFutureFlipTime(clock=routineTimer)
                 tThisFlipGlobal = win.getFutureFlipTime(clock=None)
                 frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
                 # update/draw components on each frame
@@ -2473,6 +2406,8 @@ for thisTask_condition_loop in task_condition_loop:
                     task_centerImg.tStart = t  # local t and not account for scr refresh
                     task_centerImg.tStartRefresh = tThisFlipGlobal  # on global time
                     win.timeOnFlip(task_centerImg, 'tStartRefresh')  # time at next scr refresh
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'task_centerImg.started')
                     task_centerImg.setAutoDraw(True)
                 if task_centerImg.status == STARTED:
                     # is it time to stop? (based on global clock, using actual start)
@@ -2480,7 +2415,8 @@ for thisTask_condition_loop in task_condition_loop:
                         # keep track of stop time/frame for later
                         task_centerImg.tStop = t  # not accounting for scr refresh
                         task_centerImg.frameNStop = frameN  # exact frame index
-                        win.timeOnFlip(task_centerImg, 'tStopRefresh')  # time at next scr refresh
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'task_centerImg.stopped')
                         task_centerImg.setAutoDraw(False)
                 
                 # *task_rightImg1* updates
@@ -2490,6 +2426,8 @@ for thisTask_condition_loop in task_condition_loop:
                     task_rightImg1.tStart = t  # local t and not account for scr refresh
                     task_rightImg1.tStartRefresh = tThisFlipGlobal  # on global time
                     win.timeOnFlip(task_rightImg1, 'tStartRefresh')  # time at next scr refresh
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'task_rightImg1.started')
                     task_rightImg1.setAutoDraw(True)
                 if task_rightImg1.status == STARTED:
                     # is it time to stop? (based on global clock, using actual start)
@@ -2497,7 +2435,8 @@ for thisTask_condition_loop in task_condition_loop:
                         # keep track of stop time/frame for later
                         task_rightImg1.tStop = t  # not accounting for scr refresh
                         task_rightImg1.frameNStop = frameN  # exact frame index
-                        win.timeOnFlip(task_rightImg1, 'tStopRefresh')  # time at next scr refresh
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'task_rightImg1.stopped')
                         task_rightImg1.setAutoDraw(False)
                 
                 # *task_rightImg2* updates
@@ -2507,6 +2446,8 @@ for thisTask_condition_loop in task_condition_loop:
                     task_rightImg2.tStart = t  # local t and not account for scr refresh
                     task_rightImg2.tStartRefresh = tThisFlipGlobal  # on global time
                     win.timeOnFlip(task_rightImg2, 'tStartRefresh')  # time at next scr refresh
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'task_rightImg2.started')
                     task_rightImg2.setAutoDraw(True)
                 if task_rightImg2.status == STARTED:
                     # is it time to stop? (based on global clock, using actual start)
@@ -2514,7 +2455,8 @@ for thisTask_condition_loop in task_condition_loop:
                         # keep track of stop time/frame for later
                         task_rightImg2.tStop = t  # not accounting for scr refresh
                         task_rightImg2.frameNStop = frameN  # exact frame index
-                        win.timeOnFlip(task_rightImg2, 'tStopRefresh')  # time at next scr refresh
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'task_rightImg2.stopped')
                         task_rightImg2.setAutoDraw(False)
                 
                 # *task_leftImg1* updates
@@ -2524,6 +2466,8 @@ for thisTask_condition_loop in task_condition_loop:
                     task_leftImg1.tStart = t  # local t and not account for scr refresh
                     task_leftImg1.tStartRefresh = tThisFlipGlobal  # on global time
                     win.timeOnFlip(task_leftImg1, 'tStartRefresh')  # time at next scr refresh
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'task_leftImg1.started')
                     task_leftImg1.setAutoDraw(True)
                 if task_leftImg1.status == STARTED:
                     # is it time to stop? (based on global clock, using actual start)
@@ -2531,7 +2475,8 @@ for thisTask_condition_loop in task_condition_loop:
                         # keep track of stop time/frame for later
                         task_leftImg1.tStop = t  # not accounting for scr refresh
                         task_leftImg1.frameNStop = frameN  # exact frame index
-                        win.timeOnFlip(task_leftImg1, 'tStopRefresh')  # time at next scr refresh
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'task_leftImg1.stopped')
                         task_leftImg1.setAutoDraw(False)
                 
                 # *task_leftImg2* updates
@@ -2541,6 +2486,8 @@ for thisTask_condition_loop in task_condition_loop:
                     task_leftImg2.tStart = t  # local t and not account for scr refresh
                     task_leftImg2.tStartRefresh = tThisFlipGlobal  # on global time
                     win.timeOnFlip(task_leftImg2, 'tStartRefresh')  # time at next scr refresh
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'task_leftImg2.started')
                     task_leftImg2.setAutoDraw(True)
                 if task_leftImg2.status == STARTED:
                     # is it time to stop? (based on global clock, using actual start)
@@ -2548,7 +2495,8 @@ for thisTask_condition_loop in task_condition_loop:
                         # keep track of stop time/frame for later
                         task_leftImg2.tStop = t  # not accounting for scr refresh
                         task_leftImg2.frameNStop = frameN  # exact frame index
-                        win.timeOnFlip(task_leftImg2, 'tStopRefresh')  # time at next scr refresh
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'task_leftImg2.stopped')
                         task_leftImg2.setAutoDraw(False)
                 
                 # *task_fixImg* updates
@@ -2558,6 +2506,8 @@ for thisTask_condition_loop in task_condition_loop:
                     task_fixImg.tStart = t  # local t and not account for scr refresh
                     task_fixImg.tStartRefresh = tThisFlipGlobal  # on global time
                     win.timeOnFlip(task_fixImg, 'tStartRefresh')  # time at next scr refresh
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'task_fixImg.started')
                     task_fixImg.setAutoDraw(True)
                 if task_fixImg.status == STARTED:
                     # is it time to stop? (based on global clock, using actual start)
@@ -2565,8 +2515,10 @@ for thisTask_condition_loop in task_condition_loop:
                         # keep track of stop time/frame for later
                         task_fixImg.tStop = t  # not accounting for scr refresh
                         task_fixImg.frameNStop = frameN  # exact frame index
-                        win.timeOnFlip(task_fixImg, 'tStopRefresh')  # time at next scr refresh
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'task_fixImg.stopped')
                         task_fixImg.setAutoDraw(False)
+                # Run 'Each Frame' code from task_stimTrigger_code
                 #the first if statement below ensures that the subsequent if statements (and throwing of triggers)
                 #only occurs once per trial. That is, only when the stimulus is presented (.status = STARTED) and
                 #stimTriggerSent is still False. Once a trigger is sent, we change stimTriggerSent to True so that 
@@ -2621,6 +2573,8 @@ for thisTask_condition_loop in task_condition_loop:
                     task_stim_keyResp.tStart = t  # local t and not account for scr refresh
                     task_stim_keyResp.tStartRefresh = tThisFlipGlobal  # on global time
                     win.timeOnFlip(task_stim_keyResp, 'tStartRefresh')  # time at next scr refresh
+                    # add timestamp to datafile
+                    thisExp.timestampOnFlip(win, 'task_stim_keyResp.started')
                     task_stim_keyResp.status = STARTED
                     # keyboard checking is just starting
                     waitOnFlip = True
@@ -2632,14 +2586,16 @@ for thisTask_condition_loop in task_condition_loop:
                         # keep track of stop time/frame for later
                         task_stim_keyResp.tStop = t  # not accounting for scr refresh
                         task_stim_keyResp.frameNStop = frameN  # exact frame index
-                        win.timeOnFlip(task_stim_keyResp, 'tStopRefresh')  # time at next scr refresh
+                        # add timestamp to datafile
+                        thisExp.timestampOnFlip(win, 'task_stim_keyResp.stopped')
                         task_stim_keyResp.status = FINISHED
                 if task_stim_keyResp.status == STARTED and not waitOnFlip:
-                    theseKeys = task_stim_keyResp.getKeys(keyList=['1', '8'], waitRelease=False)
+                    theseKeys = task_stim_keyResp.getKeys(keyList=['1','8'], waitRelease=False)
                     _task_stim_keyResp_allKeys.extend(theseKeys)
                     if len(_task_stim_keyResp_allKeys):
                         task_stim_keyResp.keys = [key.name for key in _task_stim_keyResp_allKeys]  # storing all keys
                         task_stim_keyResp.rt = [key.rt for key in _task_stim_keyResp_allKeys]
+                # Run 'Each Frame' code from task_respTrigger_code
                 if task_stim_keyResp.keys and len(task_stim_keyResp.keys) > len(keys_counted):# A key response has been made but we haven't yet "counted" it
                     keys_counted.append(task_stim_keyResp.keys[-1]) #add this response to list of keys pressed this trial
                     if len(task_stim_keyResp.keys) < 2: #if this is  the first response
@@ -2687,6 +2643,7 @@ for thisTask_condition_loop in task_condition_loop:
                 
                 # check if all components have finished
                 if not continueRoutine:  # a component has requested a forced-end of Routine
+                    routineForceEnded = True
                     break
                 continueRoutine = False  # will revert to True if at least one component still running
                 for thisComponent in task_stimRoutineComponents:
@@ -2698,30 +2655,17 @@ for thisTask_condition_loop in task_condition_loop:
                 if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
                     win.flip()
             
-            # -------Ending Routine "task_stimRoutine"-------
+            # --- Ending Routine "task_stimRoutine" ---
             for thisComponent in task_stimRoutineComponents:
                 if hasattr(thisComponent, "setAutoDraw"):
                     thisComponent.setAutoDraw(False)
-            task_trial_loop.addData('task_centerImg.started', task_centerImg.tStartRefresh)
-            task_trial_loop.addData('task_centerImg.stopped', task_centerImg.tStopRefresh)
-            task_trial_loop.addData('task_rightImg1.started', task_rightImg1.tStartRefresh)
-            task_trial_loop.addData('task_rightImg1.stopped', task_rightImg1.tStopRefresh)
-            task_trial_loop.addData('task_rightImg2.started', task_rightImg2.tStartRefresh)
-            task_trial_loop.addData('task_rightImg2.stopped', task_rightImg2.tStopRefresh)
-            task_trial_loop.addData('task_leftImg1.started', task_leftImg1.tStartRefresh)
-            task_trial_loop.addData('task_leftImg1.stopped', task_leftImg1.tStopRefresh)
-            task_trial_loop.addData('task_leftImg2.started', task_leftImg2.tStartRefresh)
-            task_trial_loop.addData('task_leftImg2.stopped', task_leftImg2.tStopRefresh)
-            task_trial_loop.addData('task_fixImg.started', task_fixImg.tStartRefresh)
-            task_trial_loop.addData('task_fixImg.stopped', task_fixImg.tStopRefresh)
             # check responses
             if task_stim_keyResp.keys in ['', [], None]:  # No response was made
                 task_stim_keyResp.keys = None
             task_trial_loop.addData('task_stim_keyResp.keys',task_stim_keyResp.keys)
             if task_stim_keyResp.keys != None:  # we had a response
                 task_trial_loop.addData('task_stim_keyResp.rt', task_stim_keyResp.rt)
-            task_trial_loop.addData('task_stim_keyResp.started', task_stim_keyResp.tStartRefresh)
-            task_trial_loop.addData('task_stim_keyResp.stopped', task_stim_keyResp.tStopRefresh)
+            # Run 'End Routine' code from task_respTrigger_code
             
             #instead of including here, should instead include something
             #in each frame section that computes t at stim onset and then
@@ -2732,6 +2676,7 @@ for thisTask_condition_loop in task_condition_loop:
             #            port.write([0x63]) # 99
             #            time.sleep(PulseWidth)
             #            port.write([0x00])
+            # Run 'End Routine' code from task_accuracy_code
             trialNum = trialNum + 1 #iterate trial number for this block
             
             if task_stim_keyResp.keys: #if at least one response was made this trial
@@ -2757,9 +2702,11 @@ for thisTask_condition_loop in task_condition_loop:
         # completed 10.0 repeats of 'task_trial_loop'
         
         
-        # ------Prepare to start Routine "task_blockFeed"-------
+        # --- Prepare to start Routine "task_blockFeed" ---
         continueRoutine = True
+        routineForceEnded = False
         # update component parameters for each repeat
+        # Run 'Begin Routine' code from task_blockFeed_code
         blockAcc = numCorr / trialNum #compute accuracy for this block
         
         if blockCounter < 10:
@@ -2799,14 +2746,13 @@ for thisTask_condition_loop in task_condition_loop:
         # reset timers
         t = 0
         _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-        task_blockFeedClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
         frameN = -1
         
-        # -------Run Routine "task_blockFeed"-------
+        # --- Run Routine "task_blockFeed" ---
         while continueRoutine:
             # get current time
-            t = task_blockFeedClock.getTime()
-            tThisFlip = win.getFutureFlipTime(clock=task_blockFeedClock)
+            t = routineTimer.getTime()
+            tThisFlip = win.getFutureFlipTime(clock=routineTimer)
             tThisFlipGlobal = win.getFutureFlipTime(clock=None)
             frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
             # update/draw components on each frame
@@ -2818,6 +2764,8 @@ for thisTask_condition_loop in task_condition_loop:
                 task_blockFeed_text.tStart = t  # local t and not account for scr refresh
                 task_blockFeed_text.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(task_blockFeed_text, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'task_blockFeed_text.started')
                 task_blockFeed_text.setAutoDraw(True)
             
             # *task_blackFeed_text3* updates
@@ -2834,7 +2782,6 @@ for thisTask_condition_loop in task_condition_loop:
                     # keep track of stop time/frame for later
                     task_blackFeed_text3.tStop = t  # not accounting for scr refresh
                     task_blackFeed_text3.frameNStop = frameN  # exact frame index
-                    win.timeOnFlip(task_blackFeed_text3, 'tStopRefresh')  # time at next scr refresh
                     task_blackFeed_text3.setAutoDraw(False)
             
             # *task_blockFeed_text2* updates
@@ -2854,6 +2801,8 @@ for thisTask_condition_loop in task_condition_loop:
                 task_blockFeed_keyResp.tStart = t  # local t and not account for scr refresh
                 task_blockFeed_keyResp.tStartRefresh = tThisFlipGlobal  # on global time
                 win.timeOnFlip(task_blockFeed_keyResp, 'tStartRefresh')  # time at next scr refresh
+                # add timestamp to datafile
+                thisExp.timestampOnFlip(win, 'task_blockFeed_keyResp.started')
                 task_blockFeed_keyResp.status = STARTED
                 # keyboard checking is just starting
                 waitOnFlip = True
@@ -2874,6 +2823,7 @@ for thisTask_condition_loop in task_condition_loop:
             
             # check if all components have finished
             if not continueRoutine:  # a component has requested a forced-end of Routine
+                routineForceEnded = True
                 break
             continueRoutine = False  # will revert to True if at least one component still running
             for thisComponent in task_blockFeedComponents:
@@ -2885,20 +2835,16 @@ for thisTask_condition_loop in task_condition_loop:
             if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
                 win.flip()
         
-        # -------Ending Routine "task_blockFeed"-------
+        # --- Ending Routine "task_blockFeed" ---
         for thisComponent in task_blockFeedComponents:
             if hasattr(thisComponent, "setAutoDraw"):
                 thisComponent.setAutoDraw(False)
-        task_block_loop.addData('task_blockFeed_text.started', task_blockFeed_text.tStartRefresh)
-        task_block_loop.addData('task_blockFeed_text.stopped', task_blockFeed_text.tStopRefresh)
         # check responses
         if task_blockFeed_keyResp.keys in ['', [], None]:  # No response was made
             task_blockFeed_keyResp.keys = None
         task_block_loop.addData('task_blockFeed_keyResp.keys',task_blockFeed_keyResp.keys)
         if task_blockFeed_keyResp.keys != None:  # we had a response
             task_block_loop.addData('task_blockFeed_keyResp.rt', task_blockFeed_keyResp.rt)
-        task_block_loop.addData('task_blockFeed_keyResp.started', task_blockFeed_keyResp.tStartRefresh)
-        task_block_loop.addData('task_blockFeed_keyResp.stopped', task_blockFeed_keyResp.tStopRefresh)
         # the Routine "task_blockFeed" was not non-slip safe, so reset the non-slip timer
         routineTimer.reset()
         thisExp.nextEntry()
@@ -2906,8 +2852,9 @@ for thisTask_condition_loop in task_condition_loop:
     # completed 10.0 repeats of 'task_block_loop'
     
     
-    # ------Prepare to start Routine "task_conditionComplete"-------
+    # --- Prepare to start Routine "task_conditionComplete" ---
     continueRoutine = True
+    routineForceEnded = False
     # update component parameters for each repeat
     conditionComplete_key_resp.keys = []
     conditionComplete_key_resp.rt = []
@@ -2924,14 +2871,13 @@ for thisTask_condition_loop in task_condition_loop:
     # reset timers
     t = 0
     _timeToFirstFrame = win.getFutureFlipTime(clock="now")
-    task_conditionCompleteClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
     frameN = -1
     
-    # -------Run Routine "task_conditionComplete"-------
+    # --- Run Routine "task_conditionComplete" ---
     while continueRoutine:
         # get current time
-        t = task_conditionCompleteClock.getTime()
-        tThisFlip = win.getFutureFlipTime(clock=task_conditionCompleteClock)
+        t = routineTimer.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
@@ -2973,6 +2919,7 @@ for thisTask_condition_loop in task_condition_loop:
         
         # check if all components have finished
         if not continueRoutine:  # a component has requested a forced-end of Routine
+            routineForceEnded = True
             break
         continueRoutine = False  # will revert to True if at least one component still running
         for thisComponent in task_conditionCompleteComponents:
@@ -2984,7 +2931,7 @@ for thisTask_condition_loop in task_condition_loop:
         if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
             win.flip()
     
-    # -------Ending Routine "task_conditionComplete"-------
+    # --- Ending Routine "task_conditionComplete" ---
     for thisComponent in task_conditionCompleteComponents:
         if hasattr(thisComponent, "setAutoDraw"):
             thisComponent.setAutoDraw(False)
@@ -3000,78 +2947,13 @@ for thisTask_condition_loop in task_condition_loop:
     
 # completed 1.0 repeats of 'task_condition_loop'
 
-
-# ------Prepare to start Routine "finishMessage"-------
-continueRoutine = True
-routineTimer.add(3.000000)
-# update component parameters for each repeat
-# keep track of which components have finished
-finishMessageComponents = [finishMessage_text]
-for thisComponent in finishMessageComponents:
-    thisComponent.tStart = None
-    thisComponent.tStop = None
-    thisComponent.tStartRefresh = None
-    thisComponent.tStopRefresh = None
-    if hasattr(thisComponent, 'status'):
-        thisComponent.status = NOT_STARTED
-# reset timers
-t = 0
-_timeToFirstFrame = win.getFutureFlipTime(clock="now")
-finishMessageClock.reset(-_timeToFirstFrame)  # t0 is time of first possible flip
-frameN = -1
-
-# -------Run Routine "finishMessage"-------
-while continueRoutine and routineTimer.getTime() > 0:
-    # get current time
-    t = finishMessageClock.getTime()
-    tThisFlip = win.getFutureFlipTime(clock=finishMessageClock)
-    tThisFlipGlobal = win.getFutureFlipTime(clock=None)
-    frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
-    # update/draw components on each frame
-    
-    # *finishMessage_text* updates
-    if finishMessage_text.status == NOT_STARTED and tThisFlip >= 0.0-frameTolerance:
-        # keep track of start time/frame for later
-        finishMessage_text.frameNStart = frameN  # exact frame index
-        finishMessage_text.tStart = t  # local t and not account for scr refresh
-        finishMessage_text.tStartRefresh = tThisFlipGlobal  # on global time
-        win.timeOnFlip(finishMessage_text, 'tStartRefresh')  # time at next scr refresh
-        finishMessage_text.setAutoDraw(True)
-    if finishMessage_text.status == STARTED:
-        # is it time to stop? (based on global clock, using actual start)
-        if tThisFlipGlobal > finishMessage_text.tStartRefresh + 3-frameTolerance:
-            # keep track of stop time/frame for later
-            finishMessage_text.tStop = t  # not accounting for scr refresh
-            finishMessage_text.frameNStop = frameN  # exact frame index
-            win.timeOnFlip(finishMessage_text, 'tStopRefresh')  # time at next scr refresh
-            finishMessage_text.setAutoDraw(False)
-    
-    # check for quit (typically the Esc key)
-    if endExpNow or defaultKeyboard.getKeys(keyList=["escape"]):
-        core.quit()
-    
-    # check if all components have finished
-    if not continueRoutine:  # a component has requested a forced-end of Routine
-        break
-    continueRoutine = False  # will revert to True if at least one component still running
-    for thisComponent in finishMessageComponents:
-        if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
-            continueRoutine = True
-            break  # at least one component has not yet finished
-    
-    # refresh the screen
-    if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
-        win.flip()
-
-# -------Ending Routine "finishMessage"-------
-for thisComponent in finishMessageComponents:
-    if hasattr(thisComponent, "setAutoDraw"):
-        thisComponent.setAutoDraw(False)
+# Run 'End Experiment' code from setup_code
 win.mouseVisible = True #make the mouse cursor visable again
 port.write([0xFF]) #set port values back to default state (FF)
 time.sleep(PulseWidth) #wait PulseWidth amount of time before doing anything else
 port.close() #close port opened at start of exp
 
+# --- End experiment ---
 # Flip one final time so any remaining win.callOnFlip() 
 # and win.timeOnFlip() tasks get executed before quitting
 win.flip()
@@ -3081,6 +2963,8 @@ thisExp.saveAsWideText(filename+'.csv', delim='auto')
 thisExp.saveAsPickle(filename)
 logging.flush()
 # make sure everything is closed down
+if eyetracker:
+    eyetracker.setConnectionState(False)
 thisExp.abort()  # or data files will save again on exit
 win.close()
 core.quit()
