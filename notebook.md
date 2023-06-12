@@ -5,6 +5,9 @@ The notebook is a running summary of what was done/tried each time you work on t
 
 In all cases, and in the interest of transparency, a single notebook should be used by all individuals contributing to the project.
 
+### Project social flanker
 
-### Project Notes
-The notebook can be viewed [here](INSERT YOUR LINK).
+
+
+### Project mini mfe
+See the data collection tracker on Google Drive (Projects -> mini-mfe -> tracker -> memory-for-error-mini_study-tracker)
